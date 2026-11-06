@@ -1,0 +1,1 @@
+["libuv", "libevent", "mosquitto", "nghttp2", "dlt-daemon", "jansson", "libyaml", "unbound", "lighttpd1.4", "libwebsockets", "libusb", "cJSON", "iperf3", "lldpd", "gflags", "glog", "brotli", "check", "zenoh-pico", "fribidi", "libxml2", "rtl-sdr", "c-ares", "avahi", "sscep", "lua", "rapidjson", "tinyxml2", "pistache"]

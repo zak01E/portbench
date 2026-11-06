@@ -1,0 +1,1992 @@
+[
+ {
+  "name": "tinyxml2",
+  "upstream": "leethomason/tinyxml2",
+  "license": "Zlib",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_10.0.0"
+  ]
+ },
+ {
+  "name": "Fast-DDS",
+  "upstream": "eProsima/Fast-DDS",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "feature/discovery-server-v2-onto-topic-pools",
+   "feature/qnx_ci",
+   "qnx_v2.14.4",
+   "qnx_2.10.1"
+  ]
+ },
+ {
+  "name": "boost",
+  "upstream": "boostorg/boost",
+  "license": "BSL-1.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx_v1.82.0"
+  ]
+ },
+ {
+  "name": "ComputeLibrary",
+  "upstream": "ARM-software/ComputeLibrary",
+  "license": null,
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_v24.04",
+   "qnx-v23.05.1",
+   "qnx-v53.0.0"
+  ]
+ },
+ {
+  "name": "benchmark",
+  "upstream": "google/benchmark",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx_v1.8.3"
+  ]
+ },
+ {
+  "name": "abseil-cpp",
+  "upstream": "abseil/abseil-cpp",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_master",
+   "qnx_20230802.1",
+   "qnx_20240116.0",
+   "qnx_20250814.1",
+   "qnx-20230802.0",
+   "qnx-20250512.0",
+   "qnx-mediapipe"
+  ]
+ },
+ {
+  "name": "cpuinfo",
+  "upstream": "pytorch/cpuinfo",
+  "license": "BSD-2-Clause",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_main",
+   "qnx",
+   "qnx-8a9210069b5a37dd89ed118a783945502a30a4ae",
+   "qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0"
+  ]
+ },
+ {
+  "name": "googletest",
+  "upstream": "google/googletest",
+  "license": "BSD-3-Clause",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_v1.10.0",
+   "qnx_v1.13.0",
+   "qnx_v1.14.0"
+  ]
+ },
+ {
+  "name": "gtk",
+  "upstream": "GNOME/gtk",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "QNXOSG-495",
+   "fix-printoperation-win32",
+   "mountoperation-backports-4-8",
+   "qnx_4.8.3",
+   "split-by-contour",
+   "wip/antoniof/backport-list-focus",
+   "wip/antoniof/dont-hard-code-properties-as-buildable",
+   "wip/antoniof/dont-hard-code-properties-if-buildable",
+   "wip/antoniof/expression-autocleanup",
+   "wip/antoniof/fix-focus-within-check",
+   "wip/antoniof/further-listitemmanager-fixes",
+   "wip/antoniof/listbase-initial-cursor-move",
+   "wip/antoniof/popover_remove_submenus_recursively"
+  ]
+ },
+ {
+  "name": "lighttpd1.4",
+  "upstream": "lighttpd/lighttpd1.4",
+  "license": "BSD-3-Clause",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_1.4.73",
+   "qnx-1.4.81"
+  ]
+ },
+ {
+  "name": "mosquitto",
+  "upstream": "eclipse-mosquitto/mosquitto",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "develop-qnx",
+   "qnx_v2.0.15",
+   "qnx-master"
+  ]
+ },
+ {
+  "name": "numpy",
+  "upstream": "numpy/numpy",
+  "license": "NOASSERTION",
+  "language": "Python",
+  "qnx_branches": [
+   "qnx_v1.25.0",
+   "qnx_v2.3.4"
+  ]
+ },
+ {
+  "name": "opencv",
+  "upstream": "opencv/opencv",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_v4.x",
+   "qnx-4.7.0",
+   "qnx-4.9.0",
+   "qnx-4.12.0"
+  ]
+ },
+ {
+  "name": "ros2",
+  "upstream": "ros2/ros2",
+  "license": null,
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "ruy",
+  "upstream": "google/ruy",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx"
+  ]
+ },
+ {
+  "name": "vsomeip",
+  "upstream": "COVESA/vsomeip",
+  "license": "MPL-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_3.4.10",
+   "qnx_3.5.5"
+  ]
+ },
+ {
+  "name": "farmhash",
+  "upstream": "google/farmhash",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx"
+  ]
+ },
+ {
+  "name": "tensorflow",
+  "upstream": "tensorflow/tensorflow",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_master_dummy",
+   "qnx_master",
+   "qnx_v2.16.1"
+  ]
+ },
+ {
+  "name": "cJSON",
+  "upstream": "DaveGamble/cJSON",
+  "license": "MIT",
+  "language": "C",
+  "qnx_branches": [
+   "draft-qnx-v1.7.18",
+   "qnx-master",
+   "qnx-v1.7.15",
+   "qnx-v1.7.18-master",
+   "qnx-v1.7.18"
+  ]
+ },
+ {
+  "name": "glib",
+  "upstream": "GNOME/glib",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx700-2.82.2",
+   "qnx-2.80.5",
+   "qnx-2.82.2-1759894777",
+   "qnx-2.82.2",
+   "qnx-gtk-2.76.0",
+   "wip/antoniof/document_grefstring_type",
+   "wip/antoniof/g-set-str-documentation",
+   "wip/antoniof/test-g-set-str-doc",
+   "wip/tintou/gnotification-sound-theme"
+  ]
+ },
+ {
+  "name": "protobuf",
+  "upstream": "protocolbuffers/protobuf",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-main",
+   "qnx-v3.15.0",
+   "qnx-v3.19.6",
+   "qnx-v21.12",
+   "qnx-v27.2"
+  ]
+ },
+ {
+  "name": "grpc",
+  "upstream": "grpc/grpc",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "cosmo/qnx-v1.65.0",
+   "qnx-main",
+   "qnx-mediapipe",
+   "qnx-v1.47.0",
+   "qnx-v1.65.0",
+   "qnx-v1.76.0"
+  ]
+ },
+ {
+  "name": "bash",
+  "upstream": "chaitan94/bash",
+  "license": "GPL-3.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-bash-5.2"
+  ]
+ },
+ {
+  "name": "capnproto",
+  "upstream": "capnproto/capnproto",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "kenton/concurrency-limit-uaf",
+   "kenton/concurrency-limiter-add-debug",
+   "kenton/debug-message-reader",
+   "kenton/fix-889",
+   "kenton/fix-isolated-websocket-disconnect",
+   "kenton/fix-websocket-rpc-cancellation",
+   "kenton/optimize-gettype",
+   "kenton/refactor-rpc",
+   "kenton/3ph",
+   "kenton/3ph-part3-basic-3ph",
+   "kenton/3ph-part4-cap-embargoes",
+   "qnx-1.0.2"
+  ]
+ },
+ {
+  "name": "pytorch",
+  "upstream": "pytorch/pytorch",
+  "license": "NOASSERTION",
+  "language": "Python",
+  "qnx_branches": [
+   "csl/testselectiontools",
+   "eleir/qnx_v1.7.1",
+   "eleir/qnx_v1.13.0",
+   "qnx_main",
+   "qnx_v1.7.1",
+   "qnx_v1.13.0",
+   "qnx_v2.3.1",
+   "qnx-v2.12.1"
+  ]
+ },
+ {
+  "name": "azure-iot-sdk-c",
+  "upstream": "Azure/azure-iot-sdk-c",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-LTS_08_2024"
+  ]
+ },
+ {
+  "name": "Fast-CDR",
+  "upstream": "eProsima/Fast-CDR",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx_v2.2.3",
+   "qnx_v2.2.5"
+  ]
+ },
+ {
+  "name": "pandas",
+  "upstream": "pandas-dev/pandas",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.2.3"
+  ]
+ },
+ {
+  "name": "c-ares",
+  "upstream": "c-ares/c-ares",
+  "license": "MIT",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_v1.19.1",
+   "qnx_v1.30.0",
+   "qnx_v1.31",
+   "qnx_v1.32",
+   "qnx_v1.33",
+   "qnx_v1.34",
+   "qnx-v1.19.1_broken_do_not_use",
+   "qnx-v1.34.3_old"
+  ]
+ },
+ {
+  "name": "memory",
+  "upstream": "foonathan/memory",
+  "license": "Zlib",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_710_v0.73_old",
+   "qnx_800_710_v0.73"
+  ]
+ },
+ {
+  "name": "clapack",
+  "upstream": "hunter-packages/clapack",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx_v3.2.1"
+  ]
+ },
+ {
+  "name": "gtsam",
+  "upstream": "borglab/gtsam",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_v4.1.1_SYSTEM_METIS",
+   "qnx_v4.1.1",
+   "qnx_4.3a0"
+  ]
+ },
+ {
+  "name": "METIS",
+  "upstream": "KarypisLab/METIS",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "eleir/qnx_v5.2.1",
+   "qnx_v5.2.1"
+  ]
+ },
+ {
+  "name": "re2",
+  "upstream": "google/re2",
+  "license": "BSD-3-Clause",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_main",
+   "qnx_8.0_7.1_2023-11-01"
+  ]
+ },
+ {
+  "name": "gflags",
+  "upstream": "gflags/gflags",
+  "license": "BSD-3-Clause",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_v2.2.2"
+  ]
+ },
+ {
+  "name": "glog",
+  "upstream": "google/glog",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx",
+   "qnx-mediapipe",
+   "qnx-v0.6.0"
+  ]
+ },
+ {
+  "name": "SuiteSparse",
+  "upstream": "DrTimothyAldenDavis/SuiteSparse",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_v4.5.5",
+   "qnx-v7.11.0"
+  ]
+ },
+ {
+  "name": "OpenBLAS",
+  "upstream": "OpenMathLib/OpenBLAS",
+  "license": "BSD-3-Clause",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-0.3.28"
+  ]
+ },
+ {
+  "name": "aws-crt-cpp",
+  "upstream": "awslabs/aws-crt-cpp",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-0.30.1",
+   "qnx-202502-de9fcca-1758724314",
+   "qnx-v0.30.1-1759432526",
+   "qnx-v0.30.1-1760106980"
+  ]
+ },
+ {
+  "name": "boringssl",
+  "upstream": "google/boringssl",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-mediapipe"
+  ]
+ },
+ {
+  "name": "dlt-daemon",
+  "upstream": "COVESA/dlt-daemon",
+  "license": "MPL-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "fix-qnx-slogger-timeout",
+   "qnx-v2.18.10",
+   "qnx-v3.0.0"
+  ]
+ },
+ {
+  "name": "EmulationStation",
+  "upstream": "RetroPie/EmulationStation",
+  "license": "MIT",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_master"
+  ]
+ },
+ {
+  "name": "RetroArch",
+  "upstream": "RetroPie/RetroArch",
+  "license": "GPL-3.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_master"
+  ]
+ },
+ {
+  "name": "csmith",
+  "upstream": "csmith-project/csmith",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.3.0"
+  ]
+ },
+ {
+  "name": "nghttp2",
+  "upstream": "nghttp2/nghttp2",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-1.61.0",
+   "qnx-1.64.0"
+  ]
+ },
+ {
+  "name": "brotli",
+  "upstream": "google/brotli",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.1.0"
+  ]
+ },
+ {
+  "name": "jansson",
+  "upstream": "akheron/jansson",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v2.14"
+  ]
+ },
+ {
+  "name": "asio",
+  "upstream": "chriskohlhoff/asio",
+  "license": null,
+  "language": "C++",
+  "qnx_branches": [
+   "qnx",
+   "qnx-asio-1-29-0",
+   "qnx-pr-asio-1-29-0"
+  ]
+ },
+ {
+  "name": "graphene",
+  "upstream": "ebassi/graphene",
+  "license": "MIT",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-1.10.8",
+   "qnx-gtk-compat"
+  ]
+ },
+ {
+  "name": "icu",
+  "upstream": "unicode-org/icu",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-76.1",
+   "update-to-QNX8"
+  ]
+ },
+ {
+  "name": "rapidjson",
+  "upstream": "Tencent/rapidjson",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-master",
+   "qnx-v1.1.0"
+  ]
+ },
+ {
+  "name": "fribidi",
+  "upstream": "fribidi/fribidi",
+  "license": "LGPL-2.1",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_v1.0.16"
+  ]
+ },
+ {
+  "name": "Catch2",
+  "upstream": "catchorg/Catch2",
+  "license": "BSL-1.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-pr-v3.6.0",
+   "qnx-v3.6.0"
+  ]
+ },
+ {
+  "name": "SDL",
+  "upstream": "libsdl-org/SDL",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_oldest",
+   "qnx_2.0.5",
+   "qnx-release-2.0.14",
+   "qnx-release-3.2.28",
+   "qnx-release-3.4.18"
+  ]
+ },
+ {
+  "name": "libretro-2048",
+  "upstream": "libretro/libretro-2048",
+  "license": "Unlicense",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "libretro-samples",
+  "upstream": "libretro/libretro-samples",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "XNNPACK",
+  "upstream": "google/XNNPACK",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_master",
+   "qnx-pytorch-v2.12.1-51a0103656eff6fc9bfd39a4597923c4b542c883"
+  ]
+ },
+ {
+  "name": "CANdb",
+  "upstream": "GENIVI/CANdb",
+  "license": "MPL-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-master"
+  ]
+ },
+ {
+  "name": "kineto",
+  "upstream": "pytorch/kineto",
+  "license": "NOASSERTION",
+  "language": "HTML",
+  "qnx_branches": [
+   "qnx_main",
+   "qnx-202502-c45f8f6-1759188073",
+   "qnx-202502-c45f8f6-1759188291",
+   "qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5"
+  ]
+ },
+ {
+  "name": "libevent",
+  "upstream": "libevent/libevent",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-2.1.12-stable"
+  ]
+ },
+ {
+  "name": "pistache",
+  "upstream": "pistacheio/pistache",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-v0.4.26"
+  ]
+ },
+ {
+  "name": "perl5",
+  "upstream": "Perl/perl5",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v5.32.0"
+  ]
+ },
+ {
+  "name": "perl-cross",
+  "upstream": "arsv/perl-cross",
+  "license": "NOASSERTION",
+  "language": "Shell",
+  "qnx_branches": [
+   "qnx-1.3.4",
+   "qnx-1.6.1",
+   "qnx-1.6.2-perl5.42.0"
+  ]
+ },
+ {
+  "name": "libmetal",
+  "upstream": "OpenAMP/libmetal",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v2024.10.0",
+   "qnx-v2025.10.1"
+  ]
+ },
+ {
+  "name": "libuv",
+  "upstream": "libuv/libuv",
+  "license": "MIT",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v1.51.0"
+  ]
+ },
+ {
+  "name": "lua",
+  "upstream": "lua/lua",
+  "license": null,
+  "language": "C",
+  "qnx_branches": [
+   "qnx_v5.4",
+   "qnx_v5.5"
+  ]
+ },
+ {
+  "name": "restbed",
+  "upstream": "Corvusoft/restbed",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-4.8-conan",
+   "qnx-4.8",
+   "upstream_qnx"
+  ]
+ },
+ {
+  "name": "up-conan-recipes",
+  "upstream": "eclipse-uprotocol/up-conan-recipes",
+  "license": null,
+  "language": "Python",
+  "qnx_branches": [
+   "qnx-main"
+  ]
+ },
+ {
+  "name": "up-cpp",
+  "upstream": "eclipse-uprotocol/up-cpp",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "mr-qnx-v1.0.1",
+   "qnx-main-pr",
+   "qnx-v1.0.1"
+  ]
+ },
+ {
+  "name": "OpenTTD",
+  "upstream": "OpenTTD/OpenTTD",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx_master",
+   "qnx-release-15.2"
+  ]
+ },
+ {
+  "name": "ntttcp-for-linux",
+  "upstream": "microsoft/ntttcp-for-linux",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-b483afe"
+  ]
+ },
+ {
+  "name": "zenoh-pico",
+  "upstream": "eclipse-zenoh/zenoh-pico",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-1.0.0.5",
+   "qnx-1.2.1",
+   "qnx-1.4.0",
+   "qnx-1.5.0"
+  ]
+ },
+ {
+  "name": "zenoh-cpp",
+  "upstream": "eclipse-zenoh/zenoh-cpp",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.0.0.5",
+   "qnx-1.2.1",
+   "qnx-1.4.0",
+   "qnx-1.5.0"
+  ]
+ },
+ {
+  "name": "up-transport-zenoh-cpp",
+  "upstream": "eclipse-uprotocol/up-transport-zenoh-cpp",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-v1.0.0-rc3"
+  ]
+ },
+ {
+  "name": "libxkbcommon",
+  "upstream": "xkbcommon/libxkbcommon",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.8.0"
+  ]
+ },
+ {
+  "name": "libxml2",
+  "upstream": "GNOME/libxml2",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.13.5",
+   "qnx-2.13.8",
+   "qnx-2.14.4"
+  ]
+ },
+ {
+  "name": "mason.nvim",
+  "upstream": "mason-org/mason.nvim",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v2.0.0-rc.2"
+  ]
+ },
+ {
+  "name": "lldpd",
+  "upstream": "lldpd/lldpd",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-1.0.19",
+   "qnx-1.0.22"
+  ]
+ },
+ {
+  "name": "check",
+  "upstream": "libcheck/check",
+  "license": "LGPL-2.1",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-0.15.2"
+  ]
+ },
+ {
+  "name": "samba",
+  "upstream": "samba-team/samba",
+  "license": "GPL-3.0",
+  "language": "C",
+  "qnx_branches": []
+ },
+ {
+  "name": "gnutls",
+  "upstream": "gnutls/gnutls",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-3.6.15"
+  ]
+ },
+ {
+  "name": "g3log",
+  "upstream": "KjellKod/g3log",
+  "license": "Unlicense",
+  "language": "C++",
+  "qnx_branches": [
+   "porting_g3log_to_qnx",
+   "qnx-2.6"
+  ]
+ },
+ {
+  "name": "s2n-tls",
+  "upstream": "aws/s2n-tls",
+  "license": "Apache-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v1.5.25"
+  ]
+ },
+ {
+  "name": "aws-c-common",
+  "upstream": "awslabs/aws-c-common",
+  "license": "Apache-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v0.12.4"
+  ]
+ },
+ {
+  "name": "aws-c-io",
+  "upstream": "awslabs/aws-c-io",
+  "license": "Apache-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v0.21.4",
+   "qnx-v0.26.1",
+   "support-qnx"
+  ]
+ },
+ {
+  "name": "sleef",
+  "upstream": "shibatch/sleef",
+  "license": "BSL-1.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx_master"
+  ]
+ },
+ {
+  "name": "oneTBB",
+  "upstream": "uxlfoundation/oneTBB",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-master",
+   "qnx-v2022.3.0-rc1"
+  ]
+ },
+ {
+  "name": "open-amp",
+  "upstream": "OpenAMP/open-amp",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v2024.10.0",
+   "qnx-v2025.04.0"
+  ]
+ },
+ {
+  "name": "onnx",
+  "upstream": "onnx/onnx",
+  "license": "Apache-2.0",
+  "language": "Python",
+  "qnx_branches": [
+   "qnx-v1.13.1"
+  ]
+ },
+ {
+  "name": "llvm-project",
+  "upstream": "llvm/llvm-project",
+  "license": "NOASSERTION",
+  "language": "LLVM",
+  "qnx_branches": [
+   "qnx-21.x",
+   "qnx-21.1.8",
+   "qnx-22.1.x",
+   "qnx-22.1.7",
+   "qnx-22.1.8",
+   "qnx-mediapipe",
+   "users/MaskRay/spr/mc-merge-mcasmlexerhcpp-into-asmlexerhcpp",
+   "users/RossBrunton/link1",
+   "users/RossBrunton/link2",
+   "users/RossBrunton/newMemInfo1",
+   "users/RossBrunton/newMemInfo2",
+   "users/RossBrunton/newMemInfo3",
+   "users/RossBrunton/symbol2",
+   "users/aaupov/spr/main.boltnfc-fold-processpreaggregated-into-processbranchevents",
+   "users/boomanaiden154/main.ci-try-moving-github-object-into-loop",
+   "users/cachemeifyoucan/spr/llvmsupport-make-sysfsfile_t-into-a-seperate-type",
+   "users/dc03-work/spr/aarch64globalisel-avoid-splitting-loads-of-large-vector-types-into-individual-element-loads",
+   "users/dc03-work/spr/aarch64globalisel-avoid-splitting-loads-of-large-vector-types-into-individual-element-loads-1",
+   "users/dc03-work/spr/main.aarch64globalisel-avoid-splitting-loads-of-large-vector-types-into-individual-element-loads",
+   "users/dc03-work/spr/main.aarch64globalisel-avoid-splitting-loads-of-large-vector-types-into-individual-element-loads-1",
+   "users/kevinsala/instrumentor-base-pr",
+   "users/kevinsala/instrumentor-stub-rt-pr",
+   "users/lanza/sprcir-build-out-ast-consumer-patterns-to-reach-the-entry-point-into-cirgen-1",
+   "users/melver/spr/alloctoken-refactor-stateless-token-calculation-into-support",
+   "users/melver/spr/main.alloctoken-refactor-stateless-token-calculation-into-support",
+   "users/melver/spr/main.fixup-alloctoken-refactor-stateless-token-calculation-into-support",
+   "users/pcc/spr/gn-build-embed-libcabia-objects-into-libca",
+   "users/pcc/spr/main.gn-build-embed-libcabia-objects-into-libca",
+   "users/vitalybuka/spr/aarch64-fold-more-loadx-into-loadi-with-large-offset",
+   "users/vitalybuka/spr/main.aarch64-fold-more-loadx-into-loadi-with-large-offset",
+   "users/vitalybuka/spr/main.compiler-rt-convert-maintainerstxt-into-maintainersmd",
+   "users/vitalybuka/spr/main.drivercfi-add-missing-into-error-message",
+   "users/vitalybuka/spr/main.nfcboundschecking-rename-boundscheckingoptions-into-options",
+   "users/vitalybuka/spr/main.nfclsan-extract-significant-part-of-the-loop-into-a-function",
+   "users/vitalybuka/spr/main.nfcsanitizer-move-inittlssize-into-initializeplatformearly",
+   "users/vitalybuka/spr/main.nfcsanitizer-move-symbolizedstackholder-into-sanitizer_common",
+   "users/vitalybuka/spr/main.nfcsanitizer-move-threaddescriptorsize-into-glibcfreebsd-block",
+   "users/vitalybuka/spr/main.nfcsanitizerasan-promote-stack_id-into-threadcontextbase",
+   "users/vitalybuka/spr/main.nfcsanitizerasan-promote-stack_id-into-threadcontextbase-1",
+   "users/vitalybuka/spr/main.nfcspecialcaselist-move-longestmatch-logic-from-warningsspecialcaselist-into-specialcaselist",
+   "users/vitalybuka/spr/main.nfcspecialcaselist-rename-specialcaselistinsectionblame-and-move-into-section",
+   "users/vitalybuka/spr/main.nfcspecialcaselist-split-matcher-into-regexmatcher-and-globmatcher",
+   "users/vitalybuka/spr/main.nfctsan-move-skipinternalframes-into-sanitizer_common",
+   "users/vitalybuka/spr/main.ubsan-pass-fsanitize-skip-hot-cutoff-into-fsanitizebounds",
+   "users/wangpc-pp/spr/earlyifcvt-take-branch-probablities-into-consideration",
+   "users/wangpc-pp/spr/main.earlyifcvt-take-branch-probablities-into-consideration",
+   "users/wlei-llvm/spr/sht_llvm_func_mapobjectyamlintroduce-function-address-map-section-and-emit-dynamic-instruction-countobjectyaml-part"
+  ]
+ },
+ {
+  "name": "mame",
+  "upstream": "mamedev/mame",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-mame0281"
+  ]
+ },
+ {
+  "name": "SDL_ttf",
+  "upstream": "libsdl-org/SDL_ttf",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-release-2.0.18"
+  ]
+ },
+ {
+  "name": "godot-QNX",
+  "upstream": "raphacan/godot-QNX",
+  "license": "MIT",
+  "language": "C++",
+  "qnx_branches": []
+ },
+ {
+  "name": "rust",
+  "upstream": "rust-lang/rust",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.90.0",
+   "qnx-1.98.0",
+   "qnx-1.99.0",
+   "qnx-1.99.1"
+  ]
+ },
+ {
+  "name": "perfetto",
+  "upstream": "google/perfetto",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-main",
+   "qnx-v52.0"
+  ]
+ },
+ {
+  "name": "unbound",
+  "upstream": "NLnetLabs/unbound",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "murthy-qnx-release-1.24.1",
+   "qnx-release-1.24.1"
+  ]
+ },
+ {
+  "name": "openssl",
+  "upstream": "openssl/openssl",
+  "license": "Apache-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-3.5.4",
+   "qnx-openssl-3.5.4",
+   "qnx-openssl-3.6.0"
+  ]
+ },
+ {
+  "name": "sysbench",
+  "upstream": "akopytov/sysbench",
+  "license": "GPL-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.0.20"
+  ]
+ },
+ {
+  "name": "AMQP-CPP",
+  "upstream": "CopernicaMarketingSoftware/AMQP-CPP",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-v4.3.27"
+  ]
+ },
+ {
+  "name": "flatbuffers",
+  "upstream": "google/flatbuffers",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v25.9.23"
+  ]
+ },
+ {
+  "name": "onnxruntime",
+  "upstream": "microsoft/onnxruntime",
+  "license": "MIT",
+  "language": "C++",
+  "qnx_branches": [
+   "gwang-msft/AddSupportForXamarinToCSharp",
+   "gwang-msft/AddSupportForXamarinToCSharp2",
+   "qnx-v1.23.2",
+   "sayanshaw/inventory-compliance",
+   "skottmckay/AddScriptToMoveInitializersIntoSubGraphsWherePossible",
+   "thiagofc/merge-ortmodule-into-master-with-dlpack-inference",
+   "thiagofc/merge-ortmodule-into-master-without-dlpack",
+   "user/jeffbloo/MergeMainToWindowsAI",
+   "user/sumita/mergeMainToDmlPrototype"
+  ]
+ },
+ {
+  "name": "openvino",
+  "upstream": "openvinotoolkit/openvino",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2023.0.0",
+   "qnx-2026.1.2"
+  ]
+ },
+ {
+  "name": "tflite-micro",
+  "upstream": "tensorflow/tflite-micro",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "rtl-sdr",
+  "upstream": "osmocom/rtl-sdr",
+  "license": "GPL-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx_2.0.2"
+  ]
+ },
+ {
+  "name": "libpnet",
+  "upstream": "libpnet/libpnet",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "mimalloc",
+  "upstream": "microsoft/mimalloc",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v2.1.1",
+   "qnx-v3.1.5"
+  ]
+ },
+ {
+  "name": "sdl2-compat",
+  "upstream": "libsdl-org/sdl2-compat",
+  "license": "Zlib",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-release-2.32.60"
+  ]
+ },
+ {
+  "name": "apk-tools",
+  "upstream": "alpinelinux/apk-tools",
+  "license": "GPL-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx_3.0.0_rc5"
+  ]
+ },
+ {
+  "name": "abuild",
+  "upstream": "alpinelinux/abuild",
+  "license": "GPL-2.0",
+  "language": "Shell",
+  "qnx_branches": [
+   "qnx-3.15.x",
+   "qnx-3.16.x"
+  ]
+ },
+ {
+  "name": "dump1090",
+  "upstream": "antirez/dump1090",
+  "license": null,
+  "language": null,
+  "qnx_branches": [
+   "port-dump1090-qnx"
+  ]
+ },
+ {
+  "name": "libssh2",
+  "upstream": "libssh2/libssh2",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "murthy/qnx-libssh2-1.11.1",
+   "qnx-libssh2-1.11.1"
+  ]
+ },
+ {
+  "name": "nss",
+  "upstream": "mozilla/nss",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-NSS_3_119_BRANCH",
+   "qnx-NSS_3_120_BRANCH",
+   "qnx-NSS_3_131_1_BRANCH"
+  ]
+ },
+ {
+  "name": "neovim",
+  "upstream": "neovim/neovim",
+  "license": "NOASSERTION",
+  "language": "Vim Script",
+  "qnx_branches": [
+   "qnx-v0.11.4"
+  ]
+ },
+ {
+  "name": "dnsmasq",
+  "upstream": "imp/dnsmasq",
+  "license": "GPL-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-v2.92"
+  ]
+ },
+ {
+  "name": "libusb",
+  "upstream": "libusb/libusb",
+  "license": "LGPL-2.1",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-1.0.23"
+  ]
+ },
+ {
+  "name": "psutil",
+  "upstream": "giampaolo/psutil",
+  "license": "BSD-3-Clause",
+  "language": "Python",
+  "qnx_branches": [
+   "qnx-7.2.2"
+  ]
+ },
+ {
+  "name": "chrony",
+  "upstream": "mlichvar/chrony",
+  "license": "GPL-2.0",
+  "language": "C",
+  "qnx_branches": []
+ },
+ {
+  "name": "avahi",
+  "upstream": "avahi/avahi",
+  "license": "LGPL-2.1",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.9.x"
+  ]
+ },
+ {
+  "name": "gyp-next",
+  "upstream": "nodejs/gyp-next",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.21.x"
+  ]
+ },
+ {
+  "name": "xtl",
+  "upstream": "xtensor-stack/xtl",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.7.7"
+  ]
+ },
+ {
+  "name": "libc-rs",
+  "upstream": "rust-lang/libc",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.2.177",
+   "qnx-0.2.180",
+   "qnx-0.2.183",
+   "qnx-0.2.190"
+  ]
+ },
+ {
+  "name": "cc-rs",
+  "upstream": "rust-lang/cc-rs",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.2.16",
+   "qnx-1.2.48",
+   "qnx-1.2.62"
+  ]
+ },
+ {
+  "name": "filetime",
+  "upstream": "alexcrichton/filetime",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.2.26",
+   "qnx-0.2.29"
+  ]
+ },
+ {
+  "name": "gitoxide",
+  "upstream": "GitoxideLabs/gitoxide",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-gix-index-0.42.1",
+   "qnx-gix-index-0.53.0",
+   "qnx-gix-sec-0.12.2",
+   "qnx-gix-sec-0.14.2"
+  ]
+ },
+ {
+  "name": "nix",
+  "upstream": "nix-rust/nix",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.30.1",
+   "qnx-0.31.2",
+   "qnx-0.31.3"
+  ]
+ },
+ {
+  "name": "cups",
+  "upstream": "OpenPrinting/cups",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.4.x"
+  ]
+ },
+ {
+  "name": "socket2-rs",
+  "upstream": "rust-lang/socket2",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.5.2",
+   "qnx-0.6.3",
+   "qnx-0.6.5"
+  ]
+ },
+ {
+  "name": "tokio",
+  "upstream": "tokio-rs/tokio",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.50.0"
+  ]
+ },
+ {
+  "name": "skalibs",
+  "upstream": "skarnet/skalibs",
+  "license": "ISC",
+  "language": null,
+  "qnx_branches": [
+   "qnx-release-v2.14.5.1"
+  ]
+ },
+ {
+  "name": "bazel",
+  "upstream": "bazelbuild/bazel",
+  "license": "Apache-2.0",
+  "language": "Java",
+  "qnx_branches": [
+   "qnx-6.5.0rc2",
+   "qnx-6.5.0"
+  ]
+ },
+ {
+  "name": "jdk25u",
+  "upstream": "openjdk/jdk25u",
+  "license": "GPL-2.0",
+  "language": "Java",
+  "qnx_branches": [
+   "qnx-jdk-25.0.2"
+  ]
+ },
+ {
+  "name": "mediapipe",
+  "upstream": "google-ai-edge/mediapipe",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-v0.10.26"
+  ]
+ },
+ {
+  "name": "mosh",
+  "upstream": "mobile-shell/mosh",
+  "license": "GPL-3.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.4.0"
+  ]
+ },
+ {
+  "name": "btop",
+  "upstream": "aristocratos/btop",
+  "license": "Apache-2.0",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-1.4.6"
+  ]
+ },
+ {
+  "name": "htop",
+  "upstream": "htop-dev/htop",
+  "license": "GPL-2.0",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-3.5.0"
+  ]
+ },
+ {
+  "name": "hailort",
+  "upstream": "hailo-ai/hailort",
+  "license": null,
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-4.14"
+  ]
+ },
+ {
+  "name": "libutempter",
+  "upstream": "altlinux/libutempter",
+  "license": null,
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.2.3"
+  ]
+ },
+ {
+  "name": "libcamera",
+  "upstream": "raspberrypi/libcamera",
+  "license": "NOASSERTION",
+  "language": "C++",
+  "qnx_branches": [
+   "qnx-v0.5.1_rpt20250722"
+  ]
+ },
+ {
+  "name": "libyaml",
+  "upstream": "yaml/libyaml",
+  "license": "MIT",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-0.1.7",
+   "qnx-0.2.5"
+  ]
+ },
+ {
+  "name": "node",
+  "upstream": "nodejs/node",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v24.x"
+  ]
+ },
+ {
+  "name": "ZeroTierOne",
+  "upstream": "zerotier/ZeroTierOne",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "john_qnx_support"
+  ]
+ },
+ {
+  "name": "MPItrampoline",
+  "upstream": "eschnett/MPItrampoline",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v5.3.1"
+  ]
+ },
+ {
+  "name": "gloo",
+  "upstream": "pytorch/gloo",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-mediapipe"
+  ]
+ },
+ {
+  "name": "xla",
+  "upstream": "openxla/xla",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-mediapipe"
+  ]
+ },
+ {
+  "name": "pygame",
+  "upstream": "pygame/pygame",
+  "license": null,
+  "language": null,
+  "qnx_branches": [
+   "john_qnx_support"
+  ]
+ },
+ {
+  "name": "qdirstat",
+  "upstream": "shundhammer/qdirstat",
+  "license": "GPL-2.0",
+  "language": null,
+  "qnx_branches": [
+   "john_qnx_support"
+  ]
+ },
+ {
+  "name": "target-lexicon",
+  "upstream": "bytecodealliance/target-lexicon",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.13.5"
+  ]
+ },
+ {
+  "name": "platform-info",
+  "upstream": "uutils/platform-info",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.1.0"
+  ]
+ },
+ {
+  "name": "stable-diffusion.cpp",
+  "upstream": "leejet/stable-diffusion.cpp",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-8.0"
+  ]
+ },
+ {
+  "name": "ntpsec",
+  "upstream": "ntpsec/ntpsec",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-ntpsec-1.2.4"
+  ]
+ },
+ {
+  "name": "chipStar",
+  "upstream": "CHIP-SPV/chipStar",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.3.0"
+  ]
+ },
+ {
+  "name": "HIPCC",
+  "upstream": "CHIP-SPV/HIPCC",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-chipStar-v1.3.0"
+  ]
+ },
+ {
+  "name": "ROCm-Device-Libs",
+  "upstream": "CHIP-SPV/ROCm-Device-Libs",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-chipStar-v1.3.0"
+  ]
+ },
+ {
+  "name": "sentencepiece",
+  "upstream": "google/sentencepiece",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-mediapipe-v0.10.26"
+  ]
+ },
+ {
+  "name": "sscep",
+  "upstream": "certnanny/sscep",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v0.10.0"
+  ]
+ },
+ {
+  "name": "ggml",
+  "upstream": "ggml-org/ggml",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-8.0"
+  ]
+ },
+ {
+  "name": "mcap",
+  "upstream": "foxglove/mcap",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "rocm-llvm",
+  "upstream": "ROCm/llvm-project",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "amd/dev/slinder1/merge-llvm-main-into-amd-debug_20251022",
+   "comgr/rework-llvm-path-into-something-useful",
+   "qnx-rocm-7.2.4",
+   "users/lambj/cherry-pick-2117-onto-4430"
+  ]
+ },
+ {
+  "name": "strongswan",
+  "upstream": "strongswan/strongswan",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-6.0.6"
+  ]
+ },
+ {
+  "name": "MNN",
+  "upstream": "alibaba/MNN",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "busybox",
+  "upstream": "vda-linux/busybox_mirror",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1_36_x",
+   "qnx-1_38_x"
+  ]
+ },
+ {
+  "name": "executorch",
+  "upstream": "pytorch/executorch",
+  "license": "NOASSERTION",
+  "language": "Python",
+  "qnx_branches": [
+   "qnx-v1.3.1"
+  ]
+ },
+ {
+  "name": "openrc",
+  "upstream": "OpenRC/openrc",
+  "license": "BSD-2-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.63.1"
+  ]
+ },
+ {
+  "name": "whisper.cpp",
+  "upstream": "ggml-org/whisper.cpp",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-8.0"
+  ]
+ },
+ {
+  "name": "c-blosc",
+  "upstream": "Blosc/c-blosc",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.21.6-r0"
+  ]
+ },
+ {
+  "name": "riegeli",
+  "upstream": "google/riegeli",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "rocm-systems",
+  "upstream": "ROCm/rocm-systems",
+  "license": null,
+  "language": null,
+  "qnx_branches": []
+ },
+ {
+  "name": "llama.cpp",
+  "upstream": "ggml-org/llama.cpp",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-8.0"
+  ]
+ },
+ {
+  "name": "mlas",
+  "upstream": "openvinotoolkit/mlas",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-openvino-2026.1.2-d1bc25ec4660cddd87804fcf03b2411b5dfb2e94"
+  ]
+ },
+ {
+  "name": "intel-oneDNN",
+  "upstream": "openvinotoolkit/oneDNN",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "example/antonvor/endless_memory_usage_growth_master",
+   "feature/antonvor/brgemm_matmul_avx512",
+   "feature/antonvor/conv_int_avx512_large_padding_support",
+   "feature/antonvor/convolution_post_ops_for_oneDNN_v2.2",
+   "feature/antonvor/deconvolution_int8_support_ngraph",
+   "feature/antonvor/deconvolution_int8_support_2",
+   "feature/antonvor/depthwise_6D",
+   "feature/antonvor/dw_conv_fusing_avx2_fp32_local",
+   "feature/antonvor/dw_conv_fusing_avx2_fp32_master",
+   "feature/antonvor/dw_conv_fusing/old_kernels_after_merge_oneDNN",
+   "feature/antonvor/gemm_post_ops_backporting_for_v1.6",
+   "feature/antonvor/jit_uni_reorder_isa_relaxed",
+   "feature/antonvor/llm_memory_consumption",
+   "feature/antonvor/oneDNNv2.4_migration",
+   "feature/antonvor/oneDNNv2.4.2_migration_with_pooling_fix",
+   "feature/antonvor/oneDNNv2.4.2_migration",
+   "feature/antonvor/oneDNNv2.4.4_migration_clean",
+   "feature/antonvor/oneDNNv2.4.4_migration_with_brgemm",
+   "feature/antonvor/oneDNNv2.4.4_migration",
+   "feature/antonvor/oneDNNv2.4.4_migration_2",
+   "feature/antonvor/oneDNNv2.4.4_tmp",
+   "feature/antonvor/onednn_fork_reduction",
+   "feature/antonvor/onednn_v2.3_migration_2",
+   "feature/antonvor/simple_reorder_experiment_sse",
+   "feature/antonvor/simple_reorder_experiment",
+   "feature/antonvor/sparsity_leftovers",
+   "fix/antonvor/cleanup_after_oneDNN_migration_tmp",
+   "fix/antonvor/cleanup_after_oneDNN_migration",
+   "fix/antonvor/gemm_conv_bias_fix",
+   "fix/antonvor/jit_uni_dw_conv_row_f32_fix",
+   "fix/antonvor/max_pooling_perf_fix",
+   "fix/antonvor/ov_static_build",
+   "fix/antonvor/pooling_avx2_perf_fix",
+   "fix/antonvor/pooling_avx2",
+   "fix/antonvor/simple_reorder_remove_instances",
+   "fix/antonvor/sparse_decompression_3_1",
+   "fix/antonvor/sparse_weights_decompression",
+   "fix/antonvor/sparsity_api",
+   "fix/antonvor/sparsity_remove_unused_code",
+   "fix/antonvor/zero_pad",
+   "fix/antonvor/zeropoints_for_jit_gemm_int8_3d_conv",
+   "qnx-openvino-2026.1.2-6b6492b1ea9ef5ca9ff3c5c59ed71dcca683a446"
+  ]
+ },
+ {
+  "name": "oneDNN",
+  "upstream": "uxlfoundation/oneDNN",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-openvino-2026.1.2-470e87eb07bdc805937a9f6d45d5c3a0fe4d27e7"
+  ]
+ },
+ {
+  "name": "sudo",
+  "upstream": "sudo-project/sudo",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.9.17p2"
+  ]
+ },
+ {
+  "name": "libwebsockets",
+  "upstream": "warmcat/libwebsockets",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "nnarayanamurthy-qnx-v4.5.8",
+   "qnx-v4.5.8"
+  ]
+ },
+ {
+  "name": "fastfetch",
+  "upstream": "fastfetch-cli/fastfetch",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-2.68.1"
+  ]
+ },
+ {
+  "name": "libffi",
+  "upstream": "libffi/libffi",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v3.8.0"
+  ]
+ },
+ {
+  "name": "labwc",
+  "upstream": "labwc/labwc",
+  "license": "GPL-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.20.2"
+  ]
+ },
+ {
+  "name": "getrandom-rs",
+  "upstream": "rust-random/getrandom",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.2.17",
+   "qnx-0.3.3",
+   "qnx-0.3.4",
+   "qnx-0.4.3"
+  ]
+ },
+ {
+  "name": "rustix",
+  "upstream": "bytecodealliance/rustix",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-1.1.4"
+  ]
+ },
+ {
+  "name": "rust_libloading",
+  "upstream": "nagisa/rust_libloading",
+  "license": "ISC",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.8.9",
+   "qnx-0.9.0"
+  ]
+ },
+ {
+  "name": "rust-ctrlc",
+  "upstream": "Detegr/rust-ctrlc",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-3.5.2"
+  ]
+ },
+ {
+  "name": "rust-errno",
+  "upstream": "lambda-fairy/rust-errno",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.3.13"
+  ]
+ },
+ {
+  "name": "iperf3",
+  "upstream": "esnet/iperf",
+  "license": "NOASSERTION",
+  "language": "C",
+  "qnx_branches": [
+   "qnx-3.7"
+  ]
+ },
+ {
+  "name": "ode",
+  "upstream": "odedevs/ode",
+  "license": "BSD-3-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.16.2"
+  ]
+ },
+ {
+  "name": "gdal",
+  "upstream": "OSGeo/gdal",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v3.5.3"
+  ]
+ },
+ {
+  "name": "OpenSceneGraph",
+  "upstream": "openscenegraph/OpenSceneGraph",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-OpenSceneGraph-3.6.5"
+  ]
+ },
+ {
+  "name": "dart",
+  "upstream": "dartsim/dart",
+  "license": "BSD-2-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v6.20.2"
+  ]
+ },
+ {
+  "name": "scikit-build",
+  "upstream": "scikit-build/scikit-build",
+  "license": "NOASSERTION",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.19.1"
+  ]
+ },
+ {
+  "name": "piper1-gpl",
+  "upstream": "OHF-Voice/piper1-gpl",
+  "license": "GPL-3.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.8.0"
+  ]
+ },
+ {
+  "name": "memmap2-rs",
+  "upstream": "RazrFalcon/memmap2-rs",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v0.9.12"
+  ]
+ },
+ {
+  "name": "mio",
+  "upstream": "tokio-rs/mio",
+  "license": "MIT",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v1.2.4"
+  ]
+ },
+ {
+  "name": "signal-hook",
+  "upstream": "vorner/signal-hook",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-registry-v1.4.8"
+  ]
+ },
+ {
+  "name": "ripgrep",
+  "upstream": "BurntSushi/ripgrep",
+  "license": "Unlicense",
+  "language": null,
+  "qnx_branches": [
+   "qnx-15.2.0"
+  ]
+ },
+ {
+  "name": "dhcpcd",
+  "upstream": "NetworkConfiguration/dhcpcd",
+  "license": "BSD-2-Clause",
+  "language": null,
+  "qnx_branches": [
+   "qnx-v10.2.4"
+  ]
+ },
+ {
+  "name": "cargo",
+  "upstream": "rust-lang/cargo",
+  "license": "Apache-2.0",
+  "language": null,
+  "qnx_branches": [
+   "qnx-0.100.0"
+  ]
+ }
+]

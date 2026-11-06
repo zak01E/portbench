@@ -1,0 +1,14 @@
+gold files 524 build share 0.231
+gold files with no platform token 270
+with tokens  n= 254 top10=0.64 median rank pct=0.035
+no tokens    n= 270 top10=0.02 median rank pct=0.544
+build        n= 121 top10=0.45 median rank pct=0.068
+source       n= 403 top10=0.29 median rank pct=0.181
+kind guarded-subst  n= 277 top10=0.22 no-token share=0.68
+kind build          n=  89 top10=0.55 no-token share=0.18
+kind guard-edit     n=  72 top10=0.62 no-token share=0.03
+kind include        n=  50 top10=0.34 no-token share=0.36
+kind packaging      n=  37 top10=0.27 no-token share=0.73
+kind disable        n=  36 top10=0.28 no-token share=0.67
+kind edit           n=  26 top10=0.35 no-token share=0.50
+kind qnx-code       n=   8 top10=0.38 no-token share=0.38

@@ -1,0 +1,542 @@
+{
+ "total_sites": 39,
+ "flagged": 5,
+ "repos": [
+  {
+   "name": "c-ares",
+   "fix_sites": 17,
+   "packaging_sites": 1,
+   "flagged": 1,
+   "findings": {
+    "check": 50,
+    "info": 9,
+    "link": 26
+   },
+   "sites": [
+    {
+     "file": "cmake/EnableWarnings.cmake",
+     "lines": [
+      0,
+      400
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "include/ares_version.h",
+     "lines": [
+      0,
+      1
+     ],
+     "kind": "porting",
+     "change": "#! /usr/bin/env sh\n## DO NOT EDIT - This file generated from ./build-aux/ltmain.in\n##               by inline-source v2019-02-19.15\n\n# libtool (GNU libtool) 2.4.7\n# Provide generalized library-building support services.\n# Written by Gordon Matzigkeit <gord@gnu.ai.mit.edu>, 1996\n\n# Copyright (C) 1996-2019, 2021-2022 Free Software Foundation, Inc.\n# This is free software; see the source for copying ",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares__socket.c",
+     "lines": [
+      188,
+      208
+     ],
+     "kind": "porting",
+     "change": "  /* No need to emit SIGPIPE on socket errors */\n#if defined(SO_NOSIGPIPE)\n  {\n    int opt = 1;\n    setsockopt(s, SOL_SOCKET, SO_NOSIGPIPE, (void *)&opt, sizeof(opt));\n  }\n#endif\n\n#ifndef __QNXNTO__\n#else /* !__QNXNTO__ */\n                 sizeof(channel->local_dev_name) + 1)) {\n#endif /* __QNXNTO__ */\n",
+     "flagged": [
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ],
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ],
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ]
+     ]
+    },
+    {
+     "file": "src/lib/ares_destroy.c",
+     "lines": [
+      63,
+      64
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  free(channel->conf_domain);\n  channel->conf_domain = NULL;\n\n  free(channel->conf_resolv);\n  channel->conf_resolv = NULL;\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_gethostbyaddr.c",
+     "lines": [
+      76,
+      77
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  ares__check_for_config_reload(channel);\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_gethostbyname.c",
+     "lines": [
+      107,
+      108
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  ares__check_for_config_reload(channel);\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_init.c",
+     "lines": [
+      69,
+      75
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n#include <sys/slog.h>\n#include <sys/slogcodes.h>\n/* enable this to get debugging logs */\n/*#define DEBUG*/\n#endif\n\n#ifdef __QNXNTO__\n/* CODE DUPLICATION WARNING: This code is a duplicate of code in\n * libsocket (resolve/res_init.c) */\nstatic char *\ngetconf(int token)\n{\n  size_t len;\n  char *buf;\n  char *cp;\n\n  if((len=confstr(token,NULL,0))==0) {\n    return(NULL);  /* Token not s",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_init.c",
+     "lines": [
+      289,
+      290
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  /* NOTE: if res_conf_time is ever adjusted to use the time a file is written, the clock\n   * source may need to be changed to accommodate how file system times are derived\n   */\n  clock_gettime(CLOCK_MONOTONIC, &(channel->res_conf_time));\n\n  /* QNX extensions include the ability to reload the configuration. There\n   * are several locations to do this from. If done from the C-AR",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_init.c",
+     "lines": [
+      369,
+      370
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  if (status == ARES_SUCCESS) {\n    status = init_by_qnx_conf(channel);\n    if (status != ARES_SUCCESS) {\n      DEBUGF(fprintf(stderr, \"Error: init_by_qnx_conf failed: %s\\n\",\n                     ares_strerror(status)));\n    }\n  }\n#endif /* __QNXNTO__ */\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_init.c",
+     "lines": [
+      590,
+      591
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  if (local_dev_name == NULL) {\n    memset(channel->local_dev_name, 0x00, sizeof(channel->local_dev_name));\n    return;\n  }\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_init.c",
+     "lines": [
+      622,
+      623
+     ],
+     "kind": "porting",
+     "change": "\n#ifdef __QNXNTO__\n/* returns 1 if the resolver information should be reloaded,\n * returns 0 if there is no need to reload */\nstatic int needs_reload(ares_channel channel, int force)\n{\n  if (NULL == channel)\n    return 0;\n\n  if (!force) {\n    /* if caching is disabled (this is the default), we never reload after we\n     * have loaded the first time regardless of what's changed\n     */\n    uint64_t",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_options.c",
+     "lines": [
+      479,
+      493
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n    /* Setting the nameservers via this API is an infinite setting */\n    channel->max_cache_time_in_nsec = RES_INFINITE_CACHE_TIME;\n#endif\n\n \n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_private.h",
+     "lines": [
+      46,
+      48
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNXNTO__\n#else /* !__QNXNTO__ */\n#define DEFAULT_TIMEOUT 3000 /* milliseconds */\n#endif /* __QNXNTO__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_private.h",
+     "lines": [
+      319,
+      320
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  struct\t\ttimespec res_conf_time;\n  uint64_t\t\tmax_cache_time_in_nsec; /* 0 means do not cache (although (options & RES_INIT) == 0 in the same circumstances, RES_INFINITE_CACHE_TIME means never expire the cache (infinite) */\n  char\t\t\t*conf_domain; /*%< the last read value for _CS_DOMAIN -- used for caching */\n  char\t\t\t*conf_resolv; /*%< the last read value for _CS_RESOLVE -- used ",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_private.h",
+     "lines": [
+      455,
+      458
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n  uint64_t\t   max_cache_time_in_nsec;\n#endif /* __QNXNTO__ */\n#ifdef __QNXNTO__\nextern ares_sysconfig_t sysconfig;\n#endif /* __QNXNTO__ */\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_private.h",
+     "lines": [
+      556,
+      557
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNXNTO__\n#define RES_INFINITE_CACHE_TIME ((uint64_t)-1)\nvoid ares__check_for_config_reload(ares_channel channel);\nvoid ares__check_for_config_reload_force(ares_channel channel, int force);\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_sysconfig.c",
+     "lines": [
+      1047,
+      1076
+     ],
+     "kind": "porting",
+     "change": "  if (sysconfig->ndots && !(channel->optmask & ARES_OPT_NDOTS)) {\n  if (!(channel->optmask & ARES_OPT_NDOTS)) {\n#ifdef __QNXNTO__\n  if (sysconfig->max_cache_time_in_nsec) {\n    channel->max_cache_time_in_nsec = sysconfig->max_cache_time_in_nsec;\n  }\n#endif /* __QNXNTO__ */\n\n#ifdef __QNXNTO__\nares_sysconfig_t sysconfig;\n#endif  /* __QNXNTO__ */\n  #ifndef __QNXNTO__\n  #endif  /* !__QNXNTO__ */\n  sys",
+     "flagged": []
+    },
+    {
+     "file": "src/lib/ares_sysconfig_files.c",
+     "lines": [
+      623,
+      624
+     ],
+     "kind": "porting",
+     "change": "\n#ifdef __QNXNTO__\n  else if (strcmp(option, \"nocache\") == 0) {\n  /* we expect a second parameter, typically \"on\", but we\n   * don't actually look at the value currently\n   * NOTE: this is mimicking the existing behaviour in the\n   * resolve library in libsocket*/\n    sysconfig->max_cache_time_in_nsec = 1; /* Do not cache */\n    status = ARES_SUCCESS;\n  }\n  else if (strcmp(option, \"maxcachetime\") ",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "avahi",
+   "fix_sites": 2,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "info": 20,
+    "check": 57,
+    "link": 106,
+    "blocker": 9
+   },
+   "sites": [
+    {
+     "file": "avahi-common/Makefile.am",
+     "lines": [
+      22,
+      23
+     ],
+     "kind": "porting",
+     "change": "# Qnx malloc definitions exist in malloc.h avahi-common/malloc.h is overriding malloc.h\n# we NEED this here to remove the -I. which is causing the bug\nAUTOMAKE_OPTIONS = nostdinc\n\n",
+     "flagged": []
+    },
+    {
+     "file": "avahi-compat-howl/include/salt/platform.h",
+     "lines": [
+      80,
+      81
+     ],
+     "kind": "porting",
+     "change": "#if defined(__sun)\n#if defined(__QNX__)\n#\tinclude <stdint.h>\n#endif\n\n#if defined(__sun) || defined(__QNX__)\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "sscep",
+   "fix_sites": 2,
+   "packaging_sites": 1,
+   "flagged": 1,
+   "findings": {
+    "check": 1,
+    "link": 9
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      59,
+      64
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "src/net.c",
+     "lines": [
+      273,
+      275
+     ],
+     "kind": "porting",
+     "change": "#if USE_IOSOCK || __QNX__ >= 800\n#else\n\thints.ai_flags = 0;\n#endif\n",
+     "flagged": [
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ]
+     ]
+    },
+    {
+     "file": "src/sscep.h",
+     "lines": [
+      24,
+      25
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n#include <sys/time.h>\n#endif\n\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "lua",
+   "fix_sites": 0,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {},
+   "sites": []
+  },
+  {
+   "name": "rapidjson",
+   "fix_sites": 1,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 5,
+    "blocker": 1,
+    "info": 2
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      53,
+      54
+     ],
+     "kind": "porting",
+     "change": "    set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -march=native -Wall -Wextra -Werror\")\n    if(QNX)\n        set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -Wall -Wextra\")\n    else()\n        set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -march=native -Wall -Wextra -Werror\")\n    endif()\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "tinyxml2",
+   "fix_sites": 1,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 2
+   },
+   "sites": [
+    {
+     "file": "tinyxml2.h",
+     "lines": [
+      27,
+      28
+     ],
+     "kind": "porting",
+     "change": "#if defined(ANDROID_NDK) || defined(__BORLANDC__) || defined(__QNXNTO__)\n#if defined(ANDROID_NDK) || defined(__BORLANDC__) || defined(__QNX__)\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "pistache",
+   "fix_sites": 16,
+   "packaging_sites": 0,
+   "flagged": 3,
+   "findings": {
+    "link": 109,
+    "blocker": 25,
+    "check": 33,
+    "info": 4
+   },
+   "sites": [
+    {
+     "file": "include/pistache/emosandlibevdefs.h",
+     "lines": [
+      42,
+      43
+     ],
+     "kind": "porting",
+     "change": "#ifdef __APPLE__\n#if defined(__APPLE__) || defined (__QNX__)\n",
+     "flagged": []
+    },
+    {
+     "file": "include/pistache/pist_strerror_r.h",
+     "lines": [
+      19,
+      20
+     ],
+     "kind": "porting",
+     "change": "      || (defined(__clang__)) || (defined(__NetBSD__)) || (defined(__APPLE__)))\n      || (defined(__clang__)) || (defined(__NetBSD__)) || (defined(__APPLE__)) || (defined(__QNX__)))\n",
+     "flagged": []
+    },
+    {
+     "file": "include/pistache/ps_sendfile.h",
+     "lines": [
+      22,
+      54
+     ],
+     "kind": "porting",
+     "change": "#if defined(_IS_WINDOWS) || defined(_IS_BSD)\n#if defined(_IS_WINDOWS) || defined(_IS_BSD) || defined(__QNX__)\n#else // of if defined(_IS_WINDOWS) || defined(_IS_BSD)\n#else // of if defined(_IS_WINDOWS) || defined(_IS_BSD) || defined(__QNX__)\n#elif defined __APPLE__\n#elif defined __APPLE__ || defined __QNX__\n#endif // of if defined(_IS_WINDOWS) || defined(_IS_BSD)... else...\n#endif // of if defined",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if BSD || WINDOWS"
+      ],
+      [
+       "info",
+       "linux-header",
+       "sys/sendfile.h"
+      ]
+     ]
+    },
+    {
+     "file": "include/pistache/pst_errno.h",
+     "lines": [
+      25,
+      26
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\n#include <errno.h>\n",
+     "flagged": []
+    },
+    {
+     "file": "include/pistache/winornix.h",
+     "lines": [
+      137,
+      138
+     ],
+     "kind": "porting",
+     "change": "#elif defined __QNX__\n#define PST_CLOCK_REALTIME CLOCK_REALTIME\n#define PST_CLOCK_MONOTONIC CLOCK_MONOTONIC\n#define PST_CLOCK_PROCESS_CPUTIME_ID CLOCK_PROCESS_CPUTIME_ID\n#define PST_CLOCK_THREAD_CPUTIME_ID CLOCK_THREAD_CPUTIME_ID\n\n",
+     "flagged": []
+    },
+    {
+     "file": "include/pistache/winornix.h",
+     "lines": [
+      185,
+      186
+     ],
+     "kind": "porting",
+     "change": "      (!defined(__clang__)) && (!defined(__NetBSD__)) && (!defined(__APPLE__)))\n      (!defined(__clang__)) && (!defined(__NetBSD__)) && (!defined(__APPLE__)) && (!defined(__QNX__)))\n",
+     "flagged": []
+    },
+    {
+     "file": "meson.build",
+     "lines": [
+      24,
+      25
+     ],
+     "kind": "porting",
+     "change": "if host_machine.system() != 'linux' and host_machine.system() != 'darwin' and host_machine.system() != 'windows' and not host_machine.system().endswith('bsd')\nif host_machine.system() != 'linux' and host_machine.system() != 'darwin' and host_machine.system() != 'windows' and host_machine.system() != 'qnx' and not host_machine.system().endswith('bsd')\n\n",
+     "flagged": []
+    },
+    {
+     "file": "meson.build",
+     "lines": [
+      188,
+      189
+     ],
+     "kind": "porting",
+     "change": "if host_machine.system() == 'darwin' or host_machine.system() == 'windows' or host_machine.system().endswith('bsd') or get_option('PISTACHE_FORCE_LIBEVENT')\nif host_machine.system() == 'darwin' or host_machine.system() == 'windows' or host_machine.system().endswith('bsd') or host_machine.system() == 'qnx' or get_option('PISTACHE_FORCE_LIBEVENT')\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/eventmeth.cc",
+     "lines": [
+      1919,
+      1921
+     ],
+     "kind": "porting",
+     "change": "        #ifndef _IS_BSD\n        // CLOCK_MONOTONIC_RAW not defined on FreeBSD13.3 and OpenBSD 7.3\n        #if !defined(_IS_BSD) && !defined(__QNX__)\n        // CLOCK_MONOTONIC_RAW not defined on FreeBSD13.3 and OpenBSD 7.3 and QNX\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/eventmeth.cc",
+     "lines": [
+      3552,
+      3553
+     ],
+     "kind": "porting",
+     "change": "            #ifndef __linux__\n            #if !defined(__linux__) && !defined(__QNX__)\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/pist_check.cc",
+     "lines": [
+      30,
+      31
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\n#include <cxxabi.h>\n#include <dlfcn.h>\n",
+     "flagged": [
+      [
+       "blocker",
+       "linux-header",
+       "execinfo.h"
+      ]
+     ]
+    },
+    {
+     "file": "src/common/pist_check.cc",
+     "lines": [
+      133,
+      134
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\nstatic void logStackTrace(int pri)\n{\n\n}\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/pist_strerror_r.cc",
+     "lines": [
+      264,
+      265
+     ],
+     "kind": "porting",
+     "change": "      || (defined(__clang__)) || (defined(__NetBSD__)) || (defined(__APPLE__)))\n      || (defined(__clang__)) || (defined(__NetBSD__)) || (defined(__APPLE__)) || (defined(__QNX__)))\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/ps_sendfile.cc",
+     "lines": [
+      141,
+      142
+     ],
+     "kind": "porting",
+     "change": "#elif defined(_IS_BSD)\n#elif defined(_IS_BSD) || defined (__QNX__)\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/transport.cc",
+     "lines": [
+      19,
+      20
+     ],
+     "kind": "porting",
+     "change": "#ifdef __NetBSD__\n#if defined __NetBSD__ || defined __QNX__\n",
+     "flagged": []
+    },
+    {
+     "file": "src/common/transport.cc",
+     "lines": [
+      54,
+      55
+     ],
+     "kind": "porting",
+     "change": "#if defined(__NetBSD__) || defined(_IS_WINDOWS)\n#if defined(__NetBSD__) || defined(_IS_WINDOWS) || defined(__QNX__)\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if NETBSD || WINDOWS"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

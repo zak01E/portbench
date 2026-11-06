@@ -1,0 +1,130 @@
+HIPCC@qnx-chipStar-v1.3.0 7 2 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+MPItrampoline@qnx-v5.3.1 6 1 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+METIS@eleir/qnx_v5.2.1 69 3 {'random': 0.33, 'os_mentions': 0.33, 'unix_peers': 0.33, 'top_build+peers': 0.33, 'qport': 0.33, 'qport+os': 0.33}
+Fast-CDR@qnx_v2.2.3 34 1 {'random': 1.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 0.0}
+AMQP-CPP@qnx-v4.3.27 194 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+EmulationStation@qnx_master 237 7 {'random': 0.0, 'os_mentions': 0.14, 'unix_peers': 0.14, 'top_build+peers': 0.29, 'qport': 0.29, 'qport+os': 0.29}
+ROCm-Device-Libs@qnx-chipStar-v1.3.0 60 1 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+Catch2@qnx-pr-v3.6.0 252 4 {'random': 0.0, 'os_mentions': 0.75, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.75}
+OpenTTD@qnx-release-15.2 1442 3 {'random': 0.0, 'os_mentions': 0.67, 'unix_peers': 0.33, 'top_build+peers': 0.67, 'qport': 0.67, 'qport+os': 0.67}
+OpenSceneGraph@qnx-OpenSceneGraph-3.6.5 2253 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 0.5, 'top_build+peers': 1.0, 'qport': 0.5, 'qport+os': 1.0}
+SDL@qnx-release-3.4.18 1220 5 {'random': 0.0, 'os_mentions': 0.4, 'unix_peers': 0.4, 'top_build+peers': 0.4, 'qport': 0.2, 'qport+os': 0.4}
+abseil-cpp@qnx-20250512.0 591 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+apk-tools@qnx_3.0.0_rc5 138 4 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.25, 'qport+os': 0.5}
+Fast-DDS@qnx_v2.14.4 2045 3 {'random': 0.0, 'os_mentions': 0.33, 'unix_peers': 0.0, 'top_build+peers': 0.33, 'qport': 0.33, 'qport+os': 0.33}
+ZeroTierOne@john_qnx_support 1815 7 {'random': 0.0, 'os_mentions': 0.29, 'unix_peers': 0.43, 'top_build+peers': 0.29, 'qport': 0.14, 'qport+os': 0.29}
+avahi@qnx-0.9.x 244 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 0.0}
+aws-c-io@qnx-v0.26.1 77 4 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.75, 'top_build+peers': 0.75, 'qport': 0.75, 'qport+os': 0.75}
+aws-crt-cpp@qnx-0.30.1 99 4 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.25, 'qport+os': 1.0}
+aws-c-common@qnx-v0.12.4 631 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+asio@qnx-pr-asio-1-29-0 632 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+benchmark@qnx_v1.8.3 59 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+btop@qnx-1.4.6 66 5 {'random': 0.2, 'os_mentions': 0.4, 'unix_peers': 0.6, 'top_build+peers': 0.6, 'qport': 0.6, 'qport+os': 0.4}
+c-ares@qnx_v1.34 153 10 {'random': 0.1, 'os_mentions': 0.3, 'unix_peers': 0.3, 'top_build+peers': 0.4, 'qport': 0.1, 'qport+os': 0.3}
+cJSON@qnx-master 8 1 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+capnproto@qnx-1.0.2 114 3 {'random': 0.0, 'os_mentions': 0.67, 'unix_peers': 0.33, 'top_build+peers': 0.33, 'qport': 0.0, 'qport+os': 0.33}
+check@qnx-0.15.2 48 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+azure-iot-sdk-c@qnx-LTS_08_2024 221 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+busybox@qnx-1_38_x 776 6 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.17, 'qport+os': 0.17}
+cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0 86 4 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+chipStar@qnx-v1.3.0 232 7 {'random': 0.0, 'os_mentions': 0.14, 'unix_peers': 0.57, 'top_build+peers': 0.57, 'qport': 0.14, 'qport+os': 0.14}
+dhcpcd@qnx-v10.2.4 108 7 {'random': 0.0, 'os_mentions': 0.14, 'unix_peers': 0.14, 'top_build+peers': 0.14, 'qport': 0.0, 'qport+os': 0.14}
+cups@qnx-2.4.x 318 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 1.0}
+dnsmasq@qnx-v2.92 58 4 {'random': 0.0, 'os_mentions': 0.75, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.25, 'qport+os': 0.75}
+dlt-daemon@qnx-v2.18.10 155 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.0, 'qport+os': 0.0}
+dump1090@port-dump1090-qnx 4 1 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+farmhash@qnx 23 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+g3log@porting_g3log_to_qnx 38 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 0.5}
+SuiteSparse@qnx-v7.11.0 6145 87 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+RetroArch@qnx_master 3525 11 {'random': 0.0, 'os_mentions': 0.09, 'unix_peers': 0.27, 'top_build+peers': 0.27, 'qport': 0.0, 'qport+os': 0.0}
+OpenBLAS@qnx-0.3.28 6635 8 {'random': 0.0, 'os_mentions': 0.25, 'unix_peers': 0.25, 'top_build+peers': 0.25, 'qport': 0.12, 'qport+os': 0.25}
+glog@qnx-mediapipe 52 11 {'random': 0.27, 'os_mentions': 0.45, 'unix_peers': 0.45, 'top_build+peers': 0.55, 'qport': 0.55, 'qport+os': 0.64}
+ggml@qnx-8.0 441 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+gloo@qnx-mediapipe 180 2 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 1.0}
+dart@qnx-v6.20.2 973 7 {'random': 0.0, 'os_mentions': 0.57, 'unix_peers': 0.57, 'top_build+peers': 0.57, 'qport': 0.14, 'qport+os': 0.43}
+executorch@qnx-v1.3.1 1520 3 {'random': 0.0, 'os_mentions': 0.33, 'unix_peers': 0.33, 'top_build+peers': 0.33, 'qport': 0.33, 'qport+os': 0.33}
+googletest@qnx_v1.14.0 53 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 1.0}
+gnutls@qnx-3.6.15 577 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+hailort@qnx-4.14 430 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+glib@qnx-2.82.2-1759894777 1069 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 0.0}
+htop@qnx-3.5.0 285 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 0.5}
+iperf3@qnx-3.7 43 2 {'random': 0.5, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5 135 4 {'random': 0.0, 'os_mentions': 0.75, 'unix_peers': 0.75, 'top_build+peers': 0.75, 'qport': 0.25, 'qport+os': 0.75}
+labwc@qnx-0.20.2 218 2 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+libcamera@qnx-v0.5.1_rpt20250722 683 29 {'random': 0.03, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+libevent@qnx-2.1.12-stable 112 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.0, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+gtsam@qnx_4.3a0 1958 25 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+libmetal@qnx-v2025.10.1 167 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 1.0}
+libffi@qnx-v3.8.0 102 3 {'random': 0.0, 'os_mentions': 0.67, 'unix_peers': 0.67, 'top_build+peers': 1.0, 'qport': 0.67, 'qport+os': 0.67}
+libutempter@qnx-v1.2.3 5 2 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+libusb@qnx-1.0.23 59 4 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.75, 'top_build+peers': 1.0, 'qport': 0.5, 'qport+os': 0.5}
+gtk@QNXOSG-495 2170 3 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.33, 'qport': 0.0, 'qport+os': 0.0}
+libuv@qnx-v1.51.0 122 5 {'random': 0.2, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+libyaml@qnx-0.2.5 15 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 0.0}
+lighttpd1.4@qnx_1.4.73 178 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.0, 'qport': 0.5, 'qport+os': 0.5}
+libxml2@qnx-2.14.4 143 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+lua@qnx_v5.5 68 2 {'random': 0.5, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+lldpd@qnx-1.0.22 136 6 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.33, 'qport+os': 1.0}
+mimalloc@qnx-v3.1.5 44 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.5, 'qport+os': 1.0}
+mlas@qnx-openvino-2026.1.2-d1bc25ec4660cddd87804fcf03b2411b5dfb2e94 107 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+mosh@qnx-v1.4.0 77 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+grpc@qnx-v1.76.0 3085 10 {'random': 0.0, 'os_mentions': 0.3, 'unix_peers': 0.4, 'top_build+peers': 0.4, 'qport': 0.2, 'qport+os': 0.2}
+mosquitto@qnx-master 202 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.5}
+gdal@qnx-v3.5.3 2778 2 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+nghttp2@qnx-1.64.0 242 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+ntttcp-for-linux@qnx-b483afe 25 3 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 1.0}
+ntpsec@qnx-ntpsec-1.2.4 179 7 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+neovim@qnx-v0.11.4 520 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+onnx@qnx-v1.13.1 135 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+libwebsockets@nnarayanamurthy-qnx-v4.5.8 1127 3 {'random': 0.0, 'os_mentions': 0.67, 'unix_peers': 0.67, 'top_build+peers': 0.67, 'qport': 0.67, 'qport+os': 0.67}
+open-amp@qnx-v2025.04.0 50 3 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+openrc@qnx-0.63.1 110 5 {'random': 0.0, 'os_mentions': 0.8, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.4, 'qport+os': 0.4}
+ode@qnx-0.16.2 559 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 1.0}
+numpy@qnx_v2.3.4 440 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 1.0, 'qport+os': 1.0}
+piper1-gpl@qnx-v1.8.0 22 2 {'random': 0.5, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.5, 'qport+os': 1.0}
+pistache@qnx-v0.4.26 105 11 {'random': 0.0, 'os_mentions': 0.45, 'unix_peers': 0.64, 'top_build+peers': 0.55, 'qport': 0.09, 'qport+os': 0.18}
+psutil@qnx-7.2.2 104 5 {'random': 0.4, 'os_mentions': 0.8, 'unix_peers': 0.8, 'top_build+peers': 0.8, 'qport': 1.0, 'qport+os': 1.0}
+qdirstat@john_qnx_support 215 3 {'random': 0.0, 'os_mentions': 0.33, 'unix_peers': 0.33, 'top_build+peers': 0.33, 'qport': 0.0, 'qport+os': 0.0}
+rapidjson@qnx-v1.1.0 37 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+re2@qnx_main 47 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 1.0}
+restbed@upstream_qnx 49 2 {'random': 0.5, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+rtl-sdr@qnx_2.0.2 35 2 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+intel-oneDNN@qnx-openvino-2026.1.2-6b6492b1ea9ef5ca9ff3c5c59ed71dcca683a446 2390 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+ruy@qnx 95 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+sdl2-compat@qnx-release-2.32.60 103 4 {'random': 0.25, 'os_mentions': 0.5, 'unix_peers': 0.25, 'top_build+peers': 0.5, 'qport': 0.75, 'qport+os': 0.5}
+XNNPACK@qnx_master 9037 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+s2n-tls@qnx-v1.5.25 351 32 {'random': 0.03, 'os_mentions': 0.09, 'unix_peers': 0.09, 'top_build+peers': 0.09, 'qport': 0.09, 'qport+os': 0.09}
+sscep@qnx-v0.10.0 28 3 {'random': 0.33, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.67, 'qport+os': 1.0}
+sleef@qnx_master 130 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+perfetto@qnx-main 2091 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+protobuf@qnx-main 1022 4 {'random': 0.0, 'os_mentions': 0.25, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.25, 'qport+os': 0.25}
+sentencepiece@qnx-mediapipe-v0.10.26 162 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+tinyxml2@qnx_10.0.0 8 1 {'random': 1.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+sysbench@qnx-1.0.20 405 6 {'random': 0.0, 'os_mentions': 0.17, 'unix_peers': 0.17, 'top_build+peers': 0.5, 'qport': 0.17, 'qport+os': 0.17}
+sudo@qnx-v1.9.17p2 448 5 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.2, 'qport+os': 0.2}
+nss@qnx-NSS_3_131_1_BRANCH 1567 4 {'random': 0.0, 'os_mentions': 0.75, 'unix_peers': 0.75, 'top_build+peers': 0.75, 'qport': 0.5, 'qport+os': 0.75}
+unbound@murthy-qnx-release-1.24.1 295 10 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+xtl@qnx-0.7.7 34 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+vsomeip@qnx_3.5.5 368 11 {'random': 0.0, 'os_mentions': 0.18, 'unix_peers': 0.18, 'top_build+peers': 0.18, 'qport': 0.27, 'qport+os': 0.18}
+zenoh-pico@qnx-1.5.0 272 4 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 1.0, 'qport+os': 1.0}
+strongswan@qnx-6.0.6 2522 6 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.67, 'top_build+peers': 0.5, 'qport': 0.17, 'qport+os': 0.17}
+whisper.cpp@qnx-8.0 537 2 {'random': 0.0, 'os_mentions': 0.5, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+opencv@qnx-4.12.0 3581 1 {'random': 0.0, 'os_mentions': 0.0, 'unix_peers': 0.0, 'top_build+peers': 0.0, 'qport': 0.0, 'qport+os': 0.0}
+xla@qnx-mediapipe 2934 4 {'random': 0.0, 'os_mentions': 0.75, 'unix_peers': 0.5, 'top_build+peers': 0.5, 'qport': 0.5, 'qport+os': 0.75}
+stable-diffusion.cpp@qnx-8.0 120 1 {'random': 0.0, 'os_mentions': 1.0, 'unix_peers': 1.0, 'top_build+peers': 1.0, 'qport': 0.0, 'qport+os': 1.0}
+
+all: 114 instances, median files 172.5, median gold 2.0, gold files with platform tokens 0.70
+  random           R@1=0.012  R@5=0.076  R@10=0.107  R@20=0.193
+  os_mentions      R@1=0.159  R@5=0.413  R@10=0.548  R@20=0.660
+  unix_peers       R@1=0.131  R@5=0.404  R@10=0.534  R@20=0.649
+  top_build+peers  R@1=0.174  R@5=0.413  R@10=0.570  R@20=0.676
+  qport            R@1=0.090  R@5=0.377  R@10=0.463  R@20=0.539
+  qport+os         R@1=0.137  R@5=0.401  R@10=0.545  R@20=0.692
+
+unseen: 89 instances, median files 221, median gold 2, gold files with platform tokens 0.70
+  random           R@1=0.011  R@5=0.067  R@10=0.093  R@20=0.170
+  os_mentions      R@1=0.172  R@5=0.390  R@10=0.529  R@20=0.637
+  unix_peers       R@1=0.134  R@5=0.401  R@10=0.511  R@20=0.630
+  top_build+peers  R@1=0.159  R@5=0.408  R@10=0.542  R@20=0.655
+  qport            R@1=0.106  R@5=0.385  R@10=0.454  R@20=0.522
+  qport+os         R@1=0.158  R@5=0.406  R@10=0.543  R@20=0.681

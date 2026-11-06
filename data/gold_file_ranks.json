@@ -1,0 +1,5837 @@
+[
+{
+"id": "abseil-cpp@qnx-20250512.0",
+"file": "absl/time/time.h",
+"rank": 133,
+"n": 591,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit",
+"guarded-subst"
+]
+},
+{
+"id": "AMQP-CPP@qnx-v4.3.27",
+"file": "src/linux_tcp/addressinfo.h",
+"rank": 144,
+"n": 194,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "apk-tools@qnx_3.0.0_rc5",
+"file": "libfetch/common.c",
+"rank": 52,
+"n": 138,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "apk-tools@qnx_3.0.0_rc5",
+"file": "src/apk_xattr.h",
+"rank": 1,
+"n": 138,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "apk-tools@qnx_3.0.0_rc5",
+"file": "portability/sys/random.h",
+"rank": 135,
+"n": 138,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "apk-tools@qnx_3.0.0_rc5",
+"file": "src/io.c",
+"rank": 5,
+"n": 138,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "asio@qnx-pr-asio-1-29-0",
+"file": "asio/include/asio/detail/socket_types.hpp",
+"rank": 1,
+"n": 632,
+"tokens": 203,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "asio@qnx-pr-asio-1-29-0",
+"file": "asio/include/asio/detail/impl/posix_thread.ipp",
+"rank": 616,
+"n": 632,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "avahi@qnx-0.9.x",
+"file": "avahi-compat-howl/include/salt/platform.h",
+"rank": 2,
+"n": 244,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "aws-c-common@qnx-v0.12.4",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 631,
+"tokens": 31,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "aws-c-io@qnx-v0.26.1",
+"file": "source/posix/host_resolver.c",
+"rank": 15,
+"n": 77,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "aws-c-io@qnx-v0.26.1",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 77,
+"tokens": 20,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "aws-c-io@qnx-v0.26.1",
+"file": "source/s2n/s2n_tls_channel_handler.c",
+"rank": 51,
+"n": 77,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "aws-c-io@qnx-v0.26.1",
+"file": "source/posix/socket.c",
+"rank": 4,
+"n": 77,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "aws-crt-cpp@qnx-0.30.1",
+"file": "bin/mqtt5_canary/CMakeLists.txt",
+"rank": 4,
+"n": 99,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "aws-crt-cpp@qnx-0.30.1",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 99,
+"tokens": 4,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "aws-crt-cpp@qnx-0.30.1",
+"file": "bin/elasticurl_cpp/CMakeLists.txt",
+"rank": 5,
+"n": 99,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "aws-crt-cpp@qnx-0.30.1",
+"file": "bin/mqtt5_app/CMakeLists.txt",
+"rank": 2,
+"n": 99,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "azure-iot-sdk-c@qnx-LTS_08_2024",
+"file": "testtools/iothub_test/src/iothub_account.c",
+"rank": 5,
+"n": 221,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "azure-iot-sdk-c@qnx-LTS_08_2024",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 221,
+"tokens": 9,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "benchmark@qnx_v1.8.3",
+"file": "CMakeLists.txt",
+"rank": 8,
+"n": 59,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build",
+"packaging"
+]
+},
+{
+"id": "benchmark@qnx_v1.8.3",
+"file": "src/CMakeLists.txt",
+"rank": 33,
+"n": 59,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "btop@qnx-1.4.6",
+"file": "src/btop.cpp",
+"rank": 1,
+"n": 66,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "btop@qnx-1.4.6",
+"file": "CMakeLists.txt",
+"rank": 2,
+"n": 66,
+"tokens": 15,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "btop@qnx-1.4.6",
+"file": "src/btop_config.cpp",
+"rank": 11,
+"n": 66,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "btop@qnx-1.4.6",
+"file": "src/btop_tools.cpp",
+"rank": 18,
+"n": 66,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "btop@qnx-1.4.6",
+"file": "Makefile",
+"rank": 53,
+"n": 66,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "coreutils/stat.c",
+"rank": 716,
+"n": 776,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "include/platform.h",
+"rank": 1,
+"n": 776,
+"tokens": 22,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "libbb/mode_string.c",
+"rank": 591,
+"n": 776,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "coreutils/uname.c",
+"rank": 35,
+"n": 776,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "libbb/makedev.c",
+"rank": 10,
+"n": 776,
+"tokens": 4,
+"build": false,
+"kinds": [
+"edit",
+"guard-edit"
+]
+},
+{
+"id": "busybox@qnx-1_38_x",
+"file": "include/libbb.h",
+"rank": 4,
+"n": 776,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_destroy.c",
+"rank": 101,
+"n": 153,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_sysconfig_files.c",
+"rank": 26,
+"n": 153,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_options.c",
+"rank": 62,
+"n": 153,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "configure.ac",
+"rank": 4,
+"n": 153,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "include/ares.h",
+"rank": 2,
+"n": 153,
+"tokens": 15,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_gethostbyaddr.c",
+"rank": 92,
+"n": 153,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_gethostbyname.c",
+"rank": 33,
+"n": 153,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_init.c",
+"rank": 24,
+"n": 153,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_sysconfig.c",
+"rank": 5,
+"n": 153,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "c-ares@qnx_v1.34",
+"file": "src/lib/ares_private.h",
+"rank": 13,
+"n": 153,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "capnproto@qnx-1.0.2",
+"file": "c++/src/kj/miniposix.h",
+"rank": 5,
+"n": 114,
+"tokens": 5,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "capnproto@qnx-1.0.2",
+"file": "c++/CMakeLists.txt",
+"rank": 17,
+"n": 114,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "capnproto@qnx-1.0.2",
+"file": "c++/src/kj/CMakeLists.txt",
+"rank": 7,
+"n": 114,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "Catch2@qnx-pr-v3.6.0",
+"file": "src/catch2/internal/catch_debugger.cpp",
+"rank": 10,
+"n": 252,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "Catch2@qnx-pr-v3.6.0",
+"file": "src/catch2/internal/catch_console_colour.cpp",
+"rank": 7,
+"n": 252,
+"tokens": 5,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "Catch2@qnx-pr-v3.6.0",
+"file": "src/catch2/internal/catch_platform.hpp",
+"rank": 2,
+"n": 252,
+"tokens": 14,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "Catch2@qnx-pr-v3.6.0",
+"file": "src/catch2/internal/catch_debugger.hpp",
+"rank": 18,
+"n": 252,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "check@qnx-0.15.2",
+"file": "CMakeLists.txt",
+"rank": 2,
+"n": 48,
+"tokens": 8,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "tools/spirv-extractor/spirv-extractor.hh",
+"rank": 31,
+"n": 232,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "src/CHIPBackend.cc",
+"rank": 30,
+"n": 232,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "src/CHIPException.hh",
+"rank": 44,
+"n": 232,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "src/Utils.cc",
+"rank": 11,
+"n": 232,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "src/SPVRegister.cc",
+"rank": 10,
+"n": 232,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "src/backend/OpenCL/CHIPBackendOpenCL.cc",
+"rank": 26,
+"n": 232,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "chipStar@qnx-v1.3.0",
+"file": "CMakeLists.txt",
+"rank": 21,
+"n": 232,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "cJSON@qnx-master",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 8,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build",
+"packaging"
+]
+},
+{
+"id": "cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0",
+"file": "include/cpuinfo.h",
+"rank": 2,
+"n": 86,
+"tokens": 17,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0",
+"file": "src/api.c",
+"rank": 6,
+"n": 86,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include",
+"qnx-code"
+]
+},
+{
+"id": "cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 86,
+"tokens": 43,
+"build": true,
+"kinds": [
+"build",
+"packaging"
+]
+},
+{
+"id": "cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0",
+"file": "src/init.c",
+"rank": 3,
+"n": 86,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "cups@qnx-2.4.x",
+"file": "cups/http-addrlist.c",
+"rank": 11,
+"n": 318,
+"tokens": 11,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "cmake/DARTFindOpenGL.cmake",
+"rank": 7,
+"n": 973,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/common/SharedLibrary.cpp",
+"rank": 6,
+"n": 973,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/gui/osg/ImGuiHandler.cpp",
+"rank": 704,
+"n": 973,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/gui/osg/IncludeImGui.hpp",
+"rank": 280,
+"n": 973,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/gui/imgui/CMakeLists.txt",
+"rank": 19,
+"n": 973,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/common/Platform.hpp",
+"rank": 1,
+"n": 973,
+"tokens": 17,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "dart@qnx-v6.20.2",
+"file": "dart/common/SharedLibrary.hpp",
+"rank": 4,
+"n": 973,
+"tokens": 9,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "compat/setproctitle.h",
+"rank": 62,
+"n": 108,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "src/logerr.c",
+"rank": 26,
+"n": 108,
+"tokens": 2,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "src/privsep-root.h",
+"rank": 13,
+"n": 108,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "src/privsep.c",
+"rank": 17,
+"n": 108,
+"tokens": 3,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "src/privsep-bsd.c",
+"rank": 15,
+"n": 108,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "src/if-bsd.c",
+"rank": 1,
+"n": 108,
+"tokens": 14,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dhcpcd@qnx-v10.2.4",
+"file": "compat/arc4random.h",
+"rank": 58,
+"n": 108,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "dlt-daemon@qnx-v2.18.10",
+"file": "src/offlinelogstorage/dlt_offline_logstorage.c",
+"rank": 86,
+"n": 155,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "dlt-daemon@qnx-v2.18.10",
+"file": "CMakeLists.txt",
+"rank": 4,
+"n": 155,
+"tokens": 5,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "dnsmasq@qnx-v2.92",
+"file": "src/config.h",
+"rank": 1,
+"n": 58,
+"tokens": 17,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dnsmasq@qnx-v2.92",
+"file": "src/dhcp.c",
+"rank": 51,
+"n": 58,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dnsmasq@qnx-v2.92",
+"file": "src/bpf.c",
+"rank": 3,
+"n": 58,
+"tokens": 5,
+"build": false,
+"kinds": [
+"disable",
+"edit",
+"guard-edit"
+]
+},
+{
+"id": "dnsmasq@qnx-v2.92",
+"file": "src/dnsmasq.h",
+"rank": 2,
+"n": 58,
+"tokens": 8,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "dump1090@port-dump1090-qnx",
+"file": "dump1090.c",
+"rank": 3,
+"n": 4,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "CMakeLists.txt",
+"rank": 12,
+"n": 237,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-core/src/utils/FileSystemUtil.cpp",
+"rank": 2,
+"n": 237,
+"tokens": 13,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-core/src/renderers/Renderer_GL21.cpp",
+"rank": 84,
+"n": 237,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-core/src/renderers/Renderer_GL14.cpp",
+"rank": 124,
+"n": 237,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-core/src/guis/GuiMsgBox.cpp",
+"rank": 159,
+"n": 237,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-app/src/ScraperCmdLine.cpp",
+"rank": 16,
+"n": 237,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "EmulationStation@qnx_master",
+"file": "es-core/src/renderers/Renderer_GLES10.cpp",
+"rank": 116,
+"n": 237,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "executorch@qnx-v1.3.1",
+"file": "runtime/core/exec_aten/exec_aten.h",
+"rank": 770,
+"n": 1520,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "executorch@qnx-v1.3.1",
+"file": "tools/cmake/preset/llm.cmake",
+"rank": 2,
+"n": 1520,
+"tokens": 12,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "executorch@qnx-v1.3.1",
+"file": "extension/data_loader/mmap_data_loader.cpp",
+"rank": 550,
+"n": 1520,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "farmhash@qnx",
+"file": "src/farmhash.cc",
+"rank": 1,
+"n": 23,
+"tokens": 9,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "Fast-CDR@qnx_v2.2.3",
+"file": "cmake/common/find_or_add_gtest.cmake",
+"rank": 13,
+"n": 34,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "Fast-DDS@qnx_v2.14.4",
+"file": "CMakeLists.txt",
+"rank": 66,
+"n": 2045,
+"tokens": 4,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "Fast-DDS@qnx_v2.14.4",
+"file": "src/cpp/utils/threading/threading_pthread.ipp",
+"rank": 781,
+"n": 2045,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "Fast-DDS@qnx_v2.14.4",
+"file": "src/cpp/rtps/reader/WriterProxy.cpp",
+"rank": 10,
+"n": 2045,
+"tokens": 17,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "g3log@porting_g3log_to_qnx",
+"file": "Build.cmake",
+"rank": 32,
+"n": 38,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "g3log@porting_g3log_to_qnx",
+"file": "src/crashhandler_unix.cpp",
+"rank": 5,
+"n": 38,
+"tokens": 4,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "gdal@qnx-v3.5.3",
+"file": "frmts/gif/giflib/dgif_lib.c",
+"rank": 31,
+"n": 2778,
+"tokens": 5,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "gdal@qnx-v3.5.3",
+"file": "frmts/gif/giflib/egif_lib.c",
+"rank": 37,
+"n": 2778,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "ggml@qnx-8.0",
+"file": "src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+"rank": 9,
+"n": 441,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "ggml@qnx-8.0",
+"file": "src/ggml-vulkan/CMakeLists.txt",
+"rank": 23,
+"n": 441,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "glib@qnx-2.82.2-1759894777",
+"file": "gio/gunixmounts.c",
+"rank": 88,
+"n": 1069,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "cmake/FindUnwind.cmake",
+"rank": 30,
+"n": 52,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/logging_custom_prefix_unittest.cc",
+"rank": 7,
+"n": 52,
+"tokens": 9,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/glog/platform.h",
+"rank": 2,
+"n": 52,
+"tokens": 18,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "cmake/DetermineGflagsNamespace.cmake",
+"rank": 42,
+"n": 52,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/symbolize.h",
+"rank": 20,
+"n": 52,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/logging.cc",
+"rank": 1,
+"n": 52,
+"tokens": 23,
+"build": false,
+"kinds": [
+"edit",
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/signalhandler_unittest.cc",
+"rank": 23,
+"n": 52,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/symbolize.cc",
+"rank": 13,
+"n": 52,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include",
+"qnx-code"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/logging_unittest.cc",
+"rank": 5,
+"n": 52,
+"tokens": 10,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "src/symbolize_unittest.cc",
+"rank": 11,
+"n": 52,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "glog@qnx-mediapipe",
+"file": "CMakeLists.txt",
+"rank": 3,
+"n": 52,
+"tokens": 16,
+"build": true,
+"kinds": [
+"build",
+"packaging"
+]
+},
+{
+"id": "gloo@qnx-mediapipe",
+"file": "gloo/transport/tcp/device.cc",
+"rank": 90,
+"n": 180,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "gloo@qnx-mediapipe",
+"file": "gloo/transport/tcp/buffer.cc",
+"rank": 52,
+"n": 180,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "gnutls@qnx-3.6.15",
+"file": "src/tests.c",
+"rank": 7,
+"n": 577,
+"tokens": 4,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "googletest@qnx_v1.14.0",
+"file": "googlemock/include/gmock/gmock-actions.h",
+"rank": 8,
+"n": 53,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/event_engine/posix_engine/posix_interface_posix.cc",
+"rank": 78,
+"n": 3085,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/iomgr/port.h",
+"rank": 5,
+"n": 3085,
+"tokens": 5,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/util/subprocess_posix.cc",
+"rank": 2487,
+"n": 3085,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "include/grpc/support/port_platform.h",
+"rank": 2,
+"n": 3085,
+"tokens": 37,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/address_utils/parse_address.cc",
+"rank": 101,
+"n": 3085,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/event_engine/tcp_socket_utils.cc",
+"rank": 73,
+"n": 3085,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit",
+"include"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/util/posix/directory_reader.cc",
+"rank": 33,
+"n": 3085,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/address_utils/sockaddr_utils.cc",
+"rank": 61,
+"n": 3085,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "src/core/lib/iomgr/sockaddr_posix.h",
+"rank": 1563,
+"n": 3085,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "grpc@qnx-v1.76.0",
+"file": "include/grpc/event_engine/port.h",
+"rank": 9,
+"n": 3085,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "gtk@QNXOSG-495",
+"file": "meson.build",
+"rank": 40,
+"n": 2170,
+"tokens": 6,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "gtk@QNXOSG-495",
+"file": "gdk/meson.build",
+"rank": 100,
+"n": 2170,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "gtk@QNXOSG-495",
+"file": "gdk/gdkdisplaymanager.c",
+"rank": 57,
+"n": 2170,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/nonlinear/CMakeLists.txt",
+"rank": 1063,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/slam/CMakeLists.txt",
+"rank": 471,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/navigation/CMakeLists.txt",
+"rank": 791,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/sfm/CMakeLists.txt",
+"rank": 1588,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/symbolic/CMakeLists.txt",
+"rank": 1401,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/3rdparty/ceres/CMakeLists.txt",
+"rank": 1292,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/discrete/CMakeLists.txt",
+"rank": 1049,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/basis/CMakeLists.txt",
+"rank": 1722,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/sam/CMakeLists.txt",
+"rank": 380,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/base/CMakeLists.txt",
+"rank": 1500,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/CMakeLists.txt",
+"rank": 22,
+"n": 1958,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/geometry/CMakeLists.txt",
+"rank": 1421,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/dynamics/CMakeLists.txt",
+"rank": 1627,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/linear/CMakeLists.txt",
+"rank": 232,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/geometry/CMakeLists.txt",
+"rank": 1321,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/linear/CMakeLists.txt",
+"rank": 433,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/nonlinear/CMakeLists.txt",
+"rank": 446,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/3rdparty/metis/include/CMakeLists.txt",
+"rank": 272,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "cmake/GtsamTesting.cmake",
+"rank": 83,
+"n": 1958,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/slam/CMakeLists.txt",
+"rank": 1222,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/base/std_optional_serialization.h",
+"rank": 1294,
+"n": 1958,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/inference/CMakeLists.txt",
+"rank": 1530,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/base/CMakeLists.txt",
+"rank": 210,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam_unstable/partition/CMakeLists.txt",
+"rank": 477,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "gtsam@qnx_4.3a0",
+"file": "gtsam/discrete/CMakeLists.txt",
+"rank": 1818,
+"n": 1958,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "hailort@qnx-4.14",
+"file": "hailort/CMakeLists.txt",
+"rank": 14,
+"n": 430,
+"tokens": 4,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "HIPCC@qnx-chipStar-v1.3.0",
+"file": "CMakeLists.txt",
+"rank": 3,
+"n": 7,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "HIPCC@qnx-chipStar-v1.3.0",
+"file": "src/hipBin_util.h",
+"rank": 1,
+"n": 7,
+"tokens": 12,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "htop@qnx-3.5.0",
+"file": "Makefile.am",
+"rank": 4,
+"n": 285,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "htop@qnx-3.5.0",
+"file": "configure.ac",
+"rank": 1,
+"n": 285,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "intel-oneDNN@qnx-openvino-2026.1.2-6b6492b1ea9ef5ca9ff3c5c59ed71dcca683a446",
+"file": "cmake/Threading.cmake",
+"rank": 92,
+"n": 2390,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "iperf3@qnx-3.7",
+"file": "src/portable_endian.h",
+"rank": 3,
+"n": 43,
+"tokens": 6,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "iperf3@qnx-3.7",
+"file": "src/timer.h",
+"rank": 30,
+"n": 43,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5",
+"file": "libkineto/src/ThreadUtil.cpp",
+"rank": 1,
+"n": 135,
+"tokens": 21,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5",
+"file": "libkineto/src/ConfigLoader.cpp",
+"rank": 2,
+"n": 135,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5",
+"file": "libkineto/src/Logger.cpp",
+"rank": 7,
+"n": 135,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5",
+"file": "libkineto/src/output_json.cpp",
+"rank": 15,
+"n": 135,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "labwc@qnx-0.20.2",
+"file": "include/labwc.h",
+"rank": 48,
+"n": 218,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "labwc@qnx-0.20.2",
+"file": "src/server.c",
+"rank": 33,
+"n": 218,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/hdr_algorithm.h",
+"rank": 277,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/agc_channel.h",
+"rank": 538,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/hdr.h",
+"rank": 646,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/awb.cpp",
+"rank": 549,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/libipa/pwl.h",
+"rank": 12,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/cam_helper/cam_helper.h",
+"rank": 535,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/agc.h",
+"rank": 473,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/af.cpp",
+"rank": 432,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/statistics.h",
+"rank": 529,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "include/libcamera/base/log.h",
+"rank": 591,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/cac.cpp",
+"rank": 558,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/histogram.h",
+"rank": 48,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/agc.cpp",
+"rank": 99,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/libcamera/yaml_parser.cpp",
+"rank": 182,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/cam_helper/cam_helper_imx500.cpp",
+"rank": 590,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/region_stats.h",
+"rank": 88,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/libipa/pwl.cpp",
+"rank": 55,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/awb.h",
+"rank": 627,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/hdr.cpp",
+"rank": 613,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/cac_status.h",
+"rank": 56,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/rpi/agc_channel.cpp",
+"rank": 425,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/cam_helper/md_parser.h",
+"rank": 121,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/metadata.h",
+"rank": 29,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/cam_helper/cam_helper.cpp",
+"rank": 174,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/alsc_status.h",
+"rank": 583,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/controller.h",
+"rank": 285,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "include/libcamera/internal/yaml_parser.h",
+"rank": 545,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "include/linux/bcm2835-isp.h",
+"rank": 436,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "libcamera@qnx-v0.5.1_rpt20250722",
+"file": "src/ipa/rpi/controller/agc_algorithm.h",
+"rank": 129,
+"n": 683,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libevent@qnx-2.1.12-stable",
+"file": "signal.c",
+"rank": 8,
+"n": 112,
+"tokens": 7,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "libevent@qnx-2.1.12-stable",
+"file": "evconfig-private.h.cmake",
+"rank": 63,
+"n": 112,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libffi@qnx-v3.8.0",
+"file": "src/tramp.c",
+"rank": 6,
+"n": 102,
+"tokens": 15,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "libffi@qnx-v3.8.0",
+"file": "src/closures.c",
+"rank": 5,
+"n": 102,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libffi@qnx-v3.8.0",
+"file": "configure.ac",
+"rank": 18,
+"n": 102,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libmetal@qnx-v2025.10.1",
+"file": "cmake/options.cmake",
+"rank": 1,
+"n": 167,
+"tokens": 5,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libusb@qnx-1.0.23",
+"file": "libusb/Makefile.am",
+"rank": 11,
+"n": 59,
+"tokens": 4,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libusb@qnx-1.0.23",
+"file": "Makefile.am",
+"rank": 46,
+"n": 59,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libusb@qnx-1.0.23",
+"file": "libusb/libusbi.h",
+"rank": 5,
+"n": 59,
+"tokens": 10,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "libusb@qnx-1.0.23",
+"file": "configure.ac",
+"rank": 4,
+"n": 59,
+"tokens": 11,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libutempter@qnx-v1.2.3",
+"file": "libutempter/utempter.c",
+"rank": 1,
+"n": 5,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libutempter@qnx-v1.2.3",
+"file": "libutempter/iface.c",
+"rank": 4,
+"n": 5,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libuv@qnx-v1.51.0",
+"file": "src/unix/fs.c",
+"rank": 2,
+"n": 122,
+"tokens": 90,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "libuv@qnx-v1.51.0",
+"file": "src/unix/core.c",
+"rank": 4,
+"n": 122,
+"tokens": 55,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "libuv@qnx-v1.51.0",
+"file": "src/unix/internal.h",
+"rank": 7,
+"n": 122,
+"tokens": 29,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libuv@qnx-v1.51.0",
+"file": "src/unix/udp.c",
+"rank": 5,
+"n": 122,
+"tokens": 36,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "libuv@qnx-v1.51.0",
+"file": "CMakeLists.txt",
+"rank": 6,
+"n": 122,
+"tokens": 35,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "libwebsockets@nnarayanamurthy-qnx-v4.5.8",
+"file": "lib/plat/unix/private-lib-plat-unix.h",
+"rank": 8,
+"n": 1127,
+"tokens": 12,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "libwebsockets@nnarayanamurthy-qnx-v4.5.8",
+"file": "include/libwebsockets.h",
+"rank": 4,
+"n": 1127,
+"tokens": 23,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "libwebsockets@nnarayanamurthy-qnx-v4.5.8",
+"file": "cmake/LwsCheckRequirements.cmake",
+"rank": 81,
+"n": 1127,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "libxml2@qnx-2.14.4",
+"file": "SAX2.c",
+"rank": 82,
+"n": 143,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "libyaml@qnx-0.2.5",
+"file": "CMakeLists.txt",
+"rank": 14,
+"n": 15,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "lighttpd1.4@qnx_1.4.73",
+"file": "src/server.c",
+"rank": 5,
+"n": 178,
+"tokens": 18,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "lighttpd1.4@qnx_1.4.73",
+"file": "src/fdevent.h",
+"rank": 17,
+"n": 178,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/interfaces-bsd.c",
+"rank": 1,
+"n": 136,
+"tokens": 22,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/priv-bsd.c",
+"rank": 3,
+"n": 136,
+"tokens": 8,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/Makefile.am",
+"rank": 4,
+"n": 136,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/lldpd.h",
+"rank": 5,
+"n": 136,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/lldpd.c",
+"rank": 6,
+"n": 136,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "lldpd@qnx-1.0.22",
+"file": "src/daemon/priv.c",
+"rank": 2,
+"n": 136,
+"tokens": 13,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "lua@qnx_v5.5",
+"file": "ltests.h",
+"rank": 12,
+"n": 68,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "lua@qnx_v5.5",
+"file": "luaconf.h",
+"rank": 1,
+"n": 68,
+"tokens": 9,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "METIS@eleir/qnx_v5.2.1",
+"file": "programs/CMakeLists.txt",
+"rank": 23,
+"n": 69,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "METIS@eleir/qnx_v5.2.1",
+"file": "conf/gkbuild.cmake",
+"rank": 1,
+"n": 69,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "METIS@eleir/qnx_v5.2.1",
+"file": "include/CMakeLists.txt",
+"rank": 30,
+"n": 69,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "mimalloc@qnx-v3.1.5",
+"file": "include/mimalloc/prim.h",
+"rank": 5,
+"n": 44,
+"tokens": 17,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "mimalloc@qnx-v3.1.5",
+"file": "src/alloc-override.c",
+"rank": 7,
+"n": 44,
+"tokens": 15,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "mlas@qnx-openvino-2026.1.2-d1bc25ec4660cddd87804fcf03b2411b5dfb2e94",
+"file": "lib/platform.cpp",
+"rank": 1,
+"n": 107,
+"tokens": 12,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "mosh@qnx-v1.4.0",
+"file": "src/frontend/mosh-server.cc",
+"rank": 3,
+"n": 77,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "mosquitto@qnx-master",
+"file": "src/CMakeLists.txt",
+"rank": 1,
+"n": 202,
+"tokens": 23,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "mosquitto@qnx-master",
+"file": "client/CMakeLists.txt",
+"rank": 199,
+"n": 202,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "MPItrampoline@qnx-v5.3.1",
+"file": "src/mpi.c",
+"rank": 1,
+"n": 6,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "neovim@qnx-v0.11.4",
+"file": "src/nvim/os/pty_proc_unix.c",
+"rank": 9,
+"n": 520,
+"tokens": 8,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "neovim@qnx-v0.11.4",
+"file": "src/nvim/CMakeLists.txt",
+"rank": 4,
+"n": 520,
+"tokens": 12,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "nghttp2@qnx-1.64.0",
+"file": "src/util.h",
+"rank": 165,
+"n": 242,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "nss@qnx-NSS_3_131_1_BRANCH",
+"file": "gtests/google_test/gtest/include/gtest/internal/gtest-port.h",
+"rank": 3,
+"n": 1567,
+"tokens": 96,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "nss@qnx-NSS_3_131_1_BRANCH",
+"file": "gtests/google_test/gtest/src/gtest-port.cc",
+"rank": 6,
+"n": 1567,
+"tokens": 34,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "nss@qnx-NSS_3_131_1_BRANCH",
+"file": "gtests/google_test/gtest/include/gtest/internal/gtest-port-arch.h",
+"rank": 5,
+"n": 1567,
+"tokens": 47,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "nss@qnx-NSS_3_131_1_BRANCH",
+"file": "gtests/google_test/gtest/CMakeLists.txt",
+"rank": 417,
+"n": 1567,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "include/ntp_types.h",
+"rank": 18,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "libntp/clockwork.c",
+"rank": 82,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "libntp/ntp_c.c",
+"rank": 142,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "ntpd/ntp_control.c",
+"rank": 27,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "libntp/statestr.c",
+"rank": 116,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "include/ntp_syscall.h",
+"rank": 175,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ntpsec@qnx-ntpsec-1.2.4",
+"file": "ntpd/ntp_loopfilter.c",
+"rank": 24,
+"n": 179,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "ntttcp-for-linux@qnx-b483afe",
+"file": "src/tcpstream.c",
+"rank": 25,
+"n": 25,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ntttcp-for-linux@qnx-b483afe",
+"file": "src/CMakeLists.txt",
+"rank": 20,
+"n": 25,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "ntttcp-for-linux@qnx-b483afe",
+"file": "src/main.c",
+"rank": 18,
+"n": 25,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "numpy@qnx_v2.3.4",
+"file": "numpy/_core/include/numpy/npy_endian.h",
+"rank": 47,
+"n": 440,
+"tokens": 0,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "ode@qnx-0.16.2",
+"file": "ou/include/ou/atomic.h",
+"rank": 9,
+"n": 559,
+"tokens": 10,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "onnx@qnx-v1.13.1",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 135,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "open-amp@qnx-v2025.04.0",
+"file": "lib/include/openamp/virtqueue.h",
+"rank": 28,
+"n": 50,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "open-amp@qnx-v2025.04.0",
+"file": "lib/include/openamp/remoteproc_virtio.h",
+"rank": 37,
+"n": 50,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "open-amp@qnx-v2025.04.0",
+"file": "lib/include/openamp/rpmsg_virtio.h",
+"rank": 43,
+"n": 50,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "ctest/CMakeLists.txt",
+"rank": 7,
+"n": 6635,
+"tokens": 13,
+"build": true,
+"kinds": [
+"build",
+"packaging"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "driver/others/memory.c",
+"rank": 1,
+"n": 6635,
+"tokens": 160,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "ctest/c_cblat3c_3m.c",
+"rank": 6250,
+"n": 6635,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "utest/CMakeLists.txt",
+"rank": 18,
+"n": 6635,
+"tokens": 5,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "cpp_thread_test/CMakeLists.txt",
+"rank": 6080,
+"n": 6635,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "CMakeLists.txt",
+"rank": 19,
+"n": 6635,
+"tokens": 5,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "cmake/arch.cmake",
+"rank": 4764,
+"n": 6635,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenBLAS@qnx-0.3.28",
+"file": "ctest/c_zblat3c_3m.c",
+"rank": 6550,
+"n": 6635,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "opencv@qnx-4.12.0",
+"file": "3rdparty/libpng/CMakeLists.txt",
+"rank": 128,
+"n": 3581,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "openrc@qnx-0.63.1",
+"file": "src/librc/librc-daemon.c",
+"rank": 6,
+"n": 110,
+"tokens": 5,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "openrc@qnx-0.63.1",
+"file": "meson.build",
+"rank": 12,
+"n": 110,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "openrc@qnx-0.63.1",
+"file": "init.d/meson.build",
+"rank": 7,
+"n": 110,
+"tokens": 4,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "openrc@qnx-0.63.1",
+"file": "src/openrc/rc-logger.c",
+"rank": 8,
+"n": 110,
+"tokens": 3,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "openrc@qnx-0.63.1",
+"file": "src/openrc-run/openrc-run.c",
+"rank": 9,
+"n": 110,
+"tokens": 3,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "OpenSceneGraph@qnx-OpenSceneGraph-3.6.5",
+"file": "CMakeLists.txt",
+"rank": 3,
+"n": 2253,
+"tokens": 38,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenSceneGraph@qnx-OpenSceneGraph-3.6.5",
+"file": "applications/present3D/Cluster.cpp",
+"rank": 2,
+"n": 2253,
+"tokens": 44,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "OpenTTD@qnx-release-15.2",
+"file": "CMakeLists.txt",
+"rank": 3,
+"n": 1442,
+"tokens": 22,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenTTD@qnx-release-15.2",
+"file": "cmake/CompileFlags.cmake",
+"rank": 66,
+"n": 1442,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "OpenTTD@qnx-release-15.2",
+"file": "src/3rdparty/catch2/catch.hpp",
+"rank": 1,
+"n": 1442,
+"tokens": 41,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "perfetto@qnx-main",
+"file": "src/base/unix_socket.cc",
+"rank": 2,
+"n": 2091,
+"tokens": 53,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "piper1-gpl@qnx-v1.8.0",
+"file": "CMakeLists.txt",
+"rank": 7,
+"n": 22,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "piper1-gpl@qnx-v1.8.0",
+"file": "libpiper/CMakeLists.txt",
+"rank": 5,
+"n": 22,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "src/common/transport.cc",
+"rank": 5,
+"n": 105,
+"tokens": 11,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "include/pistache/winornix.h",
+"rank": 2,
+"n": 105,
+"tokens": 42,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "include/pistache/pist_strerror_r.h",
+"rank": 14,
+"n": 105,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "include/pistache/emosandlibevdefs.h",
+"rank": 8,
+"n": 105,
+"tokens": 8,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "include/pistache/ps_sendfile.h",
+"rank": 12,
+"n": 105,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "src/common/pist_strerror_r.cc",
+"rank": 13,
+"n": 105,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "src/common/ps_sendfile.cc",
+"rank": 15,
+"n": 105,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "src/common/eventmeth.cc",
+"rank": 7,
+"n": 105,
+"tokens": 8,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "meson.build",
+"rank": 4,
+"n": 105,
+"tokens": 12,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "src/common/pist_check.cc",
+"rank": 19,
+"n": 105,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "pistache@qnx-v0.4.26",
+"file": "include/pistache/pst_errno.h",
+"rank": 37,
+"n": 105,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "protobuf@qnx-main",
+"file": "cmake/install.cmake",
+"rank": 8,
+"n": 1022,
+"tokens": 6,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "protobuf@qnx-main",
+"file": "cmake/gtest.cmake",
+"rank": 296,
+"n": 1022,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "protobuf@qnx-main",
+"file": "src/google/protobuf/compiler/subprocess.cc",
+"rank": 32,
+"n": 1022,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "protobuf@qnx-main",
+"file": "cmake/tests.cmake",
+"rank": 287,
+"n": 1022,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "psutil@qnx-7.2.2",
+"file": "psutil/arch/posix/init.c",
+"rank": 2,
+"n": 104,
+"tokens": 7,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "psutil@qnx-7.2.2",
+"file": "psutil/arch/all/init.h",
+"rank": 6,
+"n": 104,
+"tokens": 6,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "psutil@qnx-7.2.2",
+"file": "psutil/arch/posix/init.h",
+"rank": 8,
+"n": 104,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "psutil@qnx-7.2.2",
+"file": "psutil/arch/posix/net.c",
+"rank": 4,
+"n": 104,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit",
+"include"
+]
+},
+{
+"id": "psutil@qnx-7.2.2",
+"file": "psutil/arch/posix/proc.c",
+"rank": 15,
+"n": 104,
+"tokens": 2,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "qdirstat@john_qnx_support",
+"file": "src/MountPoints.cpp",
+"rank": 29,
+"n": 215,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst",
+"qnx-code"
+]
+},
+{
+"id": "qdirstat@john_qnx_support",
+"file": "src/Cleanup.cpp",
+"rank": 2,
+"n": 215,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "qdirstat@john_qnx_support",
+"file": "src/MountPoints.h",
+"rank": 102,
+"n": 215,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "rapidjson@qnx-v1.1.0",
+"file": "CMakeLists.txt",
+"rank": 2,
+"n": 37,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "re2@qnx_main",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 47,
+"tokens": 8,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "restbed@upstream_qnx",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 49,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "restbed@upstream_qnx",
+"file": "src/corvusoft/restbed/detail/socket_impl.cpp",
+"rank": 2,
+"n": 49,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/common/vulkan_common.h",
+"rank": 210,
+"n": 3525,
+"tokens": 2,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "griffin/griffin.c",
+"rank": 7,
+"n": 3525,
+"tokens": 31,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "config.def.h",
+"rank": 14,
+"n": 3525,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "Makefile",
+"rank": 274,
+"n": 3525,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/video_driver.c",
+"rank": 25,
+"n": 3525,
+"tokens": 13,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/drivers/vulkan.c",
+"rank": 2050,
+"n": 3525,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/common/vulkan_common.c",
+"rank": 28,
+"n": 3525,
+"tokens": 11,
+"build": false,
+"kinds": [
+"edit",
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/video_driver.h",
+"rank": 1853,
+"n": 3525,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/include/vulkan/vulkan.h",
+"rank": 283,
+"n": 3525,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "gfx/common/vksym.h",
+"rank": 208,
+"n": 3525,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "RetroArch@qnx_master",
+"file": "frontend/drivers/platform_unix.c",
+"rank": 17,
+"n": 3525,
+"tokens": 15,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ROCm-Device-Libs@qnx-chipStar-v1.3.0",
+"file": "ocml/inc/ocml.h",
+"rank": 5,
+"n": 60,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "rtl-sdr@qnx_2.0.2",
+"file": "CMakeLists.txt",
+"rank": 10,
+"n": 35,
+"tokens": 1,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "rtl-sdr@qnx_2.0.2",
+"file": "src/CMakeLists.txt",
+"rank": 7,
+"n": 35,
+"tokens": 5,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "ruy@qnx",
+"file": "ruy/CMakeLists.txt",
+"rank": 1,
+"n": 95,
+"tokens": 6,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_prf.c",
+"rank": 263,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "utils/s2n_mem.c",
+"rank": 50,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_send.c",
+"rank": 139,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "utils/s2n_blob.c",
+"rank": 270,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_record_write.c",
+"rank": 232,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_alerts.c",
+"rank": 217,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_client_hello.c",
+"rank": 187,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_cbc.c",
+"rank": 45,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_early_data_io.c",
+"rank": 150,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "utils/s2n_array.c",
+"rank": 242,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_ktls_io.c",
+"rank": 3,
+"n": 351,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_record_read.c",
+"rank": 330,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "crypto/s2n_drbg.c",
+"rank": 286,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_post_handshake.c",
+"rank": 197,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_connection.c",
+"rank": 124,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_psk.c",
+"rank": 79,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_tls13_handshake.c",
+"rank": 258,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "utils/s2n_random.c",
+"rank": 191,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_client_key_exchange.c",
+"rank": 225,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "stuffer/s2n_stuffer.c",
+"rank": 308,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 351,
+"tokens": 9,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_early_data.c",
+"rank": 327,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_server_new_session_ticket.c",
+"rank": 266,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_config.h",
+"rank": 131,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_recv.c",
+"rank": 6,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_handshake_io.c",
+"rank": 261,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_server_hello.c",
+"rank": 55,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/extensions/s2n_client_supported_versions.c",
+"rank": 228,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/extensions/s2n_supported_versions.c",
+"rank": 265,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_fingerprint_ja4.c",
+"rank": 17,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/s2n_resume.c",
+"rank": 77,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "s2n-tls@qnx-v1.5.25",
+"file": "tls/extensions/s2n_client_psk.c",
+"rank": 92,
+"n": 351,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sdl2-compat@qnx-release-2.32.60",
+"file": "src/sdl2_compat.h",
+"rank": 17,
+"n": 103,
+"tokens": 6,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "sdl2-compat@qnx-release-2.32.60",
+"file": "src/sdl2_compat.c",
+"rank": 1,
+"n": 103,
+"tokens": 43,
+"build": false,
+"kinds": [
+"edit",
+"guard-edit",
+"include"
+]
+},
+{
+"id": "sdl2-compat@qnx-release-2.32.60",
+"file": "src/dynapi/SDL_dynapi.c",
+"rank": 16,
+"n": 103,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "sdl2-compat@qnx-release-2.32.60",
+"file": "CMakeLists.txt",
+"rank": 5,
+"n": 103,
+"tokens": 17,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "SDL@qnx-release-3.4.18",
+"file": "include/SDL3/SDL_video.h",
+"rank": 50,
+"n": 1220,
+"tokens": 5,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "SDL@qnx-release-3.4.18",
+"file": "CMakeLists.txt",
+"rank": 6,
+"n": 1220,
+"tokens": 26,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "SDL@qnx-release-3.4.18",
+"file": "src/audio/alsa/SDL_alsa_audio.c",
+"rank": 382,
+"n": 1220,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SDL@qnx-release-3.4.18",
+"file": "src/audio/SDL_sysaudio.h",
+"rank": 887,
+"n": 1220,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SDL@qnx-release-3.4.18",
+"file": "include/SDL3/SDL_platform_defines.h",
+"rank": 4,
+"n": 1220,
+"tokens": 37,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "sentencepiece@qnx-mediapipe-v0.10.26",
+"file": "src/util.h",
+"rank": 11,
+"n": 162,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sleef@qnx_master",
+"file": "Configure.cmake",
+"rank": 2,
+"n": 130,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "sscep@qnx-v0.10.0",
+"file": "src/sscep.h",
+"rank": 6,
+"n": 28,
+"tokens": 1,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "sscep@qnx-v0.10.0",
+"file": "src/net.c",
+"rank": 1,
+"n": 28,
+"tokens": 9,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sscep@qnx-v0.10.0",
+"file": "CMakeLists.txt",
+"rank": 5,
+"n": 28,
+"tokens": 2,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "stable-diffusion.cpp@qnx-8.0",
+"file": "CMakeLists.txt",
+"rank": 8,
+"n": 120,
+"tokens": 3,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "configure.ac",
+"rank": 9,
+"n": 2522,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "src/libcharon/plugins/socket_default/socket_default_socket.c",
+"rank": 32,
+"n": 2522,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "src/libcharon/plugins/kernel_pfkey/kernel_pfkey_ipsec.c",
+"rank": 2,
+"n": 2522,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "src/libstrongswan/networking/tun_device.c",
+"rank": 3,
+"n": 2522,
+"tokens": 11,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "src/libstrongswan/plugins/sshkey/sshkey_builder.c",
+"rank": 1094,
+"n": 2522,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "strongswan@qnx-6.0.6",
+"file": "src/libcharon/plugins/vici/Makefile.am",
+"rank": 761,
+"n": 2522,
+"tokens": 0,
+"build": true,
+"kinds": [
+"packaging"
+]
+},
+{
+"id": "sudo@qnx-v1.9.17p2",
+"file": "src/get_pty.c",
+"rank": 14,
+"n": 448,
+"tokens": 2,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "sudo@qnx-v1.9.17p2",
+"file": "lib/util/getentropy.c",
+"rank": 136,
+"n": 448,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sudo@qnx-v1.9.17p2",
+"file": "plugins/sudoers/boottime.c",
+"rank": 24,
+"n": 448,
+"tokens": 2,
+"build": false,
+"kinds": [
+"include"
+]
+},
+{
+"id": "sudo@qnx-v1.9.17p2",
+"file": "src/utmp.c",
+"rank": 298,
+"n": 448,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sudo@qnx-v1.9.17p2",
+"file": "plugins/sudoers/policy.c",
+"rank": 354,
+"n": 448,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_ExactDiameter.c",
+"rank": 1662,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LG_CC_Boruvka.c",
+"rank": 4896,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_AllKCore.c",
+"rank": 4214,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGr_SingleSourceShortestPath.c",
+"rank": 1011,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_MMWrite.c",
+"rank": 3295,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_basic_mxv.c",
+"rank": 3364,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_SWrite.c",
+"rank": 3055,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_RegularPathQuery.c",
+"rank": 4172,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Matrix_IsEqual.c",
+"rank": 3420,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_basic_pushpull.c",
+"rank": 3943,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_MaxFlow.c",
+"rank": 2151,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_coloring_MIS.c",
+"rank": 835,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_FastGraphletTransform.c",
+"rank": 2105,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LG_CC_FastSV6.c",
+"rank": 3305,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_Random_Matrix.c",
+"rank": 6057,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGr_PageRank.c",
+"rank": 3314,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Vector_IsEqual.c",
+"rank": 6009,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_Incidence_Matrix.c",
+"rank": 5576,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_SLoadSet.c",
+"rank": 2174,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Cached_EMax.c",
+"rank": 437,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_basic.c",
+"rank": 345,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_TriangleCount_GPU.c",
+"rank": 3790,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_argminmax.c",
+"rank": 2555,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_Matrix_Hash.c",
+"rank": 718,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_lcc.c",
+"rank": 3738,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/template/LG_BreadthFirstSearch_vanilla_template.c",
+"rank": 609,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_VertexCentrality_Triangle.c",
+"rank": 4571,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_scc.c",
+"rank": 1564,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_KCore.c",
+"rank": 3638,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_CFL_reachability.c",
+"rank": 1277,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGr_TriangleCount.c",
+"rank": 2953,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_RichClubCoefficient.c",
+"rank": 1832,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGr_SortByDegree.c",
+"rank": 5876,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_MaximumMatching.c",
+"rank": 5647,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_MaximalMatching.c",
+"rank": 3005,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_Hdip_Fiedler.c",
+"rank": 2814,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Cached_OutDegree.c",
+"rank": 2408,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_SquareClustering.c",
+"rank": 6011,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Random.c",
+"rank": 1165,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_HITS.c",
+"rank": 1029,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_EdgeBetweennessCentrality.c",
+"rank": 6105,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Matrix_Structure.c",
+"rank": 5270,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_PageRankGX.c",
+"rank": 1026,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LG_CC_FastSV5.c",
+"rank": 1113,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Vector_Structure.c",
+"rank": 146,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_DeleteSelfEdges.c",
+"rank": 3121,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LG_CC_FastSV7.c",
+"rank": 4231,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_SSaveSet.c",
+"rank": 1809,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_SRead.c",
+"rank": 5835,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_MaximalIndependentSet.c",
+"rank": 2517,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Cached_InDegree.c",
+"rank": 1419,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_Coarsen_Matching.c",
+"rank": 3339,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_EstimateDiameter.c",
+"rank": 3404,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_HelloWorld.c",
+"rank": 4499,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_PeerPressureClustering.c",
+"rank": 1275,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_KCoreDecompose.c",
+"rank": 3693,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGr_Betweenness.c",
+"rank": 3863,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_full2.c",
+"rank": 2920,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/template/LG_BreadthFirstSearch_SSGrB_template.c",
+"rank": 4975,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_full1a.c",
+"rank": 5853,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_dnn.c",
+"rank": 2507,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_full_mxv.c",
+"rank": 3125,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Cached_EMin.c",
+"rank": 5519,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LG_CC_FastSV7_FA.c",
+"rank": 4271,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Vector_IsEqualOp.c",
+"rank": 738,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_full1.c",
+"rank": 5532,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_cdlp.c",
+"rank": 1899,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Matrix_IsEqualOp.c",
+"rank": 1554,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGraph_TriangleCount.c",
+"rank": 805,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_MultiSourceBFS.c",
+"rank": 3299,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Matrix_Print.c",
+"rank": 6005,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_PartitionQuality.c",
+"rank": 4832,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/utility/LAGraph_FastAssign.c",
+"rank": 3800,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_KTruss.c",
+"rank": 5984,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGraph_Vector_Print.c",
+"rank": 5443,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "GraphBLAS/Source/cpu/GB_cpu_features.h",
+"rank": 2958,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_Modularity.c",
+"rank": 4432,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_BF_full.c",
+"rank": 2204,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_cdlp_withsort.c",
+"rank": 4908,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_coloring_independent_set.c",
+"rank": 1412,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_msf.c",
+"rank": 3789,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_AllKTruss.c",
+"rank": 5980,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/utility/LAGr_SampleDegree.c",
+"rank": 478,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_MarkovClustering.c",
+"rank": 1706,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGr_SwapEdges.c",
+"rank": 1334,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/experimental/algorithm/LAGraph_cc_lacc.c",
+"rank": 518,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "SuiteSparse@qnx-v7.11.0",
+"file": "LAGraph/src/algorithm/LAGr_PageRankGAP.c",
+"rank": 4755,
+"n": 6145,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "configure.ac",
+"rank": 39,
+"n": 405,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "Makefile.am",
+"rank": 312,
+"n": 405,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "src/sb_timer.h",
+"rank": 81,
+"n": 405,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "third_party/luajit/luajit/src/Makefile",
+"rank": 4,
+"n": 405,
+"tokens": 7,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "src/sb_timer.c",
+"rank": 202,
+"n": 405,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "sysbench@qnx-1.0.20",
+"file": "third_party/luajit/Makefile.am",
+"rank": 30,
+"n": 405,
+"tokens": 1,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "tinyxml2@qnx_10.0.0",
+"file": "tinyxml2.h",
+"rank": 5,
+"n": 8,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "testcode/replay.h",
+"rank": 114,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "util/data/msgreply.h",
+"rank": 280,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "util/timehist.h",
+"rank": 130,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "testcode/unitmsgparse.c",
+"rank": 76,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "compat/arc4random.c",
+"rank": 13,
+"n": 295,
+"tokens": 3,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "compat/getentropy_linux.c",
+"rank": 88,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "testcode/unitverify.c",
+"rank": 30,
+"n": 295,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "testcode/unitldns.c",
+"rank": 24,
+"n": 295,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "services/outside_network.h",
+"rank": 290,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "unbound@murthy-qnx-release-1.24.1",
+"file": "testcode/unitzonemd.c",
+"rank": 178,
+"n": 295,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "interface/vsomeip/plugins/application_plugin.hpp",
+"rank": 314,
+"n": 368,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/udp_client_endpoint_impl.cpp",
+"rank": 24,
+"n": 368,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/include/local_server_endpoint_impl_receive_op.hpp",
+"rank": 20,
+"n": 368,
+"tokens": 2,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 368,
+"tokens": 15,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/local_uds_server_endpoint_impl.cpp",
+"rank": 90,
+"n": 368,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/include/udp_server_endpoint_impl_receive_op.hpp",
+"rank": 22,
+"n": 368,
+"tokens": 2,
+"build": false,
+"kinds": [
+"disable",
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/udp_server_endpoint_impl.cpp",
+"rank": 9,
+"n": 368,
+"tokens": 5,
+"build": false,
+"kinds": [
+"disable",
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/local_uds_client_endpoint_impl.cpp",
+"rank": 81,
+"n": 368,
+"tokens": 0,
+"build": false,
+"kinds": [
+"edit"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/tcp_server_endpoint_impl.cpp",
+"rank": 45,
+"n": 368,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/credentials.cpp",
+"rank": 33,
+"n": 368,
+"tokens": 1,
+"build": false,
+"kinds": [
+"disable",
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "vsomeip@qnx_3.5.5",
+"file": "implementation/endpoints/src/tcp_client_endpoint_impl.cpp",
+"rank": 37,
+"n": 368,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "whisper.cpp@qnx-8.0",
+"file": "ggml/src/ggml-vulkan/CMakeLists.txt",
+"rank": 35,
+"n": 537,
+"tokens": 2,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "whisper.cpp@qnx-8.0",
+"file": "ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+"rank": 10,
+"n": 537,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "xla@qnx-mediapipe",
+"file": "third_party/tsl/tsl/platform/default/stacktrace.h",
+"rank": 987,
+"n": 2934,
+"tokens": 0,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "xla@qnx-mediapipe",
+"file": "third_party/tsl/tsl/platform/platform.h",
+"rank": 9,
+"n": 2934,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "xla@qnx-mediapipe",
+"file": "third_party/tsl/tsl/platform/cpu_info.cc",
+"rank": 4,
+"n": 2934,
+"tokens": 14,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "xla@qnx-mediapipe",
+"file": "third_party/tsl/tsl/platform/default/port.cc",
+"rank": 3,
+"n": 2934,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "XNNPACK@qnx_master",
+"file": "CMakeLists.txt",
+"rank": 3,
+"n": 9037,
+"tokens": 13,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "xtl@qnx-0.7.7",
+"file": "include/xtl/xsystem.hpp",
+"rank": 1,
+"n": 34,
+"tokens": 11,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+},
+{
+"id": "zenoh-pico@qnx-1.5.0",
+"file": "src/system/unix/network.c",
+"rank": 3,
+"n": 272,
+"tokens": 6,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "zenoh-pico@qnx-1.5.0",
+"file": "src/system/unix/system.c",
+"rank": 2,
+"n": 272,
+"tokens": 17,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "zenoh-pico@qnx-1.5.0",
+"file": "CMakeLists.txt",
+"rank": 1,
+"n": 272,
+"tokens": 35,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "zenoh-pico@qnx-1.5.0",
+"file": "include/zenoh-pico/system/common/platform.h",
+"rank": 4,
+"n": 272,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "osdep/Phy.hpp",
+"rank": 2,
+"n": 1815,
+"tokens": 42,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "osdep/ManagedRoute.cpp",
+"rank": 111,
+"n": 1815,
+"tokens": 1,
+"build": false,
+"kinds": [
+"guard-edit",
+"guarded-subst"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "node/Utils.cpp",
+"rank": 31,
+"n": 1815,
+"tokens": 4,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "node/Constants.hpp",
+"rank": 4,
+"n": 1815,
+"tokens": 31,
+"build": false,
+"kinds": [
+"guarded-subst"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "ext/libnatpmp/getgateway.c",
+"rank": 11,
+"n": 1815,
+"tokens": 16,
+"build": false,
+"kinds": [
+"guard-edit"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "Makefile",
+"rank": 801,
+"n": 1815,
+"tokens": 0,
+"build": true,
+"kinds": [
+"build"
+]
+},
+{
+"id": "ZeroTierOne@john_qnx_support",
+"file": "osdep/EthernetTap.cpp",
+"rank": 15,
+"n": 1815,
+"tokens": 8,
+"build": false,
+"kinds": [
+"guarded-subst",
+"include"
+]
+}
+]

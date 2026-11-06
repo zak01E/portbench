@@ -1,0 +1,795 @@
+{
+ "total_sites": 51,
+ "flagged": 14,
+ "repos": [
+  {
+   "name": "cJSON",
+   "fix_sites": 1,
+   "packaging_sites": 1,
+   "flagged": 0,
+   "findings": {
+    "check": 7
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      49,
+      73
+     ],
+     "kind": "porting",
+     "change": "        if(QNX)\n            list(REMOVE_ITEM custom_compiler_flags -std=c89)\n        endif()\n\n        # Disable warning c4001 - nonstandard extension 'single line comment' was used\n        # Define _CRT_SECURE_NO_WARNINGS to disable deprecation warnings for \"insecure\" C library functions\n            /wd4001\n            /D_CRT_SECURE_NO_WARNINGS\n        -01\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      147,
+      272
+     ],
+     "kind": "packaging"
+    }
+   ]
+  },
+  {
+   "name": "iperf3",
+   "fix_sites": 2,
+   "packaging_sites": 0,
+   "flagged": 1,
+   "findings": {
+    "blocker": 3,
+    "check": 95,
+    "link": 101,
+    "info": 5
+   },
+   "sites": [
+    {
+     "file": "src/portable_endian.h",
+     "lines": [
+      67,
+      68
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\n\n#\tinclude <net/netbyte.h>\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/timer.h",
+     "lines": [
+      32,
+      34
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n#include <sys/time.h>\n#else\n#endif\n\n",
+     "flagged": [
+      [
+       "check",
+       "missing-include",
+       "sys/time.h"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "lldpd",
+   "fix_sites": 18,
+   "packaging_sites": 0,
+   "flagged": 3,
+   "findings": {
+    "info": 64,
+    "link": 33,
+    "blocker": 6,
+    "check": 24
+   },
+   "sites": [
+    {
+     "file": "src/daemon/Makefile.am",
+     "lines": [
+      94,
+      95
+     ],
+     "kind": "porting",
+     "change": "if HOST_OS_QNX\nliblldpd_la_SOURCES += \\\n\tforward-bsd.c \\\n\tinterfaces-bpf.c \\\n\tinterfaces-bsd.c \\\n\tdmi-dummy.c \\\n\tpriv-bsd.c\nendif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      31,
+      32
+     ],
+     "kind": "porting",
+     "change": "#if defined HOST_OS_FREEBSD\n#if defined HOST_OS_FREEBSD || defined HOST_OS_QNX\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      92,
+      93
+     ],
+     "kind": "porting",
+     "change": "    defined HOST_OS_DRAGONFLY\n    defined HOST_OS_DRAGONFLY || defined HOST_OS_QNX\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      144,
+      145
+     ],
+     "kind": "porting",
+     "change": "#if defined HOST_OS_OPENBSD || defined HOST_OS_FREEBSD\n#if defined HOST_OS_OPENBSD || defined HOST_OS_FREEBSD || defined HOST_OS_QNX\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      363,
+      367
+     ],
+     "kind": "porting",
+     "change": "#  if defined HOST_OS_FREEBSD || defined HOST_OS_OPENBSD\n#  if defined HOST_OS_FREEBSD || defined HOST_OS_OPENBSD || defined HOST_OS_QNX\n#    if defined HOST_OS_FREEBSD\n#    if defined HOST_OS_FREEBSD || defined HOST_OS_QNX\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      588,
+      590
+     ],
+     "kind": "porting",
+     "change": "#if defined HOST_OS_QNX\n\tif (priv_getifaddrs(&ifaddrs) < 0) {\n#else\n#endif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/interfaces-bsd.c",
+     "lines": [
+      622,
+      645
+     ],
+     "kind": "porting",
+     "change": "#if defined HOST_OS_QNX\n\t\t/* Pre-opened before privsep chroot in main(); see priv_init() call\n\t\t * site in lldpd.c. A fresh socket(PF_ROUTE, ...) call here would\n\t\t * fail the same way the ioctl and getifaddrs() sockets did, since\n\t\t * it would run from inside the chroot jail. */\n\t\ts = cfg->g_route_sock;\n\t\tif (s < 0) {\n\t\t\tlog_warn(\"interfaces\", \"unable to open route socket\");\n\t\t\tgoto end;\n\t\t}\n#els",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/lldpd.c",
+     "lines": [
+      1824,
+      1825
+     ],
+     "kind": "porting",
+     "change": "\t\t\t} else if (errno == ECONNREFUSED) {\n\t\t\t} else if (errno == ECONNREFUSED\n#ifdef __QNX__\n\t\t\t    /* On QNX, connect() to an orphaned AF_UNIX socket\n\t\t\t     * path (listener died without unlink()ing it, e.g.\n\t\t\t     * a non-graceful kill -9) reports ENOENT instead of\n\t\t\t     * ECONNREFUSED, unlike Linux/BSD - confirmed with a\n\t\t\t     * minimal unprivileged bind()+listen()+kill -9+\n\t\t\t     * connect",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/lldpd.c",
+     "lines": [
+      1914,
+      1915
+     ],
+     "kind": "porting",
+     "change": "\t/* Get ioctl socket. Must happen before priv_init() chroots: on QNX,\n\t * socket() is backed by a resource manager reachable only through the\n\t * filesystem (/dev/socket), so a fresh socket() call made after the\n\t * chroot cannot reach it and fails with EAFNOSUPPORT. An fd opened\n\t * before the chroot keeps working inside the jail since chroot() only\n\t * affects new pathname resolution, not alread",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/lldpd.c",
+     "lines": [
+      1950,
+      1954
+     ],
+     "kind": "porting",
+     "change": "\t/* Get ioctl socket */\n\tlog_debug(\"main\", \"get an ioctl socket\");\n\tif ((cfg->g_sock = socket(AF_INET, SOCK_DGRAM, 0)) == -1)\n\t\tfatal(\"main\", \"failed to get ioctl socket\");\n\t/* Socket was already obtained before priv_init()'s chroot; see above. */\n\tcfg->g_sock = ioctl_sock;\n#if defined HOST_OS_QNX\n\tcfg->g_route_sock = route_sock;\n#endif\n",
+     "flagged": [
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ]
+     ]
+    },
+    {
+     "file": "src/daemon/lldpd.h",
+     "lines": [
+      216,
+      229
+     ],
+     "kind": "porting",
+     "change": "#ifdef HOST_OS_QNX\nstruct ifaddrs;\nint priv_getifaddrs(struct ifaddrs **);\nvoid priv_freeifaddrs(struct ifaddrs *);\n#endif\n#ifdef HOST_OS_QNX\n\tPRIV_GET_IFADDRS,\n#endif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/lldpd.h",
+     "lines": [
+      393,
+      394
+     ],
+     "kind": "porting",
+     "change": "#if defined HOST_OS_QNX\n\tint g_route_sock; /* Pre-opened before privsep chroot; see priv_init()\n\t                    * call site in lldpd.c main(). */\n#endif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/priv-bsd.c",
+     "lines": [
+      105,
+      113
+     ],
+     "kind": "porting",
+     "change": "#ifndef HOST_OS_SOLARIS\n#if !defined HOST_OS_SOLARIS && !defined HOST_OS_QNX\n\t/* Solaris and QNX both provide a single, non-numbered /dev/bpf\n\t * cloning device rather than FreeBSD's numbered /dev/bpf0, /dev/bpf1,\n\t * ... scheme - confirmed on QNX 8.0 by inspection (only /dev/bpf\n\t * exists as a device node; there is no /dev/bpf0). Without this, the\n\t * numbered-device loop above fails immediately",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/priv.c",
+     "lines": [
+      39,
+      47
+     ],
+     "kind": "porting",
+     "change": "#include <ifaddrs.h>\n#if defined HOST_OS_FREEBSD || defined HOST_OS_OSX || defined HOST_OS_DRAGONFLY\n#if defined HOST_OS_FREEBSD || defined HOST_OS_OSX || defined HOST_OS_DRAGONFLY || defined HOST_OS_QNX\n",
+     "flagged": [
+      [
+       "check",
+       "linux-header",
+       "sys/prctl.h"
+      ],
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || DRAGONFLY || FREEBSD"
+      ]
+     ]
+    },
+    {
+     "file": "src/daemon/priv.c",
+     "lines": [
+      190,
+      191
+     ],
+     "kind": "porting",
+     "change": "#ifdef HOST_OS_QNX\n/* Wire format for one getifaddrs() entry, covering only what\n * interfaces-bsd.c's ifbsd_extract()/ifbsd_extract_device() consume.\n * Used to proxy interface enumeration through the privileged monitor:\n * on QNX, getifaddrs() needs to reach /dev/socket (QNX's socket\n * implementation is resource-manager/filesystem backed, unlike\n * Linux/BSD), which is unreachable from the unpr",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/priv.c",
+     "lines": [
+      265,
+      266
+     ],
+     "kind": "porting",
+     "change": "#elif defined HOST_OS_FREEBSD || defined HOST_OS_OSX || defined HOST_OS_DRAGONFLY\n#elif defined HOST_OS_FREEBSD || defined HOST_OS_OSX || defined HOST_OS_DRAGONFLY || defined HOST_OS_QNX\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || DRAGONFLY || FREEBSD"
+      ]
+     ]
+    },
+    {
+     "file": "src/daemon/priv.c",
+     "lines": [
+      326,
+      327
+     ],
+     "kind": "porting",
+     "change": "#ifdef HOST_OS_QNX\nstatic void\nasroot_get_ifaddrs()\n{\n\tstruct ifaddrs *ifaddrs = NULL, *ifa;\n\tint rc;\n\n\tif (getifaddrs(&ifaddrs) < 0) {\n\t\trc = -1;\n\t\tmust_write(PRIV_PRIVILEGED, &rc, sizeof(int));\n\t\treturn;\n\t}\n\n\trc = 0;\n\tfor (ifa = ifaddrs; ifa != NULL; ifa = ifa->ifa_next) {\n\t\tif (!ifa->ifa_name || !ifa->ifa_addr) continue;\n\t\tif (ifa->ifa_addr->sa_family != AF_LINK &&\n\t\t    ifa->ifa_addr->sa_famil",
+     "flagged": []
+    },
+    {
+     "file": "src/daemon/priv.c",
+     "lines": [
+      394,
+      395
+     ],
+     "kind": "porting",
+     "change": "\t{ PRIV_SNMP_SOCKET, asroot_snmp_socket }, { -1, NULL } };\n\t{ PRIV_SNMP_SOCKET, asroot_snmp_socket },\n#ifdef HOST_OS_QNX\n\t{ PRIV_GET_IFADDRS, asroot_get_ifaddrs },\n#endif\n\t{ -1, NULL } };\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "gflags",
+   "fix_sites": 0,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {},
+   "sites": []
+  },
+  {
+   "name": "glog",
+   "fix_sites": 19,
+   "packaging_sites": 1,
+   "flagged": 2,
+   "findings": {
+    "link": 6,
+    "check": 31,
+    "blocker": 3,
+    "info": 1
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      197,
+      199
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#endif\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      728,
+      731
+     ],
+     "kind": "porting",
+     "change": "  add_library (glogtest STATIC\n    $<TARGET_OBJECTS:glogbase>\n  )\n  if(QNX)\n    add_library (glogtest SHARED\n      $<TARGET_OBJECTS:glogbase>\n    )\n  else()\n    add_library (glogtest STATIC\n      $<TARGET_OBJECTS:glogbase>\n    )\n  endif()\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      821,
+      842
+     ],
+     "kind": "porting",
+     "change": "  if (HAVE_STACKTRACE)\n  if (HAVE_STACKTRACE OR (QNX AND HAVE_LIB_UNWIND))\n  endif (HAVE_STACKTRACE)\n  endif (HAVE_STACKTRACE OR (QNX AND HAVE_LIB_UNWIND))\n  if (HAVE_STACKTRACE AND HAVE_SYMBOLIZE)\n  if ((HAVE_STACKTRACE OR (QNX AND HAVE_LIB_UNWIND)) AND HAVE_SYMBOLIZE)\n  endif (HAVE_STACKTRACE AND HAVE_SYMBOLIZE)\n  endif ((HAVE_STACKTRACE OR (QNX AND HAVE_LIB_UNWIND)) AND HAVE_SYMBOLIZE)\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      1080,
+      1081
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "cmake/DetermineGflagsNamespace.cmake",
+     "lines": [
+      34,
+      40
+     ],
+     "kind": "porting",
+     "change": "      try_compile (${VARIABLE}\n        \"${CMAKE_BINARY_DIR}\" \"${_check_file}\"\n        COMPILE_DEFINITIONS \"${CMAKE_REQUIRED_DEFINITIONS}\" -DGLOG_GFLAGS_NAMESPACE=${_namespace}\n        LINK_LIBRARIES gflags\n        CMAKE_FLAGS -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}\n        OUTPUT_VARIABLE OUTPUT)\n      if(QNX)\n        # Make sure include dirs inherited from packages are not marked with \"isystem\"\n  ",
+     "flagged": []
+    },
+    {
+     "file": "cmake/FindUnwind.cmake",
+     "lines": [
+      9,
+      11
+     ],
+     "kind": "porting",
+     "change": "find_path (Unwind_INCLUDE_DIR NAMES unwind.h libunwind.h DOC \"unwind include directory\")\nfind_library (Unwind_LIBRARY NAMES unwind DOC \"unwind library\")\nif (QNX)\n  find_path (Unwind_INCLUDE_DIR NAMES unwind.h libunwind.h DOC \"unwind include directory\" PATHS ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_INCLUDEDIR} usr/${CMAKE_INSTALL_INCLUDEDIR})\n  find_library (Unwind_LIBRARY NAMES unwind DOC \"unwind l",
+     "flagged": []
+    },
+    {
+     "file": "src/glog/platform.h",
+     "lines": [
+      52,
+      53
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\n#define GLOG_OS_QNX\n",
+     "flagged": [
+      [
+       "check",
+       "platform-chain",
+       "APPLE / CYGWIN / FREEBSD / LINUX"
+      ]
+     ]
+    },
+    {
+     "file": "src/logging.cc",
+     "lines": [
+      97,
+      101
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\nusing std::fdopen;\n#endif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/logging.cc",
+     "lines": [
+      1048,
+      1049
+     ],
+     "kind": "porting",
+     "change": "  #if defined(GLOG_OS_QNX)\n  flags |= O_APPEND;\n  #endif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/logging.cc",
+     "lines": [
+      2389,
+      2392
+     ],
+     "kind": "porting",
+     "change": "#ifdef GLOG_OS_LINUX\n#if defined(GLOG_OS_LINUX)\n#elif defined(GLOG_OS_QNX)\n  // In QNX symlinks exist, but /proc/self/fd/ does not exist.\n  // So do not follow symlinks under any circumstances.\n  flags |= O_NOFOLLOW;\n",
+     "flagged": [
+      [
+       "check",
+       "linux-path",
+       "/proc/self/fd/"
+      ]
+     ]
+    },
+    {
+     "file": "src/logging_custom_prefix_unittest.cc",
+     "lines": [
+      1269,
+      1270
+     ],
+     "kind": "porting",
+     "change": "\n#ifndef __QNX__\n",
+     "flagged": []
+    },
+    {
+     "file": "src/logging_custom_prefix_unittest.cc",
+     "lines": [
+      1304,
+      1346
+     ],
+     "kind": "porting",
+     "change": "#endif\n  #ifndef __QNX__\n  FLAGS_log_backtrace_at = \"\";\n\n  EXPECT_CALL(log, Log(_, _, \"Backtrace me\"));\n  EXPECT_CALL(log, Log(_, _, \"Not me\"));\n  BacktraceAtHelper();\n  #elif __QNX__ > 799\n  #endif\n  #ifndef __QNX__\n  char where[100];\n  snprintf(where, 100, \"%s:%d\", const_basename(__FILE__), kBacktraceAtLine);\n  FLAGS_log_backtrace_at = where;\n\n  // The LOG at the specified line should include a ",
+     "flagged": []
+    },
+    {
+     "file": "src/logging_unittest.cc",
+     "lines": [
+      1376,
+      1377
+     ],
+     "kind": "porting",
+     "change": "\n#ifndef __QNX__\n",
+     "flagged": []
+    },
+    {
+     "file": "src/logging_unittest.cc",
+     "lines": [
+      1411,
+      1453
+     ],
+     "kind": "porting",
+     "change": "#endif\n  #ifndef __QNX__\n  FLAGS_log_backtrace_at = \"\";\n\n  EXPECT_CALL(log, Log(_, _, \"Backtrace me\"));\n  EXPECT_CALL(log, Log(_, _, \"Not me\"));\n  BacktraceAtHelper();\n  #elif __QNX__ > 799\n  #endif\n  #ifndef __QNX__\n  char where[100];\n  snprintf(where, 100, \"%s:%d\", const_basename(__FILE__), kBacktraceAtLine);\n  FLAGS_log_backtrace_at = where;\n\n  // The LOG at the specified line should include a ",
+     "flagged": []
+    },
+    {
+     "file": "src/signalhandler_unittest.cc",
+     "lines": [
+      53,
+      66
+     ],
+     "kind": "porting",
+     "change": "  #if defined(GLOG_OS_QNX)\n  // On QNX our compiler will optimize out the division by 0\n  // so we need to raise SIGFPE explicitly.\n  fprintf(\n      stderr, \"0x%p is dying\\n\",\n      gettid());\n  raise(SIGFPE);\n  fprintf(stderr, \"We should have died.\");\n  return NULL;\n  #else\n  #endif\n",
+     "flagged": []
+    },
+    {
+     "file": "src/symbolize.cc",
+     "lines": [
+      117,
+      118
+     ],
+     "kind": "porting",
+     "change": "#elif defined(GLOG_OS_QNX)\n#include <sys/elf.h>\n#include <sys/mman.h>\n",
+     "flagged": []
+    },
+    {
+     "file": "src/symbolize.cc",
+     "lines": [
+      403,
+      431
+     ],
+     "kind": "porting",
+     "change": "        eod_(buf) {}\n        eod_(buf) {\n          #if defined(GLOG_OS_QNX)\n          // We use read (instead of pread) on QNX\n          // so an offset is not possible.\n          if (offset != 0) {\n            abort();\n          }\n          #endif\n        }\n      #if defined(GLOG_OS_QNX)\n      // Use Read because pread does not work on QNX pmap files.\n      const ssize_t num_bytes = Read(fd_, buf",
+     "flagged": []
+    },
+    {
+     "file": "src/symbolize.cc",
+     "lines": [
+      503,
+      504
+     ],
+     "kind": "porting",
+     "change": "#if defined(GLOG_OS_QNX)\nstatic char * QNXGetHex(const char *start, const char *end, uint64_t *hex) {\n  if (*start != '0' or *(start + 1) != 'x') {\n    // First two chars must be '0x'.\n    return const_cast<char *>(end);\n  }\n  return GetHex(start + 2, end, hex);\n}\n\n// Searches for the object file (from /proc/self/maps) that contains\n// the specified pc.  If found, sets |start_address| to the start",
+     "flagged": []
+    },
+    {
+     "file": "src/symbolize.h",
+     "lines": [
+      65,
+      71
+     ],
+     "kind": "porting",
+     "change": "#elif defined(__QNX__)\n#include <sys/elf.h>\n#if !defined(ANDROID)\n#if !defined(ANDROID) && !defined(__QNX__)\n",
+     "flagged": []
+    },
+    {
+     "file": "src/symbolize_unittest.cc",
+     "lines": [
+      273,
+      274
+     ],
+     "kind": "porting",
+     "change": "#ifdef __ppc64__\n#if defined(__QNX__)\n// Symbolize stack consumption should be within 5kB.\nconst int kStackConsumptionUpperLimit = 5120;\n#elif defined(__ppc64__)\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "brotli",
+   "fix_sites": 0,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 7
+   },
+   "sites": []
+  },
+  {
+   "name": "check",
+   "fix_sites": 2,
+   "packaging_sites": 0,
+   "flagged": 1,
+   "findings": {
+    "check": 14,
+    "info": 1
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      300,
+      308
+     ],
+     "kind": "porting",
+     "change": "if(QNX)\n  check_struct_member(\"struct itimerspec\" it_value \"time.h\" HAVE_STRUCT_ITIMERSPEC_IT_VALUE)\nelse()\nendif()\n\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      504,
+      527
+     ],
+     "kind": "porting",
+     "change": "  if(UNIX OR MINGW OR MSYS)\n  if(UNIX OR MINGW OR MSYS OR QNX)\n  endif(UNIX OR MINGW OR MSYS)\n  endif(UNIX OR MINGW OR MSYS OR QNX)\n\n",
+     "flagged": [
+      [
+       "info",
+       "cmake-platform-list",
+       "UNIX / WINDOWS"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "zenoh-pico",
+   "fix_sites": 7,
+   "packaging_sites": 0,
+   "flagged": 6,
+   "findings": {
+    "blocker": 9,
+    "link": 275,
+    "check": 33,
+    "info": 5
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      90,
+      98
+     ],
+     "kind": "porting",
+     "change": "  if(UNIX)\n  if(CMAKE_SYSTEM_NAME MATCHES \"QNX\")\n    add_compile_options(-O3)\n  elseif(UNIX)\n  elseif(CMAKE_SYSTEM_NAME MATCHES \"QNX\")\n    add_compile_options(-c -Wall -Wextra -Wno-unused -Wno-strict-prototypes -g -O0)\n",
+     "flagged": []
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      177,
+      178
+     ],
+     "kind": "porting",
+     "change": "elseif(CMAKE_SYSTEM_NAME MATCHES \"QNX\")\n  pico_add_compile_definition(ZENOH_QNX)\n",
+     "flagged": [
+      [
+       "check",
+       "cmake-platform-list",
+       "APPLE"
+      ],
+      [
+       "check",
+       "cmake-platform-list",
+       "WASM"
+      ]
+     ]
+    },
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      402,
+      403
+     ],
+     "kind": "porting",
+     "change": "elseif(CMAKE_SYSTEM_NAME MATCHES \"Linux\" OR CMAKE_SYSTEM_NAME MATCHES \"Darwin\" OR CMAKE_SYSTEM_NAME MATCHES \"BSD\" OR POSIX_COMPATIBLE)\nelseif(CMAKE_SYSTEM_NAME MATCHES \"Linux\" OR CMAKE_SYSTEM_NAME MATCHES \"Darwin\" OR CMAKE_SYSTEM_NAME MATCHES \"BSD\" OR CMAKE_SYSTEM_NAME MATCHES \"QNX\" OR POSIX_COMPATIBLE)\n",
+     "flagged": [
+      [
+       "check",
+       "build-linux",
+       "CMAKE_SYSTEM_NAME\\s+(STREQUAL|MATCHES)\\s"
+      ],
+      [
+       "check",
+       "cmake-platform-list",
+       "WASM"
+      ]
+     ]
+    },
+    {
+     "file": "include/zenoh-pico/system/common/platform.h",
+     "lines": [
+      28,
+      29
+     ],
+     "kind": "porting",
+     "change": "#if defined(ZENOH_LINUX) || defined(ZENOH_MACOS) || defined(ZENOH_BSD)\n#if defined(ZENOH_LINUX) || defined(ZENOH_MACOS) || defined(ZENOH_BSD) || defined(ZENOH_QNX)\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || BSD || LINUX"
+      ]
+     ]
+    },
+    {
+     "file": "src/system/unix/network.c",
+     "lines": [
+      199,
+      200
+     ],
+     "kind": "porting",
+     "change": "#elif defined(ZENOH_QNX)\n    #if defined(__QNX__)\n        #if __QNX__ >= 800\n        // QNX 8 or later\n        setsockopt(sock->_fd, SOL_SOCKET, SO_NOSIGPIPE, (void *)0, sizeof(int));\n        #else\n        // QNX 7.x or earlier\n        #endif\n    #endif\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || BSD"
+      ],
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ],
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ]
+     ]
+    },
+    {
+     "file": "src/system/unix/network.c",
+     "lines": [
+      251,
+      252
+     ],
+     "kind": "porting",
+     "change": "#elif defined(ZENOH_QNX)\n    #if defined(__QNX__)\n        #if __QNX__ >= 800\n        // QNX 8 or later\n        setsockopt(sock->_fd, SOL_SOCKET, SO_NOSIGPIPE, (void *)0, sizeof(int));\n        #else\n        // QNX 7.x or earlier\n        #endif\n    #endif\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || BSD"
+      ],
+      [
+       "link",
+       "needs-lib",
+       "socket"
+      ]
+     ]
+    },
+    {
+     "file": "src/system/unix/system.c",
+     "lines": [
+      34,
+      96
+     ],
+     "kind": "porting",
+     "change": "#if defined(ZENOH_QNX)\nvoid random_buf(void *buf, size_t nbytes) {\n    while (nbytes > sizeof(long)-1) {\n        *((long*)buf) = random();\n        nbytes -= sizeof(long);\n        buf += sizeof(long);\n    }\n    if (nbytes > 0){\n        long rest = random();\n        while (nbytes > 0) {\n            *((unsigned char*)buf) = rest;\n            rest >>= 8;\n            --nbytes;\n            ++buf;\n      ",
+     "flagged": [
+      [
+       "blocker",
+       "linux-api",
+       "getrandom"
+      ],
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || BSD"
+      ],
+      [
+       "blocker",
+       "linux-api",
+       "getrandom"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fribidi",
+   "fix_sites": 0,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 1
+   },
+   "sites": []
+  },
+  {
+   "name": "libxml2",
+   "fix_sites": 1,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 13,
+    "link": 53
+   },
+   "sites": [
+    {
+     "file": "SAX2.c",
+     "lines": [
+      431,
+      434
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n            xmlWarnMsg(ctxt, XML_ERR_INVALID_URI,\n                       \"Can't resolve URI: %s\\n\", systemId==NULL?\" \":systemId);\n#else\n#endif\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "rtl-sdr",
+   "fix_sites": 1,
+   "packaging_sites": 1,
+   "flagged": 1,
+   "findings": {
+    "check": 4,
+    "link": 14
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      142,
+      147
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "src/CMakeLists.txt",
+     "lines": [
+      135,
+      136
+     ],
+     "kind": "porting",
+     "change": "if(APPLE OR CMAKE_SYSTEM MATCHES \"OpenBSD\")\nif(APPLE OR CMAKE_SYSTEM MATCHES \"OpenBSD\" OR CMAKE_SYSTEM_NAME STREQUAL \"QNX\")\n",
+     "flagged": [
+      [
+       "check",
+       "cmake-platform-list",
+       "APPLE / OPENBSD"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

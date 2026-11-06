@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+data/raw/
+data/sources*.json
+data/eval_log_94.txt
+*.log

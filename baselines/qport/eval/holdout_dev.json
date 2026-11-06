@@ -1,0 +1,519 @@
+{
+ "total_sites": 31,
+ "flagged": 9,
+ "repos": [
+  {
+   "name": "mosquitto",
+   "fix_sites": 2,
+   "packaging_sites": 1,
+   "flagged": 0,
+   "findings": {
+    "check": 23,
+    "link": 71,
+    "blocker": 2,
+    "info": 20
+   },
+   "sites": [
+    {
+     "file": "client/CMakeLists.txt",
+     "lines": [
+      0,
+      1
+     ],
+     "kind": "porting",
+     "change": "if(QNX)\n    set(OPENSSL_LIBRARIES ${QNX_TARGET}/${CPUVARDIR}/usr/lib/libssl.so\n        ${QNX_TARGET}/${CPUVARDIR}/usr/lib/libcrypto.so)\nendif()\n",
+     "flagged": []
+    },
+    {
+     "file": "client/CMakeLists.txt",
+     "lines": [
+      50,
+      51
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "src/CMakeLists.txt",
+     "lines": [
+      81,
+      82
+     ],
+     "kind": "porting",
+     "change": "if (HAVE_SYS_EPOLL_H)\nif (HAVE_SYS_EPOLL_H AND NOT QNX)\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "nghttp2",
+   "fix_sites": 1,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "blocker": 2,
+    "link": 102,
+    "check": 32,
+    "info": 2
+   },
+   "sites": [
+    {
+     "file": "src/util.h",
+     "lines": [
+      59,
+      60
+     ],
+     "kind": "porting",
+     "change": "#if defined(__QNX__)\n  #include <sys/time.h>\n#endif\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "dlt-daemon",
+   "fix_sites": 1,
+   "packaging_sites": 1,
+   "flagged": 0,
+   "findings": {
+    "info": 20,
+    "check": 55,
+    "link": 80,
+    "blocker": 12
+   },
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      357,
+      384
+     ],
+     "kind": "packaging"
+    },
+    {
+     "file": "src/offlinelogstorage/dlt_offline_logstorage.c",
+     "lines": [
+      24,
+      26
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#endif\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "jansson",
+   "fix_sites": 0,
+   "packaging_sites": 0,
+   "flagged": 0,
+   "findings": {
+    "check": 8
+   },
+   "sites": []
+  },
+  {
+   "name": "libyaml",
+   "fix_sites": 0,
+   "packaging_sites": 1,
+   "flagged": 0,
+   "findings": {},
+   "sites": [
+    {
+     "file": "CMakeLists.txt",
+     "lines": [
+      83,
+      89
+     ],
+     "kind": "packaging"
+    }
+   ]
+  },
+  {
+   "name": "unbound",
+   "fix_sites": 15,
+   "packaging_sites": 0,
+   "flagged": 6,
+   "findings": {
+    "info": 36,
+    "check": 124,
+    "blocker": 3,
+    "link": 139
+   },
+   "sites": [
+    {
+     "file": "compat/arc4random.c",
+     "lines": [
+      40,
+      41
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n#include \"util/log.h\"\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "compat/arc4random.c",
+     "lines": [
+      189,
+      191
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n\t\t\tfatal_exit(\"failed to getentropy\");\n#endif /* __QNX__ */\n",
+     "flagged": [
+      [
+       "blocker",
+       "linux-api",
+       "getentropy"
+      ]
+     ]
+    },
+    {
+     "file": "compat/getentropy_linux.c",
+     "lines": [
+      31,
+      69
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#endif /* !__QNX__ */\n#ifndef __QNX__\n#endif /* __QNX__ */\n#ifndef __QNX__\n#endif /* !__QNX__ */\n",
+     "flagged": [
+      [
+       "info",
+       "linux-header",
+       "sys/syscall.h"
+      ],
+      [
+       "info",
+       "linux-header",
+       "linux/sysctl.h"
+      ],
+      [
+       "info",
+       "linux-header",
+       "linux/types.h"
+      ]
+     ]
+    },
+    {
+     "file": "compat/getentropy_linux.c",
+     "lines": [
+      96,
+      99
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#endif /* !__QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "compat/getentropy_linux.c",
+     "lines": [
+      180,
+      188
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n\tfatal_exit(\"failed to read from /dev/urandom\");\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "compat/getentropy_linux.c",
+     "lines": [
+      216,
+      268
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n\tint fd, flags;\n#endif /* __QNX__ */\n#ifndef __QNX__\n#endif /* !__QNX__ */\n#ifndef __QNX__\n",
+     "flagged": []
+    },
+    {
+     "file": "compat/getentropy_linux.c",
+     "lines": [
+      539,
+      540
+     ],
+     "kind": "porting",
+     "change": "#endif /* !__QNX__ */\n",
+     "flagged": [
+      [
+       "info",
+       "own-impl",
+       "explicit_bzero"
+      ]
+     ]
+    },
+    {
+     "file": "services/outside_network.h",
+     "lines": [
+      50,
+      51
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n/* For struct timeval */\n#include <sys/time.h>\n#endif /* __QNX__ */\n",
+     "flagged": [
+      [
+       "check",
+       "missing-include",
+       "sys/time.h"
+      ]
+     ]
+    },
+    {
+     "file": "testcode/replay.h",
+     "lines": [
+      144,
+      145
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n/* For struct timeval */\n#include <sys/time.h>\n#endif /* __QNX__ */\n",
+     "flagged": [
+      [
+       "check",
+       "missing-include",
+       "sys/time.h"
+      ]
+     ]
+    },
+    {
+     "file": "testcode/unitldns.c",
+     "lines": [
+      209,
+      211
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n#define SRCDIRSTR \".\"\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "testcode/unitmsgparse.c",
+     "lines": [
+      500,
+      502
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n#define SRCDIRSTR \".\"\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "testcode/unitverify.c",
+     "lines": [
+      515,
+      518
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n\n#else /* !__QNX__ */\n#define SRCDIRSTR \".\"\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "testcode/unitzonemd.c",
+     "lines": [
+      52,
+      54
+     ],
+     "kind": "porting",
+     "change": "#ifndef __QNX__\n#else /* !__QNX__ */\n#define SRCDIRSTR \".\"\n#endif /* __QNX__ */\n",
+     "flagged": []
+    },
+    {
+     "file": "util/data/msgreply.h",
+     "lines": [
+      46,
+      47
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n/* For struct timeval */\n#include <sys/time.h>\n#endif /* __QNX__ */\n",
+     "flagged": [
+      [
+       "check",
+       "missing-include",
+       "sys/time.h"
+      ]
+     ]
+    },
+    {
+     "file": "util/timehist.h",
+     "lines": [
+      44,
+      45
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n/* For struct timeval */\n#include <sys/time.h>\n#endif /* __QNX__ */\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "lighttpd1.4",
+   "fix_sites": 2,
+   "packaging_sites": 0,
+   "flagged": 1,
+   "findings": {
+    "check": 132,
+    "info": 11,
+    "link": 69
+   },
+   "sites": [
+    {
+     "file": "src/fdevent.h",
+     "lines": [
+      32,
+      33
+     ],
+     "kind": "porting",
+     "change": "\n#elif defined(__QNX__) /* QNX specific definitions */\n#define FDEVENT_IN     (0x0001 | 0x0004)\n#define FDEVENT_PRI    0x0008\n#define FDEVENT_OUT    0x0002\n#define FDEVENT_ERR    0x0020\n#define FDEVENT_HUP    0x0040\n#define FDEVENT_NVAL   0x1000\n#define FDEVENT_RDHUP  0x2000\n\n",
+     "flagged": []
+    },
+    {
+     "file": "src/server.c",
+     "lines": [
+      363,
+      364
+     ],
+     "kind": "porting",
+     "change": "   #ifdef __QNX__\n      /*\n       * In QNX SDP 7.1 SA_RESTART is not supported\n       */\n      #ifndef SA_RESTART\n         #define SA_RESTART 0\n      #endif\n   #endif /* __QNX__ */\n\n",
+     "flagged": [
+      [
+       "check",
+       "port-lesson",
+       "SA_RESTART"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "libwebsockets",
+   "fix_sites": 3,
+   "packaging_sites": 0,
+   "flagged": 1,
+   "findings": {
+    "link": 91,
+    "check": 124,
+    "info": 21,
+    "blocker": 4
+   },
+   "sites": [
+    {
+     "file": "cmake/LwsCheckRequirements.cmake",
+     "lines": [
+      78,
+      83
+     ],
+     "kind": "porting",
+     "change": "\t\telseif (CMAKE_SYSTEM_NAME MATCHES \"QNX\")\n\t\t\tset(PTHREAD_LIB \"\")\n\t\t\tif (NOT ${CMAKE_SYSTEM_NAME} MATCHES \"QNX\")\n\t\t\t\tset(PTHREAD_LIB pthread)\n\t\t\tendif()\n\t\t\tset(PTHREAD_LIB pthread)\n",
+     "flagged": [
+      [
+       "check",
+       "build-linux",
+       "(target_link_libraries|set\\s*\\(\\s*\\w*LIB"
+      ]
+     ]
+    },
+    {
+     "file": "include/libwebsockets.h",
+     "lines": [
+      51,
+      52
+     ],
+     "kind": "porting",
+     "change": "#if defined(_WIN32) && !defined(ETHER_ADDR_LEN)\n#if (defined(_WIN32) || defined(__QNX__)) && !defined(ETHER_ADDR_LEN)\n",
+     "flagged": []
+    },
+    {
+     "file": "lib/plat/unix/private-lib-plat-unix.h",
+     "lines": [
+      145,
+      152
+     ],
+     "kind": "porting",
+     "change": "#ifdef __QNX__\n# include \"netinet/tcp_var.h\"\n# define TCP_KEEPINTVL TCPCTL_KEEPINTVL\n# define TCP_KEEPIDLE  TCPCTL_KEEPIDLE\n# define TCP_KEEPCNT   TCPCTL_KEEPCNT\n#endif\n\n",
+     "flagged": []
+    }
+   ]
+  },
+  {
+   "name": "libusb",
+   "fix_sites": 7,
+   "packaging_sites": 0,
+   "flagged": 1,
+   "findings": {
+    "check": 17,
+    "blocker": 5,
+    "info": 11
+   },
+   "sites": [
+    {
+     "file": "Makefile.am",
+     "lines": [
+      16,
+      17
+     ],
+     "kind": "porting",
+     "change": "if OS_QNX\nSUBDIRS += examples tests\nendif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "configure.ac",
+     "lines": [
+      91,
+      92
+     ],
+     "kind": "porting",
+     "change": "*-qnx* | *-nto*)\n\tAC_MSG_RESULT([QNX])\n\tbackend=qnx\n\tpoll=posix\n\tthreads=posix\n\t;;\n",
+     "flagged": []
+    },
+    {
+     "file": "configure.ac",
+     "lines": [
+      172,
+      199
+     ],
+     "kind": "porting",
+     "change": "qnx)\n\tAC_DEFINE(OS_QNX, 1, [QNX backend])\n\tAC_SUBST(OS_QNX)\n\tAC_CHECK_HEADERS([poll.h])\n\tAC_DEFINE([POLL_NFDS_TYPE],[int],[type of second poll() argument])\n\t;;\nAM_CONDITIONAL(OS_QNX, test \"x$backend\" = xqnx)\n",
+     "flagged": []
+    },
+    {
+     "file": "libusb/Makefile.am",
+     "lines": [
+      24,
+      32
+     ],
+     "kind": "porting",
+     "change": "QNX_USB_SRC = os/nto_qnx_usbfs.h os/nto_qnx_usbfs.c\n\t$(QNX_USB_SRC) \\\n",
+     "flagged": []
+    },
+    {
+     "file": "libusb/Makefile.am",
+     "lines": [
+      87,
+      88
+     ],
+     "kind": "porting",
+     "change": "if OS_QNX\nOS_SRC = $(QNX_USB_SRC)\nendif\n\n",
+     "flagged": []
+    },
+    {
+     "file": "libusb/libusbi.h",
+     "lines": [
+      0,
+      1
+     ],
+     "kind": "porting",
+     "change": "\n/*\n * QNX Neutrino backend for libusb\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY",
+     "flagged": []
+    },
+    {
+     "file": "libusb/libusbi.h",
+     "lines": [
+      578,
+      579
+     ],
+     "kind": "porting",
+     "change": "\tdefined(OS_HAIKU) || defined(OS_SUNOS)\n\tdefined(OS_HAIKU) || defined(OS_SUNOS) || defined(OS_QNX)\n-- /dev/null\n",
+     "flagged": [
+      [
+       "check",
+       "platform-list",
+       "#if APPLE || HAIKU || LINUX"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
