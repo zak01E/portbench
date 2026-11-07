@@ -18,6 +18,8 @@ The main task is **file localization**: given the repository at `base_commit` an
 | `data/portbench_tasks.jsonl` | The same instances as agent tasks: repo, base commit, problem statement, gold files and sites |
 | `data/all_branches.json` | Every QNX branch, including older versions of the same project |
 | `data/eval_files.json` | Per-instance results of the baselines |
+| `data/eval_graph.json` | Per-instance results of the include-graph baselines |
+| `data/llm_inputs.json` | Candidate files and platform lines per instance, input of `gemma_baseline.py` |
 | `data/forks.json` | The `qnx-ports` forks with their upstream repositories |
 
 ## Size and results
@@ -33,8 +35,10 @@ The main task is **file localization**: given the repository at `base_commit` an
 | qport (rule-based scanner) | 0.090 | 0.377 | 0.463 | 0.539 |
 | qport + OS-mentions | 0.137 | 0.401 | 0.545 | 0.692 |
 
-Half of the gold files (270 of 524) contain no platform token, and only 2% of them reach the top 10.
-Details are in [PAPER.md](PAPER.md).
+Gold files that already mention a platform are easy (OS-mentions puts 73% in the top 10, averaged per
+instance). 57 of the 114 instances also need changes in files with no platform token, where OS-mentions does
+worse than random (R@10 0.071 against 0.135). Personalized PageRank over the `#include` graph, seeded with
+OS-mentions and qport scores, raises this to 0.173 (`python graph_eval.py`). Details are in [PAPER.md](PAPER.md).
 
 ## Rebuild from scratch
 You need the GitHub CLI (`gh`) and Python 3.10 or newer.
@@ -46,10 +50,12 @@ python label.py                                      # keep QNX hunks, label fix
 python make_tasks.py                                 # export JSONL tasks
 python fetch_src.py <workdir> 150000                 # upstream sources at base commit (C/C++ only)
 python evaluate.py                                   # localization baselines
+python graph_eval.py                                 # include-graph baselines (PageRank)
 ```
 
 The `qport` baseline is in `baselines/qport`. To get a Gemma 4 baseline on a GPU (for example a Kaggle
-notebook), run `python export_llm_inputs.py` and then `python gemma_baseline.py llm_inputs.json <model dir>`.
+notebook), run `python export_llm_inputs.py` and then `python gemma_baseline.py data/llm_inputs.json <model dir>`.
+On a CPU, start `llama-server -m gemma-4-E2B-it-Q4_K_M.gguf --port 8080` and pass `http://127.0.0.1:8080` instead of the model dir.
 
 ## Fix types
 `guarded-subst` (new `#ifdef __QNX__` branch with replacement code), `guard-edit` (QNX added to an

@@ -1,0 +1,17 @@
+114 instances; gold files with tokens 254, without 270
+median edges 441.5, median isolated share 0.10
+no-token gold files with a token-bearing neighbour: 135/270 (all no-token candidates: 27024/73925)
+no-token gold files with a qport finding: 33/270 (all no-token candidates: 1682/73925)
+  os_mentions    R@1=0.159  R@5=0.413  R@10=0.548  R@20=0.660 | top10 tok 0.64 notok 0.022 | top20 notok 0.052
+  inc_neighbors  R@1=0.151  R@5=0.412  R@10=0.555  R@20=0.664 | top10 tok 0.64 notok 0.022 | top20 notok 0.052
+  ppr            R@1=0.174  R@5=0.396  R@10=0.509  R@20=0.634 | top10 tok 0.58 notok 0.030 | top20 notok 0.067
+  os+ppr         R@1=0.170  R@5=0.420  R@10=0.554  R@20=0.660 | top10 tok 0.64 notok 0.026 | top20 notok 0.059
+  ppr(os+qport)  R@1=0.130  R@5=0.361  R@10=0.500  R@20=0.658 | top10 tok 0.54 notok 0.056 | top20 notok 0.115
+  interleave     R@1=0.159  R@5=0.388  R@10=0.534  R@20=0.683 | top10 tok 0.61 notok 0.044 | top20 notok 0.085
+per-instance averages (57 instances with no-token gold files, 96 with token gold files)
+  os_mentions    no-token R@10 0.071 R@20 0.139 | token R@10 0.727
+  inc_neighbors  no-token R@10 0.079 R@20 0.153 | token R@10 0.729
+  ppr            no-token R@10 0.097 R@20 0.189 | token R@10 0.650
+  os+ppr         no-token R@10 0.080 R@20 0.154 | token R@10 0.732
+  ppr(os+qport)  no-token R@10 0.173 R@20 0.363 | token R@10 0.594
+  interleave     no-token R@10 0.139 R@20 0.284 | token R@10 0.677

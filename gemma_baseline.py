@@ -42,22 +42,42 @@ def parse(out, cands):
     return got
 
 
-def main():
+def make_generator():
+    """MODEL is either a local transformers checkpoint or the URL of a llama.cpp server
+    (llama-server -m gemma-4-E2B-it-Q4_K_M.gguf), which lets the baseline run on a CPU."""
+    if MODEL.startswith("http"):
+        import urllib.request
+
+        def gen_http(text):
+            body = json.dumps({"messages": [{"role": "user", "content": text}], "temperature": 0,
+                               "max_tokens": 600}).encode()
+            req = urllib.request.Request(MODEL.rstrip("/") + "/v1/chat/completions", body,
+                                         {"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=3600) as r:
+                return json.load(r)["choices"][0]["message"]["content"]
+        return gen_http
     import torch
     from transformers import AutoProcessor, AutoModelForCausalLM
     proc = AutoProcessor.from_pretrained(MODEL)
     model = AutoModelForCausalLM.from_pretrained(MODEL, torch_dtype=torch.bfloat16, device_map="auto")
+
+    def gen_hf(text):
+        ids = proc.apply_chat_template([{"role": "user", "content": text}], add_generation_prompt=True,
+                                       return_tensors="pt", return_dict=True).to(model.device)
+        with torch.no_grad():
+            g = model.generate(**ids, max_new_tokens=600, do_sample=False)
+        return proc.decode(g[0][ids["input_ids"].shape[1]:], skip_special_tokens=True)
+    return gen_hf
+
+
+def main():
+    generate = make_generator()
     data = json.load(open(INPUT))
     res = []
     for inst in data:
         row = {"id": inst["id"], "n_gold": len(inst["gold"])}
         for mode in ("tree", "rerank"):
-            msgs = [{"role": "user", "content": prompt(inst, mode)}]
-            ids = proc.apply_chat_template(msgs, add_generation_prompt=True, return_tensors="pt",
-                                           return_dict=True).to(model.device)
-            with torch.no_grad():
-                gen = model.generate(**ids, max_new_tokens=600, do_sample=False)
-            out = proc.decode(gen[0][ids["input_ids"].shape[1]:], skip_special_tokens=True)
+            out = generate(prompt(inst, mode))
             rank = parse(out, inst["candidates"])
             for k in (1, 5, 10, 20):
                 row[f"{mode}@{k}"] = len(set(rank[:k]) & set(inst["gold"])) / len(inst["gold"])

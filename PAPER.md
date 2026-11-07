@@ -5,10 +5,10 @@
 ## Abstract
 Agent benchmarks for software engineering start from an issue text and a failing test. Porting has neither. The code works on Linux, and the agent has to find the few files that must change for another operating system. We present PortBench, built from every fork in the public `qnx-ports` GitHub organisation, where QNX engineers port open-source projects to QNX 8.0. From 450 branches we keep 150 projects, one instance each, with 1,619 fix hunks. 127 of these projects are in C/C++ and hold 1,296 hunks. Every hunk has a fix type, and every instance points to an upstream base commit, so the task can be rebuilt exactly.
 
-We define a file-localization task scored with Recall@k against the files the engineers actually changed. On 114 C/C++ instances (median 172 candidate files, 2 gold files), random ranking finds 11% of the gold files in its top 10. Counting platform macros in each file finds 55%. A rule-based porting scanner finds 46%. But 270 of the 524 gold files contain no platform token at all, and every heuristic misses them: only 2% of them reach the top 10. These are files that call an API QNX lacks or use a type defined differently. Finding them requires understanding the code. We think this half of the benchmark is where code graphs and small fine-tuned models can show real gains.
+We define a file-localization task scored with Recall@k against the files the engineers actually changed. On 114 C/C++ instances (median 172 candidate files, 2 gold files), random ranking finds 11% of the gold files in its top 10. Counting platform macros in each file finds 55%. A rule-based porting scanner finds 46%. The benchmark splits in two. Gold files that already mention a platform are easy: 73% reach the top 10. Half of the instances (57 of 114) also need changes in files with no platform token at all, and there keyword counting does worse than random (7% against 14%). Propagating scanner findings over the `#include` graph with personalized PageRank raises this to 17%, at a cost on the easy files. Localizing these platform-neutral files is the open problem PortBench measures, and a natural target for code graphs and small fine-tuned models.
 
 ## 1. Introduction
-SWE-bench and its variants measure whether an agent can resolve a GitHub issue. The input is a human description of the bug, and success is a failing test that passes. Many real tasks do not look like this. Porting a library to a new operating system or architecture is a common one in embedded and automotive work. There is no issue, no failing test until the toolchain is set up, and the code is correct on the platforms it already supports. The first and hardest step is **localization**: which of the hundreds of files depend on the platform?
+SWE-bench and its variants measure whether an agent can resolve a GitHub issue, checked by a failing test that passes. Porting a library to a new operating system, common in embedded and automotive work, looks different. There is no issue, no failing test until the toolchain is set up, and the code is correct on the platforms it already supports. The first and hardest step is **localization**: which of the hundreds of files depend on the platform?
 
 Localization is also where small local models struggle. A model that fits on one accelerator cannot read a whole repository. It has to search and decide what to open. This competition provides graph tools for exactly that (`get_code_neighbors`, `search_similar_code`). PortBench gives a way to measure whether they help, on a kind of task the existing benchmarks do not cover.
 
@@ -17,7 +17,7 @@ QNX keeps its ports public. The `qnx-ports` organisation holds forks of 194 open
 **Contributions**
 1. **PortBench**: 150 instances (127 C/C++, 12 Rust, 11 other), 1,619 fix hunks, each with a fix type. We also release the 443 branches in raw form, including older versions of the same project.
 2. **A localization task** with an evaluation script, plus the same instances as agent tasks in JSONL (repository, base commit, problem statement, gold files and hunks).
-3. **Baselines and an analysis by fix type.** It shows a clear split. Fixes next to existing platform code are easy to find with keyword counts. The other half, which has no visible platform marker, is almost never found.
+3. **Baselines, including a code-graph baseline, and an analysis by fix type.** Fixes next to existing platform code are easy to find with keyword counts. Files with no visible platform marker are found less often than by chance; graph propagation helps but does not solve them.
 
 ## 2. Related work
 - **Issue-driven repair benchmarks.** SWE-bench [1] and its Verified and multilingual variants start from an issue and check with tests.
@@ -54,7 +54,7 @@ New files that exist only on the QNX branch are listed separately (27 C/C++ inst
 Rust instances (252 hunks) are labelled `rust` and kept out of the C/C++ task.
 
 **Audit.** We read two random samples of 40 C/C++ hunks.
-- **First sample (before the last two rules were added).** 36 hunks were real porting changes. The others were a copyright line, debug logging, a test-install rule, and a test file whose name our filter missed. We then added the comment-only filter and the `[_-]test.` file pattern.
+- **First sample (before the last two rules were added).** 36 hunks were real porting changes. The others (a copyright line, debug logging, test files) led us to add the comment-only filter and a test-file pattern.
 - **Second sample.** 38 of 40 hunks were real porting changes; the other two were a debug `printf` tagged `//QNX` and a commented-out compiler test. In 5 of the 40 the type label was wrong: all 5 were edits to continuation lines of a multi-line `#if`. We added a rule for these, which moved 20 hunks to `guard-edit` (19 of them from `edit`). We did not re-audit after this change.
 
 ## 4. What porting fixes look like
@@ -78,6 +78,7 @@ None of these needs a GPU.
 - **Top-build + peers**: puts top-level build files first, then ranks by Unix-peers.
 - **qport**: a rule-based QNX porting scanner that we wrote. It knows the 1,967 functions of the QNX 8.0 C library reference, a list of Linux-only APIs with QNX replacements, platform lists without QNX, and Linux assumptions in build files. Files are scored by findings weighted by severity. Its rules were written while looking at 29 of these projects, so we also report results without them ("unseen").
 - **qport + OS-mentions**: the sum of the two scores.
+- **Include-graph baselines.** We build a file graph per instance: an edge for each `#include` that resolves to a candidate (path-suffix match) and between `foo.c` and `foo.h`. The median graph has 442 edges and 10% isolated files. *Neighbours* breaks OS-mentions ties by the tokens of adjacent files. *PPR* runs personalized PageRank (restart 0.3) seeded by token counts, or by tokens plus qport scores. *Interleave* alternates the OS-mentions and PPR(OS + qport) rankings.
 
 We also provide `gemma_baseline.py`, a Gemma 4 baseline for Kaggle notebooks. It ranks files from the file list alone, or from the file list plus platform lines. We did not have a GPU while writing this paper, so this paper reports no Gemma results.
 
@@ -95,16 +96,20 @@ We fetched sources for 118 of the 127 C/C++ instances. Nine repositories whose G
 
 On the 89 instances qport never saw, the ranking is the same. OS-mentions gets R@10 = 0.529, top-build + peers 0.542, qport 0.454, and qport + OS-mentions 0.543 (R@20 = 0.681).
 
-**The split.** Table 2 takes the OS-mentions ranking and looks at each of the 524 gold files.
+**The split.** We call a gold file *visible* if it contains a platform token and *hidden* otherwise. 96 instances have visible gold files and 57 have hidden ones; 18 have only hidden ones. Pooled over files, 270 of 524 gold files are hidden, but four projects supply 173 of them (SuiteSparse alone 87, the same `#undef` in many files), so we average per instance. Table 2 gives recall restricted to each group.
 
-| Gold files | n | in top 10 | median rank (share of files) |
-|---|---|---|---|
-| contain a platform token | 254 | **64%** | 3.5% |
-| contain no platform token | 270 | **2%** | 54% |
-| build files | 121 | 45% | 6.8% |
-| source files | 403 | 29% | 18% |
+| Method | visible R@10 | hidden R@10 | hidden R@20 | all R@10 | all R@20 |
+|---|---|---|---|---|---|
+| Random (expected) | – | 0.135 | – | 0.107 | 0.193 |
+| OS-mentions | 0.727 | 0.071 | 0.139 | 0.548 | 0.660 |
+| Neighbours | 0.729 | 0.079 | 0.153 | 0.555 | 0.664 |
+| PPR (tokens) | 0.650 | 0.097 | 0.189 | 0.509 | 0.634 |
+| PPR (tokens + qport) | 0.594 | **0.173** | **0.363** | 0.500 | 0.658 |
+| Interleave | 0.677 | 0.139 | 0.284 | 0.534 | **0.683** |
 
-By fix type:
+Keyword counting ranks hidden files *below* chance, because visible files fill the top of the list. The graph helps: half of the hidden gold files (135/270) have a token-bearing neighbour, against 37% of all hidden candidates, and 12% carry a qport finding against 2%. Seeding PageRank with both signals more than doubles hidden recall. But it pulls visible files down, and no ranking wins on both groups.
+
+Pooled by fix type, with the OS-mentions ranking:
 
 | Type | n files | in top 10 | no-token share |
 |---|---|---|---|
@@ -117,18 +122,19 @@ By fix type:
 | guarded-subst | 277 | 22% | 68% |
 
 ## 8. Discussion
-**Easy half, hard half.** When the upstream code already has a list such as `#if defined(__APPLE__) || defined(__FreeBSD__)`, the fix usually goes into that list, and counting platform tokens finds the file. That is 62% of `guard-edit` files. The `guarded-subst` and `disable` fixes are different. QNX lacks a function, defines a type differently, or a header does not pull in another one. The file looks platform-neutral: 68% of these files contain no platform token, and the median one ranks halfway down the list.
+**Visible and hidden fixes.** When the upstream code already has a list such as `#if defined(__APPLE__) || defined(__FreeBSD__)`, the fix usually goes into that list, and counting platform tokens finds the file. The hidden files are different. We sorted the 183 hidden gold files outside SuiteSparse by their added lines: replacement code inside a QNX branch (55), build or install rules (43), a clash with a macro the QNX headers define, such as `MIN`, `MAX` or `_INT32` (31), a missing type or constant such as `cpu_set_t` (22), code switched off (20), and a missing `#include` such as `<sys/time.h>` (12).
 
-To find these files, a system has to connect the file to a fact about the target OS. For example: this file calls `prctl`, which QNX does not have. Or: this file uses `struct timeval` without `<sys/time.h>`. That calls for reasoning over call and include graphs together with knowledge of the target platform. It is the kind of signal the competition's graph tools and a fine-tuned small model could supply.
+Only 12% of hidden files get any scanner finding. Most hidden fixes depend on facts about QNX's headers (which names they define, what they include) rather than on missing functions. A system has to connect a file to such a fact, and the include graph is where that link lives: a file that includes a clashing header, or uses a type its includes do not provide. Our PageRank baseline uses the graph only to spread scores. Code graphs with symbol-level edges, as provided in this competition, together with a model that knows the target headers, are the natural next step.
 
 **Why the scanner does worse than counting.** qport flags many real but harmless findings, such as socket calls that only need `-lsocket` at link time. Its findings point to individual lines, not to files a person would edit. Adding it to OS-mentions improves R@20 (0.692 against 0.660) but not R@10. Turning API-level knowledge into a file ranking is not trivial, and PortBench measures it.
 
-**How an agent would use this.** A practical porting agent can rank files by platform tokens first, which is cheap. It can then spend its limited context on the platform-neutral files that touch APIs the target lacks. The benchmark scores both stages separately: the gold files with tokens and those without.
+**How an agent would use this.** A porting agent can take the top of the token ranking first, which is cheap, and spend its remaining context on graph-ranked, platform-neutral files. Interleaving the two rankings gives the best R@20 (0.683). PortBench scores the visible and hidden groups separately, so progress on the hard group is not masked by the easy one.
 
 ## 9. Limitations
 - **One reference port.** The ground truth is one engineer's port, and a different valid port might touch other files. Recall against a single reference is a lower bound.
 - **Rule-based filtering.** Some noise remains: about 2 in 40 hunks in our audit were not porting changes. Some QNX-specific features also count as fixes (the c-ares resolver reload, for example).
 - **One target OS.** The method needs public port branches. QNX is the only large collection we found. The scripts take any organisation name.
+- **Uneven instances.** A few projects repeat one fix across many files (SuiteSparse: 87 gold files). We report per-instance averages; pooled file counts overweight these projects.
 - **Possible contamination.** These branches are public, so a model may have seen them. We give `base_date` so users can keep only recent instances.
 - **No executable evaluation and no LLM numbers yet.** Both are planned. The JSONL tasks are ready for an agent harness.
 
