@@ -67,13 +67,15 @@ def make_generator():
     import torch
     from transformers import AutoProcessor, AutoModelForCausalLM
     proc = AutoProcessor.from_pretrained(MODEL)
-    model = AutoModelForCausalLM.from_pretrained(MODEL, torch_dtype=torch.bfloat16, device_map="auto")
+    model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16, device_map="auto")
 
     def gen_hf(text):
+        # same settings as the llama.cpp run: greedy, thinking off, at most 350 new tokens
         ids = proc.apply_chat_template([{"role": "user", "content": text}], add_generation_prompt=True,
-                                       return_tensors="pt", return_dict=True).to(model.device)
+                                       return_tensors="pt", return_dict=True,
+                                       enable_thinking=False).to(model.device)
         with torch.no_grad():
-            g = model.generate(**ids, max_new_tokens=600, do_sample=False)
+            g = model.generate(**ids, max_new_tokens=350, do_sample=False)
         return proc.decode(g[0][ids["input_ids"].shape[1]:], skip_special_tokens=True)
     return gen_hf
 
