@@ -19,6 +19,7 @@ The main task is **file localization**: given the repository at `base_commit` an
 | `data/all_branches.json` | Every QNX branch, including older versions of the same project |
 | `data/eval_files.json` | Per-instance results of the baselines |
 | `data/eval_graph.json` | Per-instance results of the include-graph baselines |
+| `data/gemma_e2b_results.json` | Gemma 4 E2B answers, rankings and timings per instance |
 | `data/llm_inputs.json` | Candidate files and platform lines per instance, input of `gemma_baseline.py` |
 | `data/forks.json` | The `qnx-ports` forks with their upstream repositories |
 
@@ -38,7 +39,8 @@ The main task is **file localization**: given the repository at `base_commit` an
 Gold files that already mention a platform are easy (OS-mentions puts 73% in the top 10, averaged per
 instance). 57 of the 114 instances also need changes in files with no platform token, where OS-mentions does
 worse than random (R@10 0.071 against 0.135). Personalized PageRank over the `#include` graph, seeded with
-OS-mentions and qport scores, raises this to 0.173 (`python graph_eval.py`). Details are in [PAPER.md](PAPER.md).
+OS-mentions and qport scores, raises this to 0.173 (`python graph_eval.py`). Gemma 4 E2B (llama.cpp on a laptop CPU)
+reaches 0.238 on these files from the file paths alone, but only 0.434 on the easy ones (`gemma_analyze.py`). Details are in [PAPER.md](PAPER.md).
 
 ## Rebuild from scratch
 You need the GitHub CLI (`gh`) and Python 3.10 or newer.

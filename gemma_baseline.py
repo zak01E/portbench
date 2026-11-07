@@ -50,11 +50,19 @@ def make_generator():
 
         def gen_http(text):
             body = json.dumps({"messages": [{"role": "user", "content": text}], "temperature": 0,
-                               "max_tokens": 600}).encode()
+                               "max_tokens": 350,
+                               "chat_template_kwargs": {"enable_thinking": False}}).encode()
             req = urllib.request.Request(MODEL.rstrip("/") + "/v1/chat/completions", body,
                                          {"Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=3600) as r:
-                return json.load(r)["choices"][0]["message"]["content"]
+            import time
+            for attempt in range(60):  # survive a server restart: retry for up to an hour
+                try:
+                    with urllib.request.urlopen(req, timeout=3600) as r:
+                        return json.load(r)["choices"][0]["message"]["content"]
+                except OSError as e:
+                    print("server error, retrying in 60 s:", e, flush=True)
+                    time.sleep(60)
+            raise RuntimeError("llama.cpp server unreachable")
         return gen_http
     import torch
     from transformers import AutoProcessor, AutoModelForCausalLM
@@ -72,19 +80,27 @@ def make_generator():
 
 def main():
     generate = make_generator()
+    import os, time
     data = json.load(open(INPUT))
-    res = []
+    out_path = os.environ.get("GEMMA_OUT", "gemma_results.json")
+    res = json.load(open(out_path)) if os.path.exists(out_path) else []  # resume
+    done = {r["id"] for r in res}
     for inst in data:
+        if inst["id"] in done:
+            continue
         row = {"id": inst["id"], "n_gold": len(inst["gold"])}
         for mode in ("tree", "rerank"):
+            t0 = time.time()
             out = generate(prompt(inst, mode))
             rank = parse(out, inst["candidates"])
             for k in (1, 5, 10, 20):
                 row[f"{mode}@{k}"] = len(set(rank[:k]) & set(inst["gold"])) / len(inst["gold"])
+            row[f"{mode}_rank"] = rank
             row[f"{mode}_raw"] = out[:2000]
+            row[f"{mode}_sec"] = round(time.time() - t0, 1)
         res.append(row)
-        print(inst["id"], {k: round(v, 2) for k, v in row.items() if "@10" in k}, flush=True)
-    json.dump(res, open("gemma_results.json", "w"), indent=1)
+        json.dump(res, open(out_path, "w"), indent=1)
+        print(inst["id"], {k: v for k, v in row.items() if "@10" in k or "_sec" in k}, flush=True)
     for mode in ("tree", "rerank"):
         print(mode, "  ".join(f"R@{k}={st.mean(r[f'{mode}@{k}'] for r in res):.3f}" for k in (1, 5, 10, 20)))
 
