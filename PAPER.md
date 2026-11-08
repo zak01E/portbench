@@ -5,7 +5,7 @@
 ## Abstract
 Agent benchmarks for software engineering start from an issue text and a failing test. Porting has neither. The code works on Linux, and the agent has to find the few files that must change for another operating system. We present PortBench, built from every fork in the public `qnx-ports` GitHub organisation, where QNX engineers port open-source projects to QNX 8.0: 150 projects (127 in C/C++) with 1,619 typed fix hunks, each tied to an upstream base commit so the task can be rebuilt exactly.
 
-We define a file-localization task scored with Recall@k against the files the engineers actually changed. On 114 C/C++ instances (median 172 candidate files, 2 gold files), random ranking finds 11% of the gold files in its top 10. Counting platform macros in each file finds 55%. A rule-based porting scanner finds 46%. The benchmark splits in two. Gold files that already mention a platform are easy: 73% reach the top 10. Half of the instances (57 of 114) need changes in files with no platform token at all; keyword counting, by construction, ranks these last (7% against 14% for random). Propagating scanner findings over the `#include` graph with personalized PageRank raises this to 17%. Gemma 4 E2B, run on a laptop CPU, reaches 24% from the file paths alone, but so does ranking files by directory depth: hidden fixes sit in shallow, central files. E4B is worse. A learned ranker over cheap per-file features has the best recall at every cutoff (59% top 10, 72% top 20; significant at top 20), mostly from path and token features, while re-ranking its shortlist with Gemma 4 E4B hurts. Localizing platform-neutral files remains the open problem PortBench measures.
+We define a file-localization task scored with Recall@k against the files the engineers actually changed. On 114 C/C++ instances (median 172 candidate files, 2 gold files), random ranking finds 11% of the gold files in its top 10. Counting platform macros in each file finds 55%. A rule-based porting scanner finds 46%. The benchmark splits in two. Gold files that already mention a platform are easy: 73% reach the top 10. Half of the instances (57 of 114) need changes in files with no platform token at all; keyword counting, by construction, ranks these last (7% against 14% for random). Propagating scanner findings over the `#include` graph with personalized PageRank raises this to 17%. Gemma 4 E2B, run on a laptop CPU, reaches 24% from the file paths alone, but so does ranking files by directory depth: hidden fixes sit in shallow, central files. E4B is worse. A learned ranker over cheap per-file features has the best recall at every cutoff (59% top 10, 72% top 20; significant at top 20), mostly from path and token features, while re-ranking its shortlist with Gemma 4, zero-shot or fine-tuned (QLoRA), does not help. Localizing platform-neutral files remains the open problem PortBench measures.
 
 ## 1. Introduction
 SWE-bench measures whether an agent can resolve a GitHub issue, checked by tests. Porting a library to a new operating system, common in embedded and automotive work, looks different. There is no issue, no failing test until the toolchain is set up, and the code is correct on the platforms it already supports. The first and hardest step is **localization**: which of the hundreds of files depend on the platform?
@@ -17,7 +17,7 @@ QNX keeps its ports public: the `qnx-ports` organisation holds forks of 194 proj
 **Contributions**
 1. **PortBench**: 150 instances (127 C/C++, 12 Rust, 11 other) with 1,619 typed fix hunks (1,296, 252 and 71). We also release the 443 branches in raw form, including older versions of the same project.
 2. **A localization task** with an evaluation script, plus the same instances as agent tasks in JSONL (repository, base commit, problem statement, gold files and hunks).
-3. **Baselines**: heuristics, include-graph PageRank, a learned ranker, Gemma 4 E2B and E4B, and a two-stage pipeline. Keyword counts find fixes next to existing platform code; files with no platform marker are found less often than by chance, and zero-shot Gemma does no better than ranking by directory depth.
+3. **Baselines**: heuristics, include-graph PageRank, a learned ranker, Gemma 4 E2B and E4B, and a two-stage pipeline. Keyword counts find fixes next to existing platform code; files with no platform marker are found less often than by chance, and Gemma, zero-shot or fine-tuned, does no better than cheap signals.
 
 ## 2. Related work
 - **Issue-driven repair benchmarks.** SWE-bench [1] and its variants start from an issue and check with tests.
@@ -41,15 +41,15 @@ New QNX-only files are listed separately (27 C/C++ instances), since they cannot
 
 | Type | Rule | C/C++ hunks |
 |---|---|---|
-| guarded-subst | adds a `#if`/`#ifdef` that mentions QNX, with replacement code | 548 |
+| guarded-subst | new QNX `#if` with replacement code | 548 |
 | build | CMake, Autotools, Make, Meson, Bazel or GN file | 226 |
-| guard-edit | only preprocessor conditions change (QNX added to an existing list) | 192 |
-| other | another file type (scripts, `.in` templates, Lua build files) | 89 |
+| guard-edit | QNX added to an existing condition | 192 |
+| other | scripts, `.in` templates | 89 |
 | include | only `#include` and guard lines added | 65 |
 | disable | existing code wrapped in `#ifndef __QNX__` | 65 |
 | edit | code changed without a new guard | 56 |
-| packaging | build change that installs or switches off tests | 40 |
-| qnx-code | more than 25 net new lines (a QNX implementation) | 15 |
+| packaging | install or test rules | 40 |
+| qnx-code | more than 25 new lines | 15 |
 
 Rust instances (252 hunks) are labelled `rust` and kept out of the C/C++ task.
 
@@ -72,11 +72,10 @@ Rust instances (252 hunks) are labelled `rust` and kept out of the C/C++ task.
 Only the E4B run needs a GPU.
 - **Random**: random order with a fixed seed. **Shallow-first**: files by directory depth, top level first.
 - **OS-mentions**: counts platform tokens in each file after removing comments. Tokens include `__linux__`, `_WIN32`, `__APPLE__`, `__FreeBSD__`, `CMAKE_SYSTEM_NAME`, `host_machine.system`, and project macros such as `GLOG_OS_LINUX`. This baseline knows nothing about QNX.
-- **Unix-peers**: counts only tokens of the Unix systems QNX most often joins (Apple, BSDs, Solaris, AIX, Haiku).
-- **Top-build + peers**: puts top-level build files first, then ranks by Unix-peers.
-- **qport**: a rule-based QNX porting scanner that we wrote. It knows the 1,967 functions of the QNX 8.0 C library reference, a list of Linux-only APIs with QNX replacements, platform lists without QNX, and Linux assumptions in build files. Files are scored by findings weighted by severity. Its rules were written while looking at 29 of these projects, so we also report results without them ("unseen").
+- **Top-build + peers**: top-level build files first, then tokens of the Unix systems QNX most often joins (Apple, BSDs, Solaris).
+- **qport**: a rule-based QNX porting scanner that we wrote. It knows the 1,967 QNX 8.0 C library functions, Linux-only APIs, platform lists without QNX, and Linux assumptions in build files. Files are scored by severity-weighted findings. Its rules were written on 29 of these projects, so we also report the rest ("unseen").
 - **qport + OS-mentions**: the sum of the two scores.
-- **Include-graph baselines.** We build a file graph per instance: an edge for each `#include` that resolves to a candidate (path-suffix match) and between `foo.c` and `foo.h`. The median graph has 442 edges and 10% isolated files. *Neighbours* breaks OS-mentions ties by the tokens of adjacent files. *PPR* runs personalized PageRank (teleport probability 0.3) seeded by token counts, or by tokens plus qport scores. *Interleave* alternates the OS-mentions and PPR(OS + qport) rankings.
+- **Include-graph baselines.** We build a file graph per instance: an edge for each `#include` that resolves to a candidate (path-suffix match) and between `foo.c` and `foo.h`. The median graph has 442 edges and 10% isolated files. *PPR* runs personalized PageRank (teleport probability 0.3) seeded by token counts, or by tokens plus qport scores. *Interleave* alternates the OS-mentions and PPR(OS + qport) rankings.
 - **Learned ranker**: logistic regression over 22 per-file features in five groups (path: depth, build file, header; tokens: platform and peer tokens; qport findings; content: size, system includes; graph: degree, neighbours' tokens, both PageRank scores; list in `features.py`), each instance weighted equally, scored with 5-fold project-level cross-validation over 3 fold assignments. **Two-stage**: Gemma 4 E4B re-ranks the ranker's top 30, seeing each file's `#include` and platform lines.
 - **Gemma 4 E2B** (instruction-tuned, Q4_0 GGUF, llama.cpp on an 8-core laptop CPU, greedy decoding, thinking off). The prompt names the target (QNX 8.0, `__QNX__`, libsocket, a hint the other baselines lack) and asks for at most 20 paths. *Paths* gives the candidates in directory-walk order, top-level files first (capped at 400); *Paths + lines* adds up to 6 platform lines from each of the 60 most token-heavy files. Median time is 45 s per prompt. **Gemma 4 E4B** uses the same prompts and decoding with 4-bit NF4 weights (transformers, one Kaggle T4; long prompts are read in 2,048-token chunks): 29 s per prompt, no failed prompt (public notebook: [E4B run](https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline?scriptVersionId=366766106), [two-stage run](https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline?scriptVersionId=366914492)).
 
@@ -87,7 +86,6 @@ We fetched sources for 118 of the 127 C/C++ instances. Nine repositories whose G
 |---|---|---|---|---|
 | Random | 0.012 | 0.076 | 0.107 | 0.193 |
 | OS-mentions | 0.159 | 0.413 | 0.548 | 0.660 |
-| Unix-peers | 0.131 | 0.404 | 0.534 | 0.649 |
 | Top-build + peers | 0.174 | 0.413 | 0.570 | 0.676 |
 | qport | 0.090 | 0.377 | 0.463 | 0.539 |
 | qport + OS-mentions | 0.137 | 0.401 | 0.545 | 0.692 |
@@ -102,7 +100,6 @@ On the 89 instances qport never saw (25 of its 29 projects are among the 114), t
 | Random (expected) | – | 0.135 | – | 0.107 | 0.193 |
 | Shallow-first | 0.333 | **0.240** | 0.283 | 0.314 | 0.398 |
 | OS-mentions | 0.727 | 0.071 | 0.139 | 0.548 | 0.660 |
-| Neighbours | 0.729 | 0.079 | 0.153 | 0.555 | 0.664 |
 | PPR (tokens) | 0.650 | 0.097 | 0.189 | 0.509 | 0.634 |
 | PPR (tokens + qport) | 0.594 | 0.173 | **0.363** | 0.500 | 0.658 |
 | Interleave | 0.677 | 0.139 | 0.284 | 0.534 | 0.683 |
@@ -118,7 +115,9 @@ Keyword counting ranks hidden files *below* chance, because visible files fill t
 
 **Gemma 4.** E2B finds hidden files at R@10 = 0.238 from paths alone, three times OS-mentions, but shallow-first reaches 0.240. In 46 of 114 answers E2B returns paths in input order, where top-level files come first; on its other answers its hidden recall is 0.277. E4B copies less (12 of 114) but is worse: 0.362 overall and 0.140 on hidden files; the runs differ in runtime and 4-bit format, so this is not a pure size effect. Adding platform lines helps both models on visible files only. Neither model beats keyword counting overall, and reciprocal-rank fusion with OS-mentions raises R@1 (0.189 for E2B) but not R@10.
 
-**Learned ranker.** It has the best mean at every cutoff: R@10 = 0.591 (95% bootstrap interval 0.522 to 0.661) and R@20 = 0.719 (0.653 to 0.779), stable across fold assignments (0.584 to 0.597). Per-instance sign tests: at R@20 it beats OS-mentions (29 wins, 11 losses, p = 0.006), qport + OS-mentions (p = 0.005) and top-build + peers (p = 0.03); at R@10 it beats qport + OS-mentions (p = 0.03) but not OS-mentions (p = 0.14) or top-build + peers (p = 0.43). Dropping feature groups shows where the signal is: without path features hidden recall falls from 0.194 to 0.117; without token features visible recall falls from 0.737 to 0.682; without graph features almost nothing changes (R@10 0.589), as the graph overlaps with tokens and qport. Re-ranking the top 30 with Gemma 4 E4B lowers R@10 from 0.584 (fold assignment 0) to 0.415; fusing both orders gives 0.554. Zero-shot, the small model does not add to cheap signals.
+**Learned ranker.** It has the best mean at every cutoff: R@10 = 0.591 (95% bootstrap interval 0.522 to 0.661) and R@20 = 0.719 (0.653 to 0.779), stable across fold assignments (0.584 to 0.597). Per-instance sign tests: at R@20 it beats OS-mentions (29 wins, 11 losses, p = 0.006), qport + OS-mentions (p = 0.005) and top-build + peers (p = 0.03); at R@10 it beats qport + OS-mentions (p = 0.03) but not OS-mentions (p = 0.14) or top-build + peers (p = 0.43). Dropping feature groups shows where the signal is: without path features hidden recall falls from 0.194 to 0.117; without token features visible recall falls from 0.737 to 0.682; without graph features almost nothing changes (R@10 0.589), as the graph overlaps with tokens and qport. Re-ranking the top 30 with Gemma 4 E4B lowers R@10 from 0.584 (fold assignment 0) to 0.415; fusing both orders gives 0.554.
+
+**Fine-tuning.** A QLoRA adapter for E2B (4-bit, 2 epochs, about 170 training prompts per fold, same project-level folds, [notebook](https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline?scriptVersionId=366930270)) learns to output the shortlist's gold files. Training loss falls from about 0.65 to 0.27, but on held-out projects it does not help: R@10 is 0.561, against 0.560 for zero-shot E2B on the same prompts and 0.584 for the ranker; R@1 drops from 0.180 to 0.131 (p = 0.03); and the 2.2 files it selects on average are less precise than the ranker's top files (0.258 against 0.353, p = 0.003). With so little data it overfits. In this matched T4 setup, zero-shot E2B (0.560) also beats E4B (0.415), so a larger model is not the missing piece.
 
 ## 8. Discussion
 **Visible and hidden fixes.** Visible fixes usually extend an existing list such as `#if defined(__APPLE__) || defined(__FreeBSD__)`. We sorted the 183 hidden gold files outside SuiteSparse by their added lines: replacement code inside a QNX branch (55), build or install rules (43), a clash with a macro the QNX headers define, such as `MIN`, `MAX` or `_INT32` (31), a missing type or constant such as `cpu_set_t` (22), code switched off (20), and a missing `#include` such as `<sys/time.h>` (12).
@@ -133,10 +132,10 @@ Only 12% of hidden files get any scanner finding. Most hidden fixes depend on fa
 - **One target OS.** QNX is the only large public collection of port branches we found; the scripts take any organisation name.
 - **Uneven instances.** A few projects repeat one fix across many files (SuiteSparse: 87 gold files). We report per-instance averages; pooled file counts overweight these projects.
 - **Possible contamination.** The branches are public. Gemma 4 E2B is no better on the 47 instances based after June 2025 (R@10 0.385 against 0.406), and `base_date` lets users select them.
-- **No executable evaluation, two small models.** We ran Gemma 4 E2B and E4B (4-bit, different runtimes), without tools or fine-tuning. The JSONL tasks are ready for an agent harness.
+- **No executable evaluation, two small models.** We ran Gemma 4 E2B and E4B (4-bit, different runtimes), without tools; the fine-tune has about 170 prompts per fold. The JSONL tasks are ready for an agent harness.
 
 ## 10. Availability
-Scripts (collection, labelling, evaluation, baselines), the dataset, the JSONL tasks and the per-instance results are at https://github.com/zak01E/portbench under the MIT licence for the code. Hunks are short excerpts of each project under its own licence, which is listed per instance. Everything can be rebuilt from public GitHub data with the scripts provided.
+Scripts, dataset, JSONL tasks and per-instance results are at https://github.com/zak01E/portbench (code under MIT; hunks are short excerpts under each project's licence, listed per instance). Everything can be rebuilt from public GitHub data.
 
 **Use of AI tools.** An AI assistant (Claude) wrote most of the collection and evaluation code and helped draft this text. The author checked the audits, the numbers and the claims against the released data.
 

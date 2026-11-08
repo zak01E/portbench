@@ -47,7 +47,8 @@ E4B notebook: https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-locali
 A learned ranker (`features.py`, `learn_rank.py`: logistic regression over 22 per-file features, project-level
 cross-validation) has the best recall at every cutoff: R@10 0.591, R@20 0.719 (significant at R@20, `ranker_stats.py`).
 Most of its signal comes from path and token features; dropping the graph features changes little. Re-ranking its top 30 with Gemma 4 E4B (`export_rerank_inputs.py`, `gemma_rerank.py`,
-`gemma_rerank_analyze.py`, notebook `notebooks/gemma_e4b_rerank.ipynb`) lowers R@10 to 0.415.
+`gemma_rerank_analyze.py`, notebook `notebooks/gemma_e4b_rerank.ipynb`) lowers R@10 to 0.415. A QLoRA fine-tune of E2B (`gemma_lora.py`, project-level folds) does not help either:
+R@10 0.561 against 0.560 zero-shot and 0.584 for the ranker.
 
 ![Recall@10](figures/recall_split.png) Details are in [PAPER.md](PAPER.md).
 
