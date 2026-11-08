@@ -35,7 +35,7 @@ def main():
             continue
         t0 = time.time()
         out = safe_generate(generate, prompt(inst))
-        rank = parse("\n".join(l.lstrip("# ") for l in out.split("\n")), inst["shortlist"])
+        rank = parse(out, inst["shortlist"], numbered=inst["shortlist"])
         res.append({"id": inst["id"], "rank": rank, "raw": out[:2000], "sec": round(time.time() - t0, 1)})
         json.dump(res, open(out_path, "w"), indent=1)
         print(inst["id"], len(rank), res[-1]["sec"], flush=True)

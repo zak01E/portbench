@@ -42,7 +42,14 @@ worse than random (R@10 0.071 against 0.135). Personalized PageRank over the `#i
 OS-mentions and qport scores, raises this to 0.173 (`python graph_eval.py`). Gemma 4 E2B (llama.cpp on a laptop CPU)
 reaches 0.238 on these files from the file paths alone, but ranking files by directory depth reaches 0.240
 (`order_baselines.py`), and Gemma 4 E4B (4-bit, Kaggle T4) does worse (0.140). Hidden fixes sit in shallow, central files.
-E4B notebook: https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline Details are in [PAPER.md](PAPER.md).
+E4B notebook: https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline
+
+A learned ranker (`features.py`, `learn_rank.py`: logistic regression over 22 per-file features, project-level
+cross-validation) beats every single heuristic: R@10 0.591, R@20 0.719. Include-graph PageRank is its second strongest
+feature. Re-ranking its top 30 with Gemma 4 E4B (`export_rerank_inputs.py`, `gemma_rerank.py`,
+`gemma_rerank_analyze.py`, notebook `notebooks/gemma_e4b_rerank.ipynb`) lowers R@10 to 0.415.
+
+![Recall@10](figures/recall_split.png) Details are in [PAPER.md](PAPER.md).
 
 ## Rebuild from scratch
 You need the GitHub CLI (`gh`) and Python 3.10 or newer.

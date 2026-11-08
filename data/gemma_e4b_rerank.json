@@ -1,0 +1,1948 @@
+[
+ {
+  "id": "AMQP-CPP@qnx-v4.3.27",
+  "rank": [
+   "include/amqpcpp/endian.h",
+   "src/linux_tcp/tcpoutbuffer.h",
+   "src/linux_tcp/tcpresolver.h",
+   "src/linux_tcp/includes.h",
+   "src/CMakeLists.txt"
+  ],
+  "raw": "include/amqpcpp/endian.h\nsrc/linux_tcp/tcpoutbuffer.h\nsrc/linux_tcp/tcpresolver.h\nsrc/linux_tcp/includes.h\nsrc/CMakeLists.txt",
+  "sec": 10.5
+ },
+ {
+  "id": "Catch2@qnx-pr-v3.6.0",
+  "rank": [
+   "src/catch2/internal/catch_platform.hpp",
+   "src/catch2/internal/catch_debugger.cpp",
+   "src/catch2/internal/catch_debugger.hpp",
+   "src/catch2/catch_session.cpp",
+   "src/catch2/catch_session.hpp",
+   "src/catch2/internal/catch_clara.cpp"
+  ],
+  "raw": "src/catch2/internal/catch_platform.hpp\nsrc/catch2/internal/catch_debugger.cpp\nsrc/catch2/internal/catch_debugger.hpp\nsrc/catch2/catch_session.cpp\nsrc/catch2/catch_session.hpp\nsrc/catch2/internal/catch_clara.cpp",
+  "sec": 12.8
+ },
+ {
+  "id": "EmulationStation@qnx_master",
+  "rank": [
+   "es-core/src/utils/FileSystemUtil.cpp",
+   "es-app/src/VolumeControl.cpp",
+   "es-core/src/Window.cpp",
+   "es-core/src/platform.cpp",
+   "es-app/src/ScraperCmdLine.cpp",
+   "es-app/src/main.cpp",
+   "es-core/src/components/VideoVlcComponent.cpp",
+   "es-app/src/guis/GuiMenu.cpp"
+  ],
+  "raw": "es-core/src/utils/FileSystemUtil.cpp\nes-app/src/VolumeControl.cpp\nes-core/src/Window.cpp\nes-core/src/platform.cpp\nes-app/src/ScraperCmdLine.cpp\nes-app/src/main.cpp\nes-core/src/components/VideoVlcComponent.cpp\nes-app/src/guis/GuiMenu.cpp",
+  "sec": 15.2
+ },
+ {
+  "id": "Fast-CDR@qnx_v2.2.3",
+  "rank": [],
+  "raw": "3\n10\n14",
+  "sec": 3.0
+ },
+ {
+  "id": "Fast-DDS@qnx_v2.14.4",
+  "rank": [
+   "src/cpp/utils/IPFinder.cpp",
+   "src/cpp/rtps/persistence/sqlite3.c",
+   "src/cpp/rtps/persistence/sqlite3.h",
+   "src/cpp/utils/SystemInfo.cpp",
+   "CMakeLists.txt"
+  ],
+  "raw": "src/cpp/utils/IPFinder.cpp\nsrc/cpp/rtps/persistence/sqlite3.c\nsrc/cpp/rtps/persistence/sqlite3.h\nsrc/cpp/utils/SystemInfo.cpp\nCMakeLists.txt",
+  "sec": 12.4
+ },
+ {
+  "id": "HIPCC@qnx-chipStar-v1.3.0",
+  "rank": [
+   "src/hipBin_base.h",
+   "src/hipBin_util.h"
+  ],
+  "raw": "src/hipBin_base.h\nsrc/hipBin_util.h",
+  "sec": 2.9
+ },
+ {
+  "id": "METIS@eleir/qnx_v5.2.1",
+  "rank": [
+   "Makefile",
+   "CMakeLists.txt",
+   "programs/CMakeLists.txt",
+   "libmetis/CMakeLists.txt",
+   "programs/io.c",
+   "libmetis/kwayfm.c",
+   "libmetis/parmetis.c",
+   "libmetis/kwayrefine.c",
+   "libmetis/initpart.c",
+   "libmetis/mmd.c",
+   "libmetis/options.c",
+   "libmetis/contig.c",
+   "programs/smbfactor.c"
+  ],
+  "raw": "Makefile\nCMakeLists.txt\nprograms/CMakeLists.txt\nlibmetis/CMakeLists.txt\nprograms/io.c\nlibmetis/kwayfm.c\nlibmetis/parmetis.c\nlibmetis/kwayrefine.c\nlibmetis/initpart.c\nlibmetis/mmd.c\nlibmetis/options.c\nlibmetis/contig.c\nprograms/smbfactor.c",
+  "sec": 14.7
+ },
+ {
+  "id": "MPItrampoline@qnx-v5.3.1",
+  "rank": [
+   "src/mpi.c",
+   "CMakeLists.txt"
+  ],
+  "raw": "src/mpi.c\nCMakeLists.txt",
+  "sec": 1.8
+ },
+ {
+  "id": "OpenBLAS@qnx-0.3.28",
+  "rank": [
+   "driver/others/memory.c",
+   "driver/mapper/mapper.c",
+   "driver/others/memory_qalloc.c",
+   "driver/others/init.c",
+   "driver/others/blas_server.c",
+   "cpuid_power.c",
+   "cpuid_arm64.c",
+   "driver/others/dynamic_mips64.c",
+   "lapack-netlib/CMakeLists.txt",
+   "lapack-netlib/lapack_build.cmake",
+   "cmake/system.cmake",
+   "cmake/os.cmake",
+   "ctest/CMakeLists.txt",
+   "utest/CMakeLists.txt"
+  ],
+  "raw": "driver/others/memory.c\ndriver/mapper/mapper.c\ndriver/others/memory_qalloc.c\ndriver/others/init.c\ndriver/others/blas_server.c\ncpuid_power.c\ncpuid_arm64.c\ndriver/others/dynamic_mips64.c\nlapack-netlib/CMakeLists.txt\nlapack-netlib/lapack_build.cmake\ncmake/system.cmake\ncmake/os.cmake\nctest/CMakeLists.txt\nutest/CMakeLists.txt",
+  "sec": 20.4
+ },
+ {
+  "id": "OpenSceneGraph@qnx-OpenSceneGraph-3.6.5",
+  "rank": [],
+  "raw": "1. src/osgPlugins/zeroConfDevice/mdns_win/dns-sd.c\n2. src/osgPlugins/zeroConfDevice/mdns_win/dns_sd.h\n3. src/osgPlugins/osc/ip/posix/UdpSocket.cpp\n4. src/osgDB/FileUtils.cpp\n5. src/OpenThreads/pthreads/PThread.cpp\n6. src/osgDB/DynamicLibrary.cpp\n7. src/osgDB/FileNameUtils.cpp\n8. src/osgPlugins/tgz/ReaderWriterTGZ.cpp\n9. src/osgPlugins/osgtgz/ReaderWriterOSGTGZ.cpp\n10. src/osgDB/ConvertUTF.cpp\n11. src/OpenThreads/common/Atomic.cpp\n12. src/osgGA/StateSetManipulator.cpp\n13. src/osgPlugins/osc/osc/OscHostEndianness.h\n14. src/osgPlugins/lua/CMakeLists.txt\n15. src/osgPlugins/fbx/CMakeLists.cpp",
+  "sec": 38.2
+ },
+ {
+  "id": "OpenTTD@qnx-release-15.2",
+  "rank": [
+   "src/os/unix/unix.cpp",
+   "src/network/core/os_abstraction.h",
+   "src/fileio.cpp",
+   "src/settings_gui.cpp",
+   "src/strings.cpp"
+  ],
+  "raw": "src/os/unix/unix.cpp\nsrc/network/core/os_abstraction.h\nsrc/fileio.cpp\nsrc/settings_gui.cpp\nsrc/strings.cpp",
+  "sec": 9.1
+ },
+ {
+  "id": "ROCm-Device-Libs@qnx-chipStar-v1.3.0",
+  "rank": [],
+  "raw": "## 3\n## 20\n## 24",
+  "sec": 3.1
+ },
+ {
+  "id": "RetroArch@qnx_master",
+  "rank": [
+   "frontend/drivers/platform_unix.c",
+   "libretro-common/features/features_cpu.c",
+   "libretro-common/vfs/vfs_implementation.c",
+   "libretro-common/rthreads/rthreads.c",
+   "runloop.c",
+   "command.c",
+   "retroarch.c"
+  ],
+  "raw": "frontend/drivers/platform_unix.c\nlibretro-common/features/features_cpu.c\nlibretro-common/vfs/vfs_implementation.c\nlibretro-common/include/net/net_socket.c\nlibretro-common/rthreads/rthreads.c\nrunloop.c\ncommand.c\nretroarch.c\nlibretro-common/net/net_compat.h",
+  "sec": 17.4
+ },
+ {
+  "id": "SDL@qnx-release-3.4.18",
+  "rank": [
+   "src/hidapi/SDL_hidapi.c",
+   "src/video/SDL_video.c",
+   "src/filesystem/unix/SDL_sysfilesystem.c",
+   "src/joystick/linux/SDL_sysjoystick.c",
+   "src/thread/pthread/SDL_systhread.c",
+   "src/dynapi/SDL_dynapi.c",
+   "src/stdlib/SDL_malloc.c",
+   "include/SDL3/SDL_platform_defines.h",
+   "cmake/sdlplatform.cmake",
+   "CMakeLists.txt"
+  ],
+  "raw": "src/hidapi/SDL_hidapi.c\nsrc/video/SDL_video.c\nsrc/filesystem/unix/SDL_sysfilesystem.c\nsrc/joystick/linux/SDL_sysjoystick.c\nsrc/thread/pthread/SDL_systhread.c\nsrc/dynapi/SDL_dynapi.c\nsrc/stdlib/SDL_malloc.c\ninclude/SDL3/SDL_platform_defines.h\ncmake/sdlplatform.cmake\nCMakeLists.txt",
+  "sec": 20.4
+ },
+ {
+  "id": "SuiteSparse@qnx-v7.11.0",
+  "rank": [
+   "UMFPACK/Source/umf_internal.h",
+   "CHOLMOD/SuiteSparse_metis/GKlib/GKlib.h",
+   "CHOLMOD/SuiteSparse_metis/GKlib/original/GKlib.h",
+   "LAGraph/src/utility/LG_internal.h",
+   "SuiteSparse_config/cmake_modules/SuiteSparsePolicy.cmake",
+   "GraphBLAS/cmake_modules/SuiteSparsePolicy.cmake",
+   "GraphBLAS/cpu_features/CMakeLists.txt",
+   "GraphBLAS/GraphBLAS/CMakeLists.txt",
+   "GraphBLAS/cmake_modules/GraphBLAS_JIT_configure.cmake",
+   "GraphBLAS/cpu_features/include/cpu_features_macros.h",
+   "LAGraph/CMakeLists.txt",
+   "SuiteSparse_config/CMakeLists.txt",
+   "GraphBLAS/CMakeLists.txt"
+  ],
+  "raw": "UMFPACK/Source/umf_internal.h\nCHOLMOD/SuiteSparse_metis/GKlib/GKlib.h\nCHOLMOD/SuiteSparse_metis/GKlib/original/GKlib.h\nLAGraph/src/utility/LG_internal.h\nSuiteSparse_config/cmake_modules/SuiteSparsePolicy.cmake\nGraphBLAS/cmake_modules/SuiteSparsePolicy.cmake\nGraphBLAS/cpu_features/CMakeLists.txt\nGraphBLAS/GraphBLAS/CMakeLists.txt\nGraphBLAS/cmake_modules/GraphBLAS_JIT_configure.cmake\nGraphBLAS/cpu_features/include/cpu_features_macros.h\nLAGraph/CMakeLists.txt\nSuiteSparse_config/CMakeLists.txt\nGraphBLAS/CMakeLists.txt",
+  "sec": 27.6
+ },
+ {
+  "id": "XNNPACK@qnx_master",
+  "rank": [
+   "CMakeLists.txt",
+   "src/xnnpack/common.h",
+   "src/mutex.c",
+   "src/xnnpack/math.h",
+   "src/xnnpack/intrinsics-polyfill.h",
+   "src/memory.c",
+   "src/configs/hardware-config.c"
+  ],
+  "raw": "CMakeLists.txt\nsrc/xnnpack/common.h\nsrc/mutex.c\nsrc/xnnpack/math.h\nsrc/xnnpack/intrinsics-polyfill.h\nsrc/memory.c\nsrc/configs/hardware-config.c",
+  "sec": 11.3
+ },
+ {
+  "id": "ZeroTierOne@john_qnx_support",
+  "rank": [
+   "osdep/Phy.hpp",
+   "node/Constants.hpp",
+   "osdep/BSDEthernetTap.cpp",
+   "osdep/NetBSDEthernetTap.cpp",
+   "osdep/Binder.hpp",
+   "include/ZeroTierDebug.h",
+   "node/Utils.hpp",
+   "ext/libnatpmp/getgateway.c",
+   "ext/libnatpmp/natpmp.c",
+   "ext/hiredis-1.0.2/net.c"
+  ],
+  "raw": "osdep/Phy.hpp\nnode/Constants.hpp\nosdep/BSDEthernetTap.cpp\nosdep/NetBSDEthernetTap.cpp\nosdep/Binder.hpp\ninclude/ZeroTierDebug.h\nnode/Utils.hpp\next/libnatpmp/getgateway.c\next/libnatpmp/natpmp.c\next/hiredis-1.0.2/net.c\next/hiredis-1.0.2/net.c",
+  "sec": 19.7
+ },
+ {
+  "id": "abseil-cpp@qnx-20250512.0",
+  "rank": [
+   "absl/debugging/failure_signal_handler.cc",
+   "absl/debugging/internal/stacktrace_powerpc-inl.inc",
+   "absl/debugging/internal/stacktrace_x86-inl.inc",
+   "absl/debugging/internal/stacktrace_aarch64-inl.inc",
+   "absl/synchronization/internal/futex.h",
+   "absl/base/internal/low_level_alloc.cc",
+   "absl/time/internal/cctz/src/time_zone_libc.cc",
+   "absl/time/clock.cc",
+   "absl/base/internal/thread_identity.h",
+   "absl/crc/internal/cpu_detect.cc"
+  ],
+  "raw": "absl/debugging/failure_signal_handler.cc\nabsl/debugging/internal/stacktrace_powerpc-inl.inc\nabsl/debugging/internal/stacktrace_x86-inl.inc\nabsl/debugging/internal/stacktrace_aarch64-inl.inc\nabsl/synchronization/internal/futex.h\nabsl/base/internal/low_level_alloc.cc\nabsl/time/internal/cctz/src/time_zone_libc.cc\nabsl/time/clock.cc\nabsl/base/internal/thread_identity.h\nabsl/crc/internal/cpu_detect.cc",
+  "sec": 25.4
+ },
+ {
+  "id": "apk-tools@qnx_3.0.0_rc5",
+  "rank": [
+   "src/apk_nproc.h",
+   "src/apk_xattr.h",
+   "src/database.c",
+   "src/package.c",
+   "src/io.c",
+   "libfetch/common.c",
+   "libfetch/http.c",
+   "src/crypto_mbedtls.c",
+   "src/process.c",
+   "src/app_audit.c",
+   "src/apk_defines.h",
+   "src/adb.c",
+   "src/app_mkpkg.c",
+   "src/apk.c"
+  ],
+  "raw": "src/apk_nproc.h\nsrc/apk_xattr.h\nsrc/database.c\nsrc/package.c\nsrc/io.c\nlibfetch/common.c\nlibfetch/http.c\nsrc/crypto_mbedtls.c\nsrc/process.c\nsrc/app_audit.c\nsrc/apk_defines.h\nsrc/adb.c\nsrc/app_mkpkg.c\nsrc/apk.c",
+  "sec": 16.1
+ },
+ {
+  "id": "asio@qnx-pr-asio-1-29-0",
+  "rank": [
+   "asio/include/asio/detail/impl/socket_ops.ipp",
+   "asio/include/asio/detail/socket_types.hpp",
+   "asio/include/asio/detail/config.hpp",
+   "asio/include/asio/impl/serial_port_base.ipp",
+   "asio/include/asio/detail/impl/signal_set_service.ipp",
+   "asio/include/asio/error.hpp",
+   "asio/include/asio/io_context.hpp",
+   "asio/include/asio/detail/impl/null_event.ipp",
+   "asio/include/asio/impl/error_code.ipp",
+   "asio/include/asio/socket_base.hpp",
+   "asio/include/asio/detail/impl/select_reactor.ipp",
+   "asio/include/asio/detail/hash_map.hpp",
+   "asio/include/asio/detail/impl/winrt_ssocket_service_base.ipp",
+   "asio/include/asio/ip/multicast.hpp",
+   "asio/include/asio/basic_file.hpp",
+   "asio/include/asio/detail/push_options.hpp",
+   "asio/include/asio/detail/pop_options.hpp",
+   "asio/include/asio/detail/impl/handler_tracking.ipp",
+   "asio/include/asio/detail/signal_set_service.hpp",
+   "asio/include/asio/detail/buffer_sequence_adapter.hpp"
+  ],
+  "raw": "asio/include/asio/detail/impl/socket_ops.ipp\nasio/include/asio/detail/socket_types.hpp\nasio/include/asio/detail/config.hpp\nasio/include/asio/impl/serial_port_base.ipp\nasio/include/asio/detail/impl/signal_set_service.ipp\nasio/include/asio/error.hpp\nasio/include/asio/io_context.hpp\nasio/include/asio/detail/impl/null_event.ipp\nasio/include/asio/impl/error_code.ipp\nasio/include/asio/socket_base.hpp\nasio/include/asio/detail/impl/select_reactor.ipp\nasio/include/asio/detail/hash_map.hpp\nasio/include/asio/detail/impl/winrt_ssocket_service_base.ipp\nasio/include/asio/ip/multicast.hpp\nasio/include/asio/basic_file.hpp\nasio/include/asio/detail/push_options.hpp\nasio/include/asio/detail/pop_options.hpp\nasio/include/asio/detail/impl/handler_tracking.ipp\nasio/include/asio/detail/signal_set_service.hpp\nasio/include/asio/detail/buffer_sequence_adapter.hpp",
+  "sec": 45.7
+ },
+ {
+  "id": "avahi@qnx-0.9.x",
+  "rank": [
+   "avahi-core/netlink.h",
+   "avahi-autoipd/iface-linux.c",
+   "avahi-daemon/caps.c",
+   "avahi-core/iface-pfroute.c",
+   "avahi-core/domain-util.c"
+  ],
+  "raw": "avahi-core/netlink.h\navahi-autoipd/iface-linux.c\navahi-daemon/caps.c\navahi-core/iface-pfroute.c\navahi-core/domain-util.c",
+  "sec": 10.9
+ },
+ {
+  "id": "aws-c-common@qnx-v0.12.4",
+  "rank": [
+   "source/posix/thread.c",
+   "source/posix/system_info.c",
+   "cmake/AwsThreadName.cmake",
+   "cmake/AwsCFlags.cmake",
+   "cmake/AwsThreadAffinity.cmake",
+   "cmake/AwsFeatureTests.cmake",
+   "include/aws/common/platform.h",
+   "include/aws/common/system_info.h",
+   "include/aws/common/byte_order.inl",
+   "include/aws/common/thread.h",
+   "include/aws/common/mutex.h",
+   "include/aws/common/common.h",
+   "cmake/AwsPrebuildDependency.cmake",
+   "include/aws/common/private/lookup3.inl",
+   "cmake/AwsCRuntime.cmake",
+   "include/aws/common/stdint.h",
+   "include/aws/common/byte_buf.h",
+   "include/aws/common/string.h",
+   "cmake/AwsSharedLibSetup.cmake"
+  ],
+  "raw": "source/posix/thread.c\nsource/posix/system_info.c\ncmake/AwsThreadName.cmake\ncmake/AwsCFlags.cmake\ncmake/AwsThreadAffinity.cmake\ncmake/AwsFeatureTests.cmake\ninclude/aws/common/platform.h\ninclude/aws/common/system_info.h\ninclude/aws/common/byte_order.inl\ninclude/aws/common/thread.h\ninclude/aws/common/mutex.h\ninclude/aws/common/common.h\ncmake/AwsPrebuildDependency.cmake\ninclude/aws/common/private/lookup3.inl\ncmake/AwsCRuntime.cmake\ninclude/aws/common/stdint.h\ninclude/aws/common/byte_buf.h\ninclude/aws/common/string.h\ninclude/aws/common/byte_order.inl\ncmake/AwsSharedLibSetup.cmake",
+  "sec": 29.8
+ },
+ {
+  "id": "aws-c-io@qnx-v0.26.1",
+  "rank": [
+   "CMakeLists.txt",
+   "source/posix/socket.c",
+   "source/host_resolver.c",
+   "source/event_loop.c"
+  ],
+  "raw": "CMakeLists.txt\nsource/posix/socket.c\nsource/host_resolver.c\nsource/event_loop.c",
+  "sec": 8.2
+ },
+ {
+  "id": "aws-crt-cpp@qnx-0.30.1",
+  "rank": [],
+  "raw": "1. bin/mqtt5_canary/main.cpp\n7. bin/mqtt5_app/main.cpp\n14. bin/mqtt5_app/main.cpp\n30. source/ImdsClient.cpp",
+  "sec": 9.9
+ },
+ {
+  "id": "azure-iot-sdk-c@qnx-LTS_08_2024",
+  "rank": [
+   "testtools/iothub_test/src/iothub_account.c",
+   "iothub_client/src/iothubtransport_amqp_common.c",
+   "iothub_client/src/iothubtransport_amqp_twin_messenger.c",
+   "serializer/src/multitree.c",
+   "iothub_client/src/iothub_client_core.c",
+   "iothub_client/src/iothubtransport_mqtt_common.c"
+  ],
+  "raw": "testtools/iothub_test/src/iothub_account.c\niothub_client/src/iothubtransport_amqp_common.c\niothub_client/src/iothubtransport_amqp_twin_messenger.c\nserializer/src/multitree.c\niothub_client/src/iothub_client_core.c\niothub_client/src/iothubtransport_mqtt_common.c",
+  "sec": 16.8
+ },
+ {
+  "id": "benchmark@qnx_v1.8.3",
+  "rank": [
+   "src/sysinfo.cc",
+   "src/benchmark.cc",
+   "src/benchmark_runner.cc",
+   "src/benchmark_register.cc",
+   "src/perf_counters.h",
+   "src/perf_counters.cc",
+   "src/colorprint.cc",
+   "src/reporter.cc",
+   "src/console_reporter.cc"
+  ],
+  "raw": "src/sysinfo.cc\nsrc/benchmark.cc\nsrc/benchmark_runner.cc\nsrc/benchmark_register.cc\nsrc/perf_counters.h\nsrc/perf_counters.cc\nsrc/colorprint.cc\nsrc/reporter.cc\nsrc/console_reporter.cc",
+  "sec": 11.5
+ },
+ {
+  "id": "btop@qnx-1.4.6",
+  "rank": [
+   "src/linux/intel_gpu_top/igt_perf.c",
+   "src/linux/intel_gpu_top/intel_gpu_top.c",
+   "src/btop_draw.cpp",
+   "src/btop_config.cpp",
+   "src/btop_tools.cpp",
+   "src/btop_shared.hpp",
+   "src/btop_menu.cpp",
+   "src/btop_config.hpp",
+   "src/linux/btop_collect.cpp"
+  ],
+  "raw": "src/linux/intel_gpu_top/igt_perf.c\nsrc/linux/intel_gpu_top/intel_gpu_top.c\nsrc/btop_draw.cpp\nsrc/btop_config.cpp\nsrc/btop_tools.cpp\nsrc/btop_collect.cpp\nsrc/btop_shared.hpp\nsrc/btop_menu.cpp\nsrc/btop_config.hpp\nsrc/linux/btop_collect.cpp",
+  "sec": 18.2
+ },
+ {
+  "id": "busybox@qnx-1_38_x",
+  "rank": [
+   "networking/ifplugd.c",
+   "networking/libiproute/ip_common.h",
+   "networking/ifenslave.c",
+   "networking/libiproute/iplink.c",
+   "networking/ntpd.c",
+   "networking/ping.c",
+   "networking/traceroute.c",
+   "shell/hush.c",
+   "init/init.c",
+   "libbb/loop.c",
+   "libbb/makedev.c",
+   "util-linux/fdisk.c",
+   "util-linux/fdisk_osf.c",
+   "mailutils/mail.c",
+   "miscutils/seedrng.c",
+   "modutils/modutils.c",
+   "modutils/modprobe-small.c",
+   "init/bootchartd.c",
+   "include/libbb.h",
+   "include/platform.h"
+  ],
+  "raw": "networking/ifplugd.c\nnetworking/libiproute/ip_common.h\nnetworking/ifenslave.c\nnetworking/libiproute/iplink.c\nnetworking/ntpd.c\nnetworking/ping.c\nnetworking/traceroute.c\nshell/hush.c\ninit/init.c\nlibbb/loop.c\nlibbb/makedev.c\nutil-linux/fdisk.c\nutil-linux/fdisk_osf.c\nmailutils/mail.c\nmiscutils/seedrng.c\nmodutils/modutils.c\nmodutils/modprobe-small.c\ninit/bootchartd.c\ninclude/libbb.h\ninclude/platform.h",
+  "sec": 26.5
+ },
+ {
+  "id": "c-ares@qnx_v1.34",
+  "rank": [
+   "src/lib/ares_sysconfig_mac.c",
+   "src/lib/ares_socket.c",
+   "src/lib/util/ares_threads.c",
+   "src/lib/ares_addrinfo_localhost.c",
+   "src/lib/ares_hosts_file.c",
+   "src/lib/ares_init.c",
+   "src/lib/ares_update_servers.c",
+   "src/lib/util/ares_iface_ips.c",
+   "src/lib/ares_set_socket_functions.c",
+   "src/lib/ares_private.h",
+   "include/ares.h",
+   "src/lib/config-win32.h",
+   "src/lib/ares_config.h.cmake"
+  ],
+  "raw": "src/lib/ares_sysconfig_mac.c\nsrc/lib/ares_socket.c\nsrc/lib/util/ares_threads.c\nsrc/lib/ares_addrinfo_localhost.c\nsrc/lib/ares_hosts_file.c\nsrc/lib/ares_init.c\nsrc/lib/ares_update_servers.c\nsrc/lib/util/ares_iface_ips.c\nsrc/lib/ares_set_socket_functions.c\nsrc/lib/ares_private.h\ninclude/ares.h\nsrc/lib/config-win32.h\nsrc/lib/ares_config.h.cmake\nsrc/lib/ares_socket.c",
+  "sec": 26.2
+ },
+ {
+  "id": "cJSON@qnx-master",
+  "rank": [
+   "CMakeLists.txt",
+   "cJSON.c",
+   "cJSON_Utils.c"
+  ],
+  "raw": "CMakeLists.txt\ncJSON.c\ncJSON_Utils.c",
+  "sec": 2.8
+ },
+ {
+  "id": "capnproto@qnx-1.0.2",
+  "rank": [
+   "c++/src/kj/debug.h",
+   "c++/src/kj/mutex.h",
+   "c++/src/kj/async-io.h",
+   "c++/src/kj/async-unix.h",
+   "c++/src/kj/filesystem.h",
+   "c++/src/kj/miniposix.h",
+   "c++/src/kj/io.h",
+   "c++/src/capnp/rpc-twoparty.h",
+   "c++/src/capnp/capability.h",
+   "c++/src/capnp/rpc.capnp.h",
+   "c++/src/capnp/dynamic.h",
+   "c++/src/kj/windows-sanity.h",
+   "c++/src/capnp/schema.capnp.h",
+   "c++/src/capnp/compiler/grammar.capnp.h"
+  ],
+  "raw": "c++/src/kj/debug.h\nc++/src/kj/mutex.h\nc++/src/kj/async-io.h\nc++/src/kj/async-unix.h\nc++/src/kj/filesystem.h\nc++/src/kj/miniposix.h\nc++/src/kj/io.h\nc++/src/capnp/rpc-twoparty.h\nc++/src/capnp/capability.h\nc++/src/capnp/rpc.capnp.h\nc++/src/capnp/dynamic.h\nc++/src/kj/windows-sanity.h\nc++/src/capnp/schema.capnp.h\nc++/src/capnp/compiler/grammar.capnp.h\nc++/src/capnp/rpc.capnp.h",
+  "sec": 28.6
+ },
+ {
+  "id": "check@qnx-0.15.2",
+  "rank": [
+   "lib/snprintf.c",
+   "src/check_run.c",
+   "src/check_msg.c",
+   "src/check_impl.h",
+   "lib/clock_gettime.c",
+   "src/check_error.c"
+  ],
+  "raw": "lib/snprintf.c\nsrc/check_run.c\nsrc/check_msg.c\nsrc/check_impl.h\nlib/clock_gettime.c\nsrc/check_error.c",
+  "sec": 8.8
+ },
+ {
+  "id": "chipStar@qnx-v1.3.0",
+  "rank": [
+   "include/CL/cl_platform.h",
+   "include/CL/cl_icd.h",
+   "include/CL/cl_ext.h",
+   "include/spdlog/details/os.h",
+   "include/spdlog/fmt/bundled/posix.h",
+   "include/spdlog/details/pattern_formatter.h",
+   "include/spdlog/fmt/bundled/format.h",
+   "include/hip/spirv_hip.hh",
+   "src/CHIPGraph.hh",
+   "src/CHIPException.hh",
+   "src/CHIPBindings.cc",
+   "src/Utils.cc",
+   "tools/spirv-extractor/spirv-extractor.hh",
+   "src/spirv_hiprtc.cc"
+  ],
+  "raw": "include/CL/cl_platform.h\ninclude/CL/cl_icd.h\ninclude/CL/cl_ext.h\ninclude/spdlog/details/os.h\ninclude/spdlog/fmt/bundled/posix.h\ninclude/spdlog/details/pattern_formatter.h\ninclude/spdlog/fmt/bundled/format.h\ninclude/hip/spirv_hip.hh\nsrc/CHIPGraph.hh\nsrc/CHIPException.hh\nsrc/CHIPBindings.cc\nsrc/Utils.cc\nsrc/CHIPBackendOpenCL.cc\ntools/spirv-extractor/spirv-extractor.hh\nsrc/spirv_hiprtc.cc\ninclude/hip/spirv_hip.hh",
+  "sec": 27.2
+ },
+ {
+  "id": "cpuinfo@qnx-f9a03241f8c3d4ed0c9728f5d70bff873d43d4e0",
+  "rank": [
+   "src/linux/processors.c",
+   "src/api.c",
+   "src/linux/cpulist.c",
+   "src/x86/linux/cpuinfo.c"
+  ],
+  "raw": "src/linux/processors.c\nsrc/api.c\nsrc/linux/cpulist.c\nsrc/x86/linux/cpuinfo.c",
+  "sec": 8.9
+ },
+ {
+  "id": "cups@qnx-2.4.x",
+  "rank": [
+   "tools/ippeveprinter.c",
+   "cups/dest.c",
+   "tools/ipptool.c",
+   "cups/http.c",
+   "cups/http.h",
+   "scheduler/auth.c",
+   "backend/lpd.c",
+   "tools/ippfind.c",
+   "scheduler/main.c",
+   "cups/http-addrlist.c",
+   "cups/cups-private.h",
+   "cups/http-private.h",
+   "cups/usersys.c",
+   "backend/backend-private.h",
+   "scheduler/printers.c",
+   "scheduler/cupsd.h",
+   "scheduler/cups-driverd.cxx",
+   "cups/file.c",
+   "scheduler/conf.c",
+   "backend/usb.c",
+   "cups/http-support.c",
+   "scheduler/cups-lpd.c",
+   "cups/debug.c",
+   "cups/tls-darwin.c",
+   "backend/usb-unix.c",
+   "backend/snmp.c",
+   "cups/http-addr.c"
+  ],
+  "raw": "tools/ippeveprinter.c\ncups/dest.c\ntools/ipptool.c\ncups/http.c\ncups/http.h\nscheduler/auth.c\nbackend/lpd.c\ntools/ippfind.c\nscheduler/main.c\ncups/http-addrlist.c\ncups/cups-private.h\ncups/http-private.h\ncups/usersys.c\nbackend/backend-private.h\nscheduler/printers.c\nscheduler/cupsd.h\nscheduler/cups-driverd.cxx\ncups/file.c\nscheduler/conf.c\nbackend/usb.c\ncups/http-support.c\nscheduler/cups-lpd.c\ncups/debug.c\ncups/tls-darwin.c\nbackend/usb-unix.c\nbackend/snmp.c\ncups/http-addr.c",
+  "sec": 30.5
+ },
+ {
+  "id": "dart@qnx-v6.20.2",
+  "rank": [
+   "dart/common/Platform.hpp",
+   "dart/common/SharedLibrary.hpp",
+   "dart/common/SharedLibrary.cpp",
+   "tools/friction_eval/CMakeLists.txt"
+  ],
+  "raw": "dart/common/Platform.hpp\ndart/common/SharedLibrary.hpp\ndart/common/SharedLibrary.cpp\ntools/friction_eval/CMakeLists.txt",
+  "sec": 6.9
+ },
+ {
+  "id": "dhcpcd@qnx-v10.2.4",
+  "rank": [
+   "src/if-linux.c",
+   "src/privsep-linux.c",
+   "src/ipv6.h",
+   "src/dhcpcd.h"
+  ],
+  "raw": "src/if-linux.c\nsrc/privsep-linux.c\nsrc/ipv6.h\nsrc/dhcpcd.h",
+  "sec": 7.8
+ },
+ {
+  "id": "dlt-daemon@qnx-v2.18.10",
+  "rank": [
+   "src/daemon/dlt-daemon.c",
+   "src/lib/dlt_user.c",
+   "src/system/dlt-system-filetransfer.c",
+   "src/daemon/dlt_daemon_socket.c",
+   "src/console/dlt-receive.c",
+   "src/system/dlt-system-processes.c",
+   "src/daemon/dlt_daemon_connection.c",
+   "src/core_dump_handler/dlt_cdh_crashid.c",
+   "src/lib/dlt_client.c",
+   "src/daemon/dlt_daemon_common.c",
+   "src/console/logstorage/dlt-logstorage-ctrl.c",
+   "src/system/dlt-system-watchdog.c",
+   "src/offlinelogstorage/dlt_offline_logstorage.c",
+   "src/shared/dlt_multiple_files.c",
+   "src/daemon/dlt_daemon_unix_socket.c"
+  ],
+  "raw": "src/daemon/dlt-daemon.c\nsrc/lib/dlt_user.c\nsrc/system/dlt-system-filetransfer.c\nsrc/daemon/dlt_daemon_socket.c\nsrc/console/dlt-receive.c\nsrc/system/dlt-system-processes.c\nsrc/daemon/dlt_daemon_connection.c\nsrc/core_dump_handler/dlt_cdh_crashid.c\nsrc/lib/dlt_client.c\nsrc/daemon/dlt_daemon_common.c\nsrc/console/logstorage/dlt-logstorage-ctrl.c\nsrc/system/dlt-system-watchdog.c\nsrc/offlinelogstorage/dlt_offline_logstorage.c\nsrc/shared/dlt_multiple_files.c\nsrc/daemon/dlt_daemon_unix_socket.c",
+  "sec": 31.2
+ },
+ {
+  "id": "dnsmasq@qnx-v2.92",
+  "rank": [
+   "src/netlink.c",
+   "src/rfc1035.c",
+   "src/cache.c",
+   "src/dnsmasq.c",
+   "src/dhcp.c",
+   "src/network.c",
+   "src/dhcp6.c",
+   "src/radv.c",
+   "src/util.c",
+   "src/dnsmasq.h"
+  ],
+  "raw": "src/netlink.c\nsrc/rfc1035.c\nsrc/cache.c\nsrc/dnsmasq.c\nsrc/dhcp.c\nsrc/network.c\nsrc/dhcp6.c\nsrc/radv.c\nsrc/util.c\nsrc/dnsmasq.h",
+  "sec": 13.2
+ },
+ {
+  "id": "dump1090@port-dump1090-qnx",
+  "rank": [
+   "anet.c",
+   "anet.h"
+  ],
+  "raw": "anet.c\nanet.h",
+  "sec": 1.3
+ },
+ {
+  "id": "executorch@qnx-v1.3.1",
+  "rank": [],
+  "raw": "13\n21\n28",
+  "sec": 3.4
+ },
+ {
+  "id": "farmhash@qnx",
+  "rank": [
+   "dev/platform.cc"
+  ],
+  "raw": "dev/platform.cc",
+  "sec": 1.9
+ },
+ {
+  "id": "g3log@porting_g3log_to_qnx",
+  "rank": [],
+  "raw": "2\n12\n13\n15\n17\n25",
+  "sec": 4.7
+ },
+ {
+  "id": "gdal@qnx-v3.5.3",
+  "rank": [],
+  "raw": "1. port/cpl_port.h\n2. ogr/ogr_geometry.h\n3. cmake/helpers/configure.cmake\n4. port/cpl_vsi_unix_stdio_64.cpp\n5. port/cpl_string.h\n6. port/cpl_vsisimple.cpp\n7. port/cpl_vsi.h\n8. cmake/modules/3.16/FindPython/Support.cmake\n9. cmake/modules/3.12/FindBoost.cmake\n10. cmake/modules/3.12/FindOpenSSL.cmake\n11. cmake/modules/packages/FindODBC.cmake\n12. cmake/modules/packages/FindIconv.cmake\n13. frmts/zlib/zconf.h\n14. frmts/zlib/zutil.h\n15. ogr/ogr_core.h",
+  "sec": 32.4
+ },
+ {
+  "id": "ggml@qnx-8.0",
+  "rank": [
+   "src/ggml-cpu/ggml-cpu.c",
+   "src/ggml.c",
+   "src/ggml-backend-reg.cpp",
+   "src/ggml-cpu/kleidiai/kleidiai.cpp",
+   "src/ggml-rpc/transport.cpp",
+   "src/ggml-sycl/dpct/helper.hpp",
+   "src/ggml-cpu/ggml-cpu.cpp",
+   "src/ggml-cpu/ggml-cpu-impl.h",
+   "src/ggml-cpu/amx/mmq.cpp",
+   "src/ggml-cpu/CMakeLists.txt",
+   "src/ggml-rpc/CMakeLists.txt",
+   "src/ggml-sycl/CMakeLists.txt",
+   "src/ggml-vulkan/ggml-vulkan.cpp",
+   "src/ggml-vulkan/CMakeLists.txt",
+   "src/ggml-quants.c",
+   "src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+   "src/ggml-backend.cpp",
+   "src/ggml-cpu/llamafile/sgemm.cpp",
+   "src/ggml-cpu/spacemit/ime.cpp",
+   "src/ggml-hip/CMakeLists.txt",
+   "src/ggml-hexagon/htp/cmake-toolchain.cmake",
+   "src/ggml-cann/CMakeLists.txt",
+   "src/ggml-opencl/ggml-opencl.cpp",
+   "src/ggml-blas/CMakeLists.txt"
+  ],
+  "raw": "src/ggml-cpu/ggml-cpu.c\nsrc/ggml.c\nsrc/ggml-backend-reg.cpp\nsrc/ggml-cpu/kleidiai/kleidiai.cpp\nsrc/ggml-rpc/transport.cpp\nsrc/ggml-sycl/dpct/helper.hpp\nsrc/ggml-cpu/ggml-cpu.cpp\nsrc/ggml-cpu/ggml-cpu-impl.h\nsrc/ggml-cpu/amx/mmq.cpp\nsrc/ggml-cpu/CMakeLists.txt\nsrc/ggml-rpc/CMakeLists.txt\nsrc/ggml-sycl/CMakeLists.txt\nsrc/ggml-vulkan/ggml-vulkan.cpp\nsrc/ggml-vulkan/CMakeLists.txt\nsrc/ggml-quants.c\nsrc/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp\nsrc/ggml-backend.cpp\nsrc/ggml-cpu/llamafile/sgemm.cpp\nsrc/ggml-cpu/spacemit/ime.cpp\nsrc/ggml-hip/CMakeLists.txt\nsrc/ggml-hexagon/htp/cmake-toolchain.cmake\nsrc/ggml-cann/CMakeLists.txt\nsrc/ggml-opencl/ggml-opencl.cpp\nsrc/ggml-blas/CMakeLists.txt",
+  "sec": 48.3
+ },
+ {
+  "id": "glib@qnx-2.82.2-1759894777",
+  "rank": [
+   "gio/gsocket.c",
+   "glib/gmain.c",
+   "gio/gunixmounts.c",
+   "glib/gfileutils.c",
+   "gio/glocalfile.c",
+   "gio/glocalfileinfo.c",
+   "glib/glib-unix.c",
+   "gio/glocalfileoutputstream.c",
+   "glib/gspawn-posix.c",
+   "glib/gtestutils.c",
+   "gio/gdbusmessage.c",
+   "glib/gstdio.c",
+   "glib/gthread-posix.c",
+   "glib/gbacktrace.c",
+   "gio/gsubprocess.c",
+   "glib/gkeyfile.c",
+   "gio/giomodule.c",
+   "glib/goption.c",
+   "gio/gfile.c"
+  ],
+  "raw": "gio/gsocket.c\nglib/gmain.c\ngio/gunixmounts.c\nglib/gfileutils.c\ngio/glocalfile.c\ngio/glocalfileinfo.c\nglib/glib-unix.c\ngio/glocalfileoutputstream.c\nglib/gspawn-posix.c\nglib/gtestutils.c\ngio/gdbusmessage.c\nglib/gstdio.c\nglib/gthread-posix.c\nglib/gbacktrace.c\ngio/gsubprocess.c\nglib/gkeyfile.c\ngio/giomodule.c\nglib/goption.c\ngio/gfile.c\n",
+  "sec": 27.9
+ },
+ {
+  "id": "glog@qnx-mediapipe",
+  "rank": [
+   "src/logging.cc",
+   "src/utilities.cc",
+   "src/stacktrace_generic-inl.h",
+   "src/signalhandler.cc",
+   "src/raw_logging.cc",
+   "src/stacktrace_unittest.cc",
+   "src/vlog_is_on.cc",
+   "src/windows/port.h",
+   "src/stacktrace_x86-inl.h",
+   "src/stacktrace_powerpc-inl.h",
+   "src/googletest.h",
+   "src/symbolize.cc",
+   "src/symbolize.h",
+   "src/base/mutex.h",
+   "src/demangle.cc"
+  ],
+  "raw": "src/logging.cc\nsrc/utilities.cc\nsrc/stacktrace_generic-inl.h\nsrc/signalhandler.cc\nsrc/raw_logging.cc\nsrc/stacktrace_unittest.cc\nsrc/vlog_is_on.cc\nsrc/windows/port.h\nsrc/stacktrace_x86-inl.h\nsrc/stacktrace_powerpc-inl.h\nsrc/googletest.h\nsrc/symbolize.cc\nsrc/symbolize.h\nsrc/base/mutex.h\nsrc/demangle.cc",
+  "sec": 20.5
+ },
+ {
+  "id": "gloo@qnx-mediapipe",
+  "rank": [
+   "gloo/common/linux.cc",
+   "gloo/transport/tcp/device.cc",
+   "gloo/transport/tcp/loop.h"
+  ],
+  "raw": "gloo/common/linux.cc\ngloo/transport/tcp/device.cc\ngloo/transport/tcp/loop.h",
+  "sec": 6.2
+ },
+ {
+  "id": "gnutls@qnx-3.6.15",
+  "rank": [],
+  "raw": "1. src/socket.c\n10. src/common.h\n15. src/udp-serv.c\n19. src/srptool.c\n26. src/psk.c\n27. lib/system.c",
+  "sec": 11.7
+ },
+ {
+  "id": "googletest@qnx_v1.14.0",
+  "rank": [
+   "googletest/src/gtest-port.cc",
+   "googletest/include/gtest/internal/gtest-port.h",
+   "googletest/include/gtest/internal/gtest-port-arch.h",
+   "googletest/CMakeLists.txt"
+  ],
+  "raw": "googletest/src/gtest-port.cc\ngoogletest/include/gtest/internal/gtest-port.h\ngoogletest/include/gtest/internal/gtest-port-arch.h\ngoogletest/CMakeLists.txt",
+  "sec": 12.1
+ },
+ {
+  "id": "grpc@qnx-v1.76.0",
+  "rank": [
+   "src/core/lib/event_engine/posix_engine/posix_interface_posix.cc",
+   "src/core/lib/iomgr/socket_utils_common_posix.cc",
+   "src/core/lib/event_engine/posix_engine/posix_endpoint.cc",
+   "src/core/lib/iomgr/tcp_posix.cc",
+   "src/core/lib/event_engine/posix_engine/tcp_socket_utils.cc",
+   "src/core/lib/iomgr/internal_errqueue.h",
+   "src/core/lib/iomgr/tcp_server_utils_posix_ifaddrs.cc",
+   "src/core/lib/event_engine/posix_engine/set_socket_dualstack.cc",
+   "src/core/lib/iomgr/port.h",
+   "src/core/lib/event_engine/posix_engine/traced_buffer_list.cc",
+   "src/core/lib/iomgr/tcp_client_posix.cc",
+   "src/core/lib/iomgr/tcp_server_posix.cc",
+   "src/core/lib/address_utils/sockaddr_utils.cc"
+  ],
+  "raw": "src/core/lib/event_engine/posix_engine/posix_interface_posix.cc\nsrc/core/lib/iomgr/socket_utils_common_posix.cc\nsrc/core/lib/event_engine/posix_engine/posix_endpoint.cc\nsrc/core/lib/iomgr/tcp_posix.cc\nsrc/core/lib/event_engine/posix_engine/tcp_socket_utils.cc\nsrc/core/lib/iomgr/internal_errqueue.h\nsrc/core/lib/event_engine/posix_engine/tcp_socket_utils.cc\nsrc/core/lib/iomgr/tcp_server_utils_posix_ifaddrs.cc\nsrc/core/lib/event_engine/posix_engine/set_socket_dualstack.cc\nsrc/core/lib/iomgr/port.h\nsrc/core/lib/event_engine/posix_engine/traced_buffer_list.cc\nsrc/core/lib/event_engine/posix_engine/tcp_socket_utils.cc\nsrc/core/lib/iomgr/tcp_client_posix.cc\nsrc/core/lib/iomgr/tcp_server_posix.cc\nsrc/core/lib/event_engine/posix_engine/tcp_socket_utils.cc\nsrc/core/lib/address_utils/sockaddr_utils.cc\nsrc/core/lib/iomgr/exec_ctx.",
+  "sec": 53.7
+ },
+ {
+  "id": "gtk@QNXOSG-495",
+  "rank": [
+   "gdk/win32/gdksurface-win32.c",
+   "gdk/win32/gdkclipdrop-win32.c",
+   "gdk/win32/gdkevents-win32.c",
+   "gdk/win32/gdkprivate-win32.h",
+   "gdk/win32/gdkdrag-win32.c",
+   "gdk/win32/gdkdisplay-win32.c",
+   "gdk/win32/gdkdrop-win32.c",
+   "gdk/win32/gdksurface-win32.h",
+   "gdk/win32/gdkcursor-win32.c",
+   "gdk/win32/gdkdevicemanager-win32.c",
+   "gdk/win32/gdkclipdrop-win32.h"
+  ],
+  "raw": "gdk/win32/gdksurface-win32.c\ngdk/win32/gdkclipdrop-win32.c\ngdk/win32/gdkevents-win32.c\ngdk/win32/gdkprivate-win32.h\ngdk/win32/gdkdrag-win32.c\ngdk/win32/gdkdisplay-win32.c\ngdk/win32/gdkdrop-win32.c\ngdk/win32/gdksurface-win32.h\ngdk/win32/gdkcursor-win32.c\ngdk/win32/gdkdevicemanager-win32.c\ngdk/win32/gdkclipdrop-win32.h\ngdk/win32/gdkdrop-win32.c\ngdk/win32/gdksurface-win32.h\ngdk/win32/gdkdisplay-win32.c\ngdk/win32/gdkcursor-win32.c",
+  "sec": 41.4
+ },
+ {
+  "id": "gtsam@qnx_4.3a0",
+  "rank": [
+   "gtsam/3rdparty/Eigen/cmake/EigenDetermineOSVersion.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindMetis.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindTriSYCL.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindGLEW.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindPTSCOTCH.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindScotch.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindBLASEXT.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindGSL.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindPastix.cmake",
+   "gtsam/3rdparty/Eigen/cmake/FindBLAS.cmake",
+   "gtsam/CMakeLists.txt",
+   "gtsam/3rdparty/GeographicLib/CMakeLists.txt",
+   "wrap/cmake/MatlabWrap.cmake",
+   "wrap/pybind11/tools/pybind11Common.cmake",
+   "gtsam/nonlinear/NonlinearFactor.h",
+   "wrap/cmake/PybindWrap.cmake",
+   "wrap/pybind11/tools/FindPythonLibsNew.cmake",
+   "gtsam/3rdparty/metis/GKlib/gkregex.c",
+   "gtsam/3rdparty/Eigen/CMakeLists.txt",
+   "cmake/FindMKL.cmake",
+   "python/CMakeLists.txt",
+   "wrap/pybind11/CMakeLists.txt"
+  ],
+  "raw": "gtsam/3rdparty/Eigen/cmake/EigenDetermineOSVersion.cmake\ngtsam/3rdparty/Eigen/cmake/FindMetis.cmake\ngtsam/3rdparty/Eigen/cmake/FindTriSYCL.cmake\ngtsam/3rdparty/Eigen/cmake/FindGLEW.cmake\ngtsam/3rdparty/Eigen/cmake/FindPTSCOTCH.cmake\ngtsam/3rdparty/Eigen/cmake/FindScotch.cmake\ngtsam/3rdparty/Eigen/cmake/FindBLASEXT.cmake\ngtsam/3rdparty/Eigen/cmake/FindGSL.cmake\ngtsam/3rdparty/Eigen/cmake/FindPastix.cmake\ngtsam/3rdparty/Eigen/cmake/FindBLAS.cmake\ngtsam/CMakeLists.txt\ngtsam/3rdparty/GeographicLib/CMakeLists.txt\nwrap/cmake/MatlabWrap.cmake\nwrap/pybind11/tools/pybind11Common.cmake\ngtsam/nonlinear/NonlinearFactor.h\nwrap/cmake/PybindWrap.cmake\nwrap/pybind11/tools/FindPythonLibsNew.cmake\ngtsam/3rdparty/metis/GKlib/gkregex.c\ngtsam/3rdparty/Eigen/CMakeLists.txt\ncmake/FindMKL.cmake\ncmake/FindGtsamBuildTypes.cmake\npython/CMakeLists.txt\nwrap/pybind11/CMakeLists.txt\ngtsam",
+  "sec": 49.6
+ },
+ {
+  "id": "hailort@qnx-4.14",
+  "rank": [
+   "hailort/libhailort/src/os/CMakeLists.txt",
+   "hailort/libhailort/bindings/python/src/CMakeLists.txt",
+   "hailort/libhailort/src/os/posix/hailort_driver.cpp",
+   "hailort/libhailort/include/hailo/platform.h",
+   "hailort/libhailort/src/os/hailort_driver.hpp",
+   "hailort/libhailort/bindings/python/src/internal/CMakeLists.txt",
+   "hailort/common/os/posix/filesystem.cpp"
+  ],
+  "raw": "hailort/libhailort/src/os/CMakeLists.txt\nhailort/libhailort/bindings/python/src/CMakeLists.txt\nhailort/libhailort/src/os/posix/hailort_driver.cpp\nhailort/libhailort/include/hailo/platform.h\nhailort/libhailort/src/os/hailort_driver.hpp\nhailort/libhailort/bindings/python/src/internal/CMakeLists.txt\nhailort/common/os/posix/filesystem.cpp",
+  "sec": 22.3
+ },
+ {
+  "id": "htop@qnx-3.5.0",
+  "rank": [
+   "pcp/Platform.c",
+   "generic/UnwindPtrace.c",
+   "TraceScreen.c",
+   "linux/Platform.c",
+   "linux/LinuxProcessTable.c",
+   "pcp/PCPMachine.c",
+   "pcp/PCPMachine.h",
+   "dragonflybsd/Platform.c",
+   "dragonflybsd/DragonFlyBSDProcessTable.c",
+   "Action.c",
+   "linux/LinuxMachine.c"
+  ],
+  "raw": "pcp/Platform.c\ngeneric/UnwindPtrace.c\nTraceScreen.c\nlinux/Platform.c\nlinux/LinuxProcessTable.c\npcp/PCPMachine.c\npcp/PCPMachine.h\ndragonflybsd/Platform.c\ndragonflybsd/DragonFlyBSDProcessTable.c\nAction.c\nlinux/LinuxMachine.c",
+  "sec": 15.4
+ },
+ {
+  "id": "intel-oneDNN@qnx-openvino-2026.1.2-6b6492b1ea9ef5ca9ff3c5c59ed71dcca683a446",
+  "rank": [
+   "third_party/gtest/internal/gtest-port.h",
+   "third_party/gtest/src/gtest.cc",
+   "third_party/spdlog/details/os-inl.h",
+   "third_party/gtest/src/gtest-port.cc",
+   "src/cpu/x64/jit_generator.hpp",
+   "cmake/FindBLAS.cmake",
+   "third_party/ittnotify/ittnotify_static.c",
+   "third_party/ittnotify/ittnotify_config.h",
+   "third_party/ittnotify/ittnotify.h",
+   "cmake/platform.cmake",
+   "third_party/ittnotify/legacy/ittnotify.h",
+   "third_party/xbyak/xbyak.h",
+   "src/common/utils.cpp",
+   "third_party/gtest/internal/gtest-port-arch.h",
+   "CMakeLists.txt",
+   "cmake/FindOpenCL.cmake",
+   "third_party/level_zero/ze_api.h",
+   "cmake/SYCL.cmake",
+   "third_party/gtest/internal/gtest-internal.h",
+   "src/cpu/aarch64/jit_sve_512_x8s8s32x_conv_kernel.cpp",
+   "cmake/OpenMP.cmake",
+   "cmake/SDL.cmake",
+   "third_party/xbyak/xbyak_util.h",
+   "third_party/gtest/src/gtest-filepath.cc",
+   "cmake/utils.cmake",
+   "cmake/Threading.cmake"
+  ],
+  "raw": "third_party/gtest/internal/gtest-port.h\nthird_party/gtest/src/gtest.cc\nthird_party/spdlog/details/os-inl.h\nthird_party/gtest/src/gtest-port.cc\nsrc/cpu/x64/jit_generator.hpp\ncmake/FindBLAS.cmake\nthird_party/ittnotify/ittnotify_static.c\nthird_party/ittnotify/ittnotify_config.h\nthird_party/ittnotify/ittnotify.h\ncmake/platform.cmake\nthird_party/ittnotify/legacy/ittnotify.h\nthird_party/xbyak/xbyak.h\nsrc/common/utils.cpp\nthird_party/gtest/internal/gtest-port-arch.h\nCMakeLists.txt\ncmake/FindOpenCL.cmake\nthird_party/level_zero/ze_api.h\ncmake/SYCL.cmake\nthird_party/gtest/internal/gtest-internal.h\nsrc/cpu/aarch64/jit_sve_512_x8s8s32x_conv_kernel.cpp\ncmake/OpenMP.cmake\ncmake/SDL.cmake\nthird_party/xbyak/xbyak_util.h\nthird_party/gtest/src/gtest-filepath.cc\ncmake/utils.cmake\ncmake/Threading.cmake\nthird_party/xbyak_aarch64/xbyak_aarch64/xbyak_a",
+  "sec": 50.9
+ },
+ {
+  "id": "iperf3@qnx-3.7",
+  "rank": [
+   "src/iperf_api.c",
+   "src/net.c",
+   "src/tcp_info.c",
+   "src/iperf_sctp.c",
+   "src/iperf_tcp.c",
+   "src/iperf_util.c",
+   "src/iperf_api.h",
+   "src/iperf_client_api.c",
+   "src/iperf_server_api.c",
+   "src/iperf_util.h",
+   "src/iperf_locale.c",
+   "src/dscp.c",
+   "src/iperf_auth.c",
+   "src/units.c",
+   "src/iperf_time.c",
+   "src/iperf_error.c"
+  ],
+  "raw": "src/iperf_api.c\nsrc/net.c\nsrc/tcp_info.c\nsrc/iperf_sctp.c\nsrc/iperf_tcp.c\nsrc/iperf_util.c\nsrc/iperf_api.h\nsrc/iperf_client_api.c\nsrc/iperf_server_api.c\nsrc/iperf_util.h\nsrc/iperf_locale.c\nsrc/dscp.c\nsrc/iperf_auth.c\nsrc/units.c\nsrc/iperf_time.c\nsrc/iperf_error.c",
+  "sec": 22.1
+ },
+ {
+  "id": "kineto@qnx-pytorch-v2.12.1-b2103f78d13fde4937af010c0ef8e24313568bc5",
+  "rank": [
+   "libkineto/src/ThreadUtil.cpp",
+   "libkineto/src/ConfigLoader.cpp",
+   "libkineto/src/DaemonConfigLoader.h",
+   "libkineto/src/IpcFabricConfigClient.h",
+   "libkineto/src/CuptiActivityProfiler.cpp",
+   "libkineto/include/EnvMetadata.h",
+   "libkineto/src/CuptiActivityBuffer.h"
+  ],
+  "raw": "libkineto/src/ThreadUtil.cpp\nlibkineto/src/ConfigLoader.cpp\nlibkineto/src/DaemonConfigLoader.h\nlibkineto/src/IpcFabricConfigClient.h\nlibkineto/src/CuptiActivityProfiler.cpp\nlibkineto/include/EnvMetadata.h\nlibkineto/src/CuptiActivityBuffer.h",
+  "sec": 14.0
+ },
+ {
+  "id": "labwc@qnx-0.20.2",
+  "rank": [
+   "clients/labnag.c",
+   "src/input/tablet.c",
+   "src/input/touch.c",
+   "src/config/tablet.c",
+   "src/input/cursor.c",
+   "src/seat.c"
+  ],
+  "raw": "clients/labnag.c\nsrc/input/tablet.c\nsrc/input/touch.c\nsrc/config/tablet.c\nsrc/input/cursor.c\nsrc/seat.c",
+  "sec": 9.0
+ },
+ {
+  "id": "libcamera@qnx-v0.5.1_rpt20250722",
+  "rank": [
+   "src/libcamera/v4l2_videodevice.cpp",
+   "src/libcamera/dma_buf_allocator.cpp",
+   "src/libcamera/v4l2_device.cpp",
+   "src/libcamera/base/thread.cpp",
+   "src/libcamera/pipeline/mali-c55/mali-c55.cpp",
+   "src/libcamera/pipeline/rpi/pisp/pisp.cpp",
+   "src/libcamera/v4l2_subdevice.cpp",
+   "src/libcamera/pipeline/rpi/vc4/vc4.cpp",
+   "src/libcamera/pipeline/ipu3/ipu3.cpp",
+   "src/libcamera/pipeline/rkisp1/rkisp1.cpp",
+   "src/libcamera/process.cpp",
+   "src/libcamera/pipeline/vimc/vimc.cpp",
+   "src/ipa/rpi/cam_helper/imx500_tensor_parser/flatbuffers/flatbuffers.h",
+   "src/ipa/rpi/common/ipa_base.cpp",
+   "src/libcamera/pipeline/rpi/common/pipeline_base.cpp",
+   "src/libcamera/media_device.cpp",
+   "src/libcamera/base/event_dispatcher_poll.cpp",
+   "src/ipa/mali-c55/mali-c55.cpp",
+   "src/ipa/rkisp1/rkisp1.cpp"
+  ],
+  "raw": "src/libcamera/v4l2_videodevice.cpp\nsrc/libcamera/dma_buf_allocator.cpp\nsrc/libcamera/v4l2_device.cpp\nsrc/libcamera/base/thread.cpp\nsrc/libcamera/pipeline/mali-c55/mali-c55.cpp\nsrc/libcamera/pipeline/rpi/pisp/pisp.cpp\nsrc/libcamera/v4l2_subdevice.cpp\nsrc/libcamera/pipeline/rpi/vc4/vc4.cpp\nsrc/libcamera/pipeline/ipu3/ipu3.cpp\nsrc/libcamera/pipeline/rkisp1/rkisp1.cpp\nsrc/libcamera/process.cpp\nsrc/libcamera/pipeline/vimc/vimc.cpp\nsrc/ipa/rpi/cam_helper/imx500_tensor_parser/flatbuffers/flatbuffers.h\nsrc/ipa/rpi/common/ipa_base.cpp\nsrc/libcamera/pipeline/ipu3/ipu3.cpp\nsrc/libcamera/pipeline/rkisp1/rkisp1.cpp\nsrc/libcamera/pipeline/rpi/common/pipeline_base.cpp\nsrc/libcamera/media_device.cpp\nsrc/libcamera/base/event_dispatcher_poll.cpp\nsrc/ipa/mali-c55/mali-c55.cpp\nsrc/ipa/rkisp1/rkisp1.cpp",
+  "sec": 49.3
+ },
+ {
+  "id": "libevent@qnx-2.1.12-stable",
+  "rank": [],
+  "raw": "1. Makefile.am\n2. event.c\n3. epolltable-internal.h\n4. kqueue.c\n5. win32select.c\n6. bufferevent.c\n7. bufferevent_sock.c\n8. evrpc.c\n9. buffer.c\n10. evutil.c\n11. http.c\n12. evdns.c\n13. signal.c\n14. arc4random.c\n15. listener.c\n16. epoll.c\n17. evmap.c\n18. util-internal.h\n19. cmake/FindGit.cmake\n20. cmake/CheckFunctionExistsEx.cmake",
+  "sec": 26.0
+ },
+ {
+  "id": "libffi@qnx-v3.8.0",
+  "rank": [
+   "src/arm/ffi.c",
+   "src/powerpc/ffi_darwin.c",
+   "src/aarch64/ffi.c",
+   "src/powerpc/ffi_sysv.c",
+   "src/x86/ffi.c",
+   "src/x86/ffitarget.h",
+   "src/powerpc/ffi_linux64.c",
+   "src/mips/ffi.c",
+   "src/mips/ffitarget.h",
+   "src/riscv/ffi.c",
+   "src/pa/ffi.c",
+   "src/arm/ffitarget.h",
+   "src/powerpc/ffi.c",
+   "src/x86/ffi64.c",
+   "src/closures.c",
+   "src/tramp.c",
+   "src/dlmalloc.c",
+   "src/m68k/ffi.c",
+   "src/avr32/ffi.c",
+   "src/prep_cif.c",
+   "include/ffi_common.h",
+   "src/powerpc/ffitarget.h",
+   "src/aarch64/ffitarget.h"
+  ],
+  "raw": "src/arm/ffi.c\nsrc/powerpc/ffi_darwin.c\nsrc/aarch64/ffi.c\nsrc/powerpc/ffi_sysv.c\nsrc/x86/ffi.c\nsrc/x86/ffitarget.h\nsrc/powerpc/ffi_linux64.c\nsrc/mips/ffi.c\nsrc/mips/ffitarget.h\nsrc/riscv/ffi.c\nsrc/pa/ffi.c\nsrc/arm/ffitarget.h\nsrc/powerpc/ffi.c\nsrc/x86/ffi64.c\nsrc/closures.c\nsrc/tramp.c\nsrc/dlmalloc.c\nsrc/m68k/ffi.c\nsrc/avr32/ffi.c\nsrc/prep_cif.c\ninclude/ffi_common.h\nsrc/powerpc/ffitarget.h\nsrc/aarch64/ffitarget.h\nsrc/x86/ffi.c",
+  "sec": 35.6
+ },
+ {
+  "id": "libmetal@qnx-v2025.10.1",
+  "rank": [
+   "lib/system/linux/sys.h",
+   "lib/system/linux/mutex.h",
+   "lib/system/linux/condition.h",
+   "lib/system/linux/irq.c",
+   "lib/system/linux/init.c",
+   "lib/io.h"
+  ],
+  "raw": "lib/system/linux/sys.h\nlib/system/linux/mutex.h\nlib/system/linux/condition.h\nlib/system/linux/irq.c\nlib/system/linux/init.c\nlib/io.h",
+  "sec": 8.9
+ },
+ {
+  "id": "libusb@qnx-1.0.23",
+  "rank": [
+   "libusb/os/linux_udev.c",
+   "libusb/os/linux_netlink.c",
+   "libusb/os/threads_posix.c"
+  ],
+  "raw": "libusb/os/linux_udev.c\nlibusb/os/linux_netlink.c\nlibusb/os/threads_posix.c",
+  "sec": 8.0
+ },
+ {
+  "id": "libutempter@qnx-v1.2.3",
+  "rank": [
+   "libutempter/iface.c",
+   "libutempter/utempter.c",
+   "libutempter/diag.h"
+  ],
+  "raw": "libutempter/iface.c\nlibutempter/utempter.c\nlibutempter/diag.h",
+  "sec": 4.2
+ },
+ {
+  "id": "libuv@qnx-v1.51.0",
+  "rank": [
+   "src/unix/fs.c",
+   "src/unix/core.c",
+   "src/unix/thread.c",
+   "src/unix/internal.h",
+   "src/unix/udp.c",
+   "include/uv/unix.h",
+   "src/unix/stream.c",
+   "src/unix/process.c",
+   "src/unix/tcp.c",
+   "src/unix/tty.c",
+   "src/unix/linux.c",
+   "src/unix/pipe.c",
+   "src/unix/kqueue.c",
+   "src/uv-common.h",
+   "src/unix/async.c",
+   "src/unix/freebsd.c",
+   "src/unix/bsd-ifaddrs.c",
+   "src/unix/aix.c",
+   "src/thread-common.c"
+  ],
+  "raw": "src/unix/fs.c\nsrc/unix/core.c\nsrc/unix/thread.c\nsrc/unix/internal.h\nsrc/unix/udp.c\ninclude/uv/unix.h\nsrc/unix/stream.c\nsrc/unix/process.c\nsrc/unix/tcp.c\nsrc/unix/tty.c\nsrc/unix/linux.c\nsrc/unix/pipe.c\nsrc/unix/kqueue.c\nsrc/uv-common.h\nsrc/unix/async.c\nsrc/unix/freebsd.c\nsrc/unix/bsd-ifaddrs.c\nsrc/unix/aix.c\nsrc/thread-common.c",
+  "sec": 25.8
+ },
+ {
+  "id": "libwebsockets@nnarayanamurthy-qnx-v4.5.8",
+  "rank": [
+   "lib/plat/unix/private-lib-plat-unix.h",
+   "lib/plat/unix/unix-sockets.c",
+   "lib/roles/http/server/server.c",
+   "lib/plat/freertos/freertos-sockets.c",
+   "lib/misc/CMakeLists.txt",
+   "lib/CMakeLists.txt",
+   "cmake/LwsCheckRequirements.cmake",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-hugeurl/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-perf/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-blob/CMakeLists.txt",
+   "minimal-examples/client/hello_world-policy/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-testsfail/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-smd/CMakeLists.txt",
+   "minimal-examples-lowlevel/secure-streams/minimal-secure-streams-threads/CMakeLists.txt",
+   "minimal-examples/client/http-post/CMakeLists.txt",
+   "minimal-examples/client/ws-echo/CMakeLists.txt",
+   "minimal-examples/client/hello_world/CMakeLists.txt",
+   "test-apps/test-server.c",
+   "lwsws/main.c"
+  ],
+  "raw": "lib/plat/unix/private-lib-plat-unix.h\nlib/plat/unix/unix-sockets.c\nlib/roles/http/server/server.c\nlib/plat/freertos/freertos-sockets.c\nlib/misc/CMakeLists.txt\nlib/CMakeLists.txt\ncmake/LwsCheckRequirements.cmake\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-hugeurl/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-perf/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-blob/CMakeLists.txt\nminimal-examples/client/hello_world-policy/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-testsfail/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-smd/CMakeLists.txt\nminimal-examples-lowlevel/secure-streams/minimal-secure-streams-threads/CMakeLists.txt\nminimal-examples/client/http-post/CMakeLists.txt\nminimal-examples/client/ws-echo/CMakeLists.txt\nminimal-examples/client/hello_world/CMakeLists.txt\ntest-apps/test-server.c\nlwsws/main.c",
+  "sec": 47.5
+ },
+ {
+  "id": "libxml2@qnx-2.14.4",
+  "rank": [],
+  "raw": "3\n11\n12\n13\n14\n15\n17\n19\n20\n21\n23\n24\n25\n26\n27\n28\n29\n30",
+  "sec": 10.4
+ },
+ {
+  "id": "libyaml@qnx-0.2.5",
+  "rank": [
+   "CMakeLists.txt",
+   "include/yaml.h",
+   "src/yaml_private.h"
+  ],
+  "raw": "CMakeLists.txt\ninclude/yaml.h\nsrc/yaml_private.h",
+  "sec": 3.0
+ },
+ {
+  "id": "lighttpd1.4@qnx_1.4.73",
+  "rank": [
+   "src/server.c",
+   "src/stat_cache.c",
+   "src/mod_openssl.c",
+   "src/mod_dirlisting.c",
+   "src/network_write.c",
+   "src/mod_extforward.c",
+   "src/configfile.c",
+   "src/log.c",
+   "src/ck.c",
+   "src/mod_deflate.c"
+  ],
+  "raw": "src/server.c\nsrc/stat_cache.c\nsrc/mod_openssl.c\nsrc/mod_dirlisting.c\nsrc/network_write.c\nsrc/mod_extforward.c\nsrc/configfile.c\nsrc/log.c\nsrc/ck.c\nsrc/mod_deflate.c",
+  "sec": 14.4
+ },
+ {
+  "id": "lldpd@qnx-1.0.22",
+  "rank": [
+   "src/daemon/netlink.c",
+   "src/daemon/priv-linux.c",
+   "src/daemon/interfaces-linux.c",
+   "include/linux/rtnetlink.h",
+   "include/linux/if.h",
+   "include/linux/netlink.h",
+   "include/linux/ethtool.h",
+   "include/linux/wireless.h",
+   "src/daemon/protocols/sonmp.c",
+   "src/daemon/interfaces-bsd.c"
+  ],
+  "raw": "src/daemon/netlink.c\nsrc/daemon/priv-linux.c\nsrc/daemon/interfaces-linux.c\ninclude/linux/rtnetlink.h\ninclude/linux/if.h\ninclude/linux/netlink.h\ninclude/linux/ethtool.h\ninclude/linux/wireless.h\nsrc/daemon/protocols/sonmp.c\nsrc/daemon/interfaces-bsd.c",
+  "sec": 15.7
+ },
+ {
+  "id": "lua@qnx_v5.5",
+  "rank": [
+   "luaconf.h",
+   "lua.c",
+   "liolib.c",
+   "loslib.c",
+   "lauxlib.c",
+   "lstate.h",
+   "lmathlib.c",
+   "ldo.c",
+   "lparser.c",
+   "ldebug.c",
+   "ltable.c",
+   "loadlib.c",
+   "lbaselib.c",
+   "llex.c",
+   "ldblib.c",
+   "lctype.h"
+  ],
+  "raw": "luaconf.h\nlua.c\nliolib.c\nloslib.c\nlauxlib.c\nlstate.h\nlmathlib.c\nldo.c\nlparser.c\nldebug.c\nltable.c\nloadlib.c\nlbaselib.c\nllex.c\nldblib.c\nlctype.h",
+  "sec": 15.3
+ },
+ {
+  "id": "mimalloc@qnx-v3.1.5",
+  "rank": [
+   "src/prim/unix/prim.c",
+   "src/alloc-posix.c",
+   "src/prim/prim.c",
+   "src/os.c",
+   "src/init.c"
+  ],
+  "raw": "src/prim/unix/prim.c\nsrc/alloc-posix.c\nsrc/prim/prim.c\nsrc/os.c\nsrc/init.c",
+  "sec": 10.0
+ },
+ {
+  "id": "mlas@qnx-openvino-2026.1.2-d1bc25ec4660cddd87804fcf03b2411b5dfb2e94",
+  "rank": [
+   "lib/platform.cpp",
+   "inc/mlas.h",
+   "lib/mlasi.h",
+   "lib/qgemm.h",
+   "lib/sgemm.cpp",
+   "lib/activate.cpp",
+   "lib/qladd.h"
+  ],
+  "raw": "lib/platform.cpp\ninc/mlas.h\nlib/mlasi.h\nlib/qgemm.h\nlib/sgemm.cpp\nlib/activate.cpp\nlib/qladd.h\nlib/sgemm.cpp",
+  "sec": 9.2
+ },
+ {
+  "id": "mosh@qnx-v1.4.0",
+  "rank": [
+   "src/frontend/mosh-server.cc",
+   "src/network/network.cc",
+   "src/util/select.h",
+   "src/util/timestamp.cc",
+   "src/util/pty_compat.cc",
+   "src/crypto/byteorder.h",
+   "src/frontend/stmclient.cc",
+   "src/crypto/ocb_internal.cc",
+   "src/frontend/stmclient.h",
+   "src/crypto/crypto.cc"
+  ],
+  "raw": "src/frontend/mosh-server.cc\nsrc/network/network.cc\nsrc/util/select.h\nsrc/util/timestamp.cc\nsrc/util/pty_compat.cc\nsrc/crypto/byteorder.h\nsrc/frontend/stmclient.cc\nsrc/crypto/ocb_internal.cc\nsrc/frontend/stmclient.h\nsrc/crypto/crypto.cc",
+  "sec": 14.0
+ },
+ {
+  "id": "mosquitto@qnx-master",
+  "rank": [
+   "lib/net_mosq.c",
+   "src/net.c",
+   "lib/socks_mosq.c",
+   "src/mux_epoll.c",
+   "src/mosquitto.c",
+   "lib/loop.c",
+   "src/conf_includedir.c",
+   "src/bridge.c",
+   "src/mosquitto_broker_internal.h",
+   "lib/mosquitto.c",
+   "config.h"
+  ],
+  "raw": "lib/net_mosq.c\nsrc/net.c\nlib/socks_mosq.c\nsrc/mux_epoll.c\nsrc/mosquitto.c\nlib/loop.c\nsrc/conf_includedir.c\nsrc/bridge.c\nsrc/mosquitto_broker_internal.h\nlib/mosquitto.c\nconfig.h",
+  "sec": 14.6
+ },
+ {
+  "id": "neovim@qnx-v0.11.4",
+  "rank": [
+   "src/nvim/os/proc.c",
+   "src/nvim/os/pty_proc_unix.c",
+   "src/nvim/ex_docmd.c",
+   "src/nvim/window.c",
+   "src/nvim/ex_cmds.c",
+   "src/nvim/fileio.c",
+   "src/nvim/bufwrite.c",
+   "src/nvim/option.c",
+   "src/nvim/quickfix.c",
+   "src/nvim/diff.c",
+   "src/nvim/buffer.c",
+   "src/nvim/terminal.c",
+   "src/nvim/tui/tui.c",
+   "src/nvim/shada.c",
+   "src/nvim/undo.c",
+   "src/nvim/drawscreen.c",
+   "src/nvim/move.c",
+   "src/nvim/ops.c",
+   "src/nvim/os/os_defs.h",
+   "src/nvim/path.c",
+   "src/nvim/api/vim.c",
+   "src/nvim/change.c",
+   "src/nvim/normal.c"
+  ],
+  "raw": "src/nvim/os/proc.c\nsrc/nvim/os/pty_proc_unix.c\nsrc/nvim/ex_docmd.c\nsrc/nvim/window.c\nsrc/nvim/ex_cmds.c\nsrc/nvim/fileio.c\nsrc/nvim/bufwrite.c\nsrc/nvim/option.c\nsrc/nvim/quickfix.c\nsrc/nvim/diff.c\nsrc/nvim/buffer.c\nsrc/nvim/terminal.c\nsrc/nvim/tui/tui.c\nsrc/nvim/shada.c\nsrc/nvim/undo.c\nsrc/nvim/drawscreen.c\nsrc/nvim/move.c\nsrc/nvim/ops.c\nsrc/nvim/os/os_defs.h\nsrc/nvim/path.c\nsrc/nvim/api/vim.c\nsrc/nvim/change.c\nsrc/nvim/normal.c",
+  "sec": 31.8
+ },
+ {
+  "id": "nghttp2@qnx-1.64.0",
+  "rank": [
+   "src/shrpx.cc",
+   "src/util.cc",
+   "src/shrpx_config.cc",
+   "src/shrpx_worker.cc",
+   "src/HttpServer.cc",
+   "src/shrpx_http3_upstream.cc",
+   "src/shrpx_tls.cc",
+   "src/shrpx_http2_session.cc",
+   "src/shrpx_connection_handler.cc",
+   "src/shrpx_client_handler.cc",
+   "src/shrpx_log.cc",
+   "src/shrpx_http2_upstream.cc",
+   "src/shrpx_connection.cc",
+   "src/memchunk.h",
+   "src/shrpx_config.h"
+  ],
+  "raw": "src/shrpx.cc\nsrc/util.cc\nsrc/shrpx_config.cc\nsrc/shrpx_worker.cc\nsrc/HttpServer.cc\nsrc/shrpx_http3_upstream.cc\nsrc/shrpx_tls.cc\nsrc/shrpx_http2_session.cc\nsrc/shrpx_connection_handler.cc\nsrc/shrpx_client_handler.cc\nsrc/shrpx_log.cc\nsrc/shrpx_http2_upstream.cc\nsrc/shrpx_connection.cc\nsrc/memchunk.h\nsrc/shrpx_config.h",
+  "sec": 21.8
+ },
+ {
+  "id": "nss@qnx-NSS_3_131_1_BRANCH",
+  "rank": [
+   "lib/dbm/include/mcom_db.h",
+   "lib/dbm/src/hash.c",
+   "lib/freebl/blinit.c",
+   "lib/freebl/libcrux/karamel/endianness.h",
+   "lib/freebl/verified/karamel/include/krml/lowstar_endianness.h",
+   "lib/dbm/include/ncompat.h",
+   "lib/zlib/zutil.h",
+   "lib/ssl/sslsnce.c",
+   "cmd/pk11mode/pk11mode.c",
+   "coreconf/Linux.mk"
+  ],
+  "raw": "lib/dbm/include/mcom_db.h\nlib/dbm/src/hash.c\nlib/freebl/blinit.c\nlib/freebl/libcrux/karamel/endianness.h\nlib/freebl/verified/karamel/include/krml/lowstar_endianness.h\nlib/lib/karamel/krml/lowstar_endianness.h\nlib/dbm/include/ncompat.h\nlib/zlib/zutil.h\nlib/ssl/sslsnce.c\ncmd/pk11mode/pk11mode.c\ncoreconf/Linux.mk",
+  "sec": 23.6
+ },
+ {
+  "id": "ntpsec@qnx-ntpsec-1.2.4",
+  "rank": [
+   "libntp/isc_interfaceiter.c",
+   "ntpd/ntp_io.c",
+   "ntpd/nts_client.c",
+   "ntpd/nts_server.c",
+   "ntpd/ntp_dns.c",
+   "ntpd/ntp_signd.c",
+   "ntpd/ntpd.c",
+   "ntpd/ntp_loopfilter.c",
+   "ntpd/ntp_util.c",
+   "ntpd/refclock_gpsd.c",
+   "ntpd/refclock_generic.c",
+   "ntpd/refclock_oncore.c",
+   "ntpd/refclock_jjy.c",
+   "ntpd/nts_cookie.c",
+   "ntpd/ntp_packetstamp.c",
+   "ntpd/ntp_scanner.c",
+   "ntpd/ntp_config.c",
+   "attic/timestamp-info.c",
+   "attic/samba/fake-ntp-client.c",
+   "attic/samba/mssntp-blaster.c",
+   "attic/samba/fake-samba.c",
+   "ntpd/refclock_trimble.c",
+   "libntp/isc_net.c",
+   "include/ntp_stdlib.h"
+  ],
+  "raw": "libntp/isc_interfaceiter.c\nntpd/ntp_io.c\nntpd/nts_client.c\nntpd/nts_server.c\nntpd/ntp_dns.c\nntpd/ntp_signd.c\nntpd/ntpd.c\nntpd/ntp_loopfilter.c\nntpd/ntp_util.c\nntpd/refclock_gpsd.c\nntpd/refclock_generic.c\nntpd/refclock_oncore.c\nntpd/refclock_jjy.c\nntpd/nts_cookie.c\nntpd/ntp_packetstamp.c\nntpd/ntp_scanner.c\nntpd/ntp_config.c\nattic/timestamp-info.c\nattic/samba/fake-ntp-client.c\nattic/samba/mssntp-blaster.c\nattic/samba/fake-samba.c\nntpd/refclock_trimble.c\nlibntp/isc_net.c\ninclude/ntp_stdlib.h",
+  "sec": 37.7
+ },
+ {
+  "id": "ntttcp-for-linux@qnx-b483afe",
+  "rank": [
+   "src/tcpstream.h",
+   "src/util.h",
+   "src/tcpstream.c"
+  ],
+  "raw": "src/tcpstream.h\nsrc/util.h\nsrc/tcpstream.c",
+  "sec": 3.8
+ },
+ {
+  "id": "numpy@qnx_v2.3.4",
+  "rank": [],
+  "raw": "2. numpy/_core/include/numpy/npy_os.h\n10. numpy/_core/src/multiarray/alloc.c\n18. numpy/_core/src/multiarray/convert.c\n27. numpy/_core/src/multiarray/datetime_strings.c\n29. numpy/_core/src/_simd/_simd_vector.inc",
+  "sec": 14.7
+ },
+ {
+  "id": "ode@qnx-0.16.2",
+  "rank": [
+   "ode/src/threading_impl_posix.h",
+   "ode/src/threading_pool_posix.cpp",
+   "drawstuff/src/windows.cpp",
+   "drawstuff/src/drawstuff.cpp",
+   "ode/demo/Makefile.am",
+   "contrib/InteractiveCollisions/deps/AntTweakBar/src/TwMgr.cpp",
+   "contrib/InteractiveCollisions/deps/AntTweakBar/src/TwBar.cpp",
+   "ode/src/timer.cpp"
+  ],
+  "raw": "ode/src/threading_impl_posix.h\node/src/threading_pool_posix.cpp\ndrawstuff/src/windows.cpp\ndrawstuff/src/drawstuff.cpp\node/demo/Makefile.am\ncontrib/InteractiveCollisions/deps/AntTweakBar/src/TwMgr.cpp\ncontrib/InteractiveCollisions/deps/AntTweakBar/src/TwBar.cpp\node/src/timer.cpp",
+  "sec": 17.1
+ },
+ {
+  "id": "onnx@qnx-v1.13.1",
+  "rank": [
+   "cmake/Utils.cmake",
+   "onnx/common/path.h",
+   "onnx/checker.cc"
+  ],
+  "raw": "cmake/Utils.cmake\nonnx/common/path.h\nonnx/checker.cc",
+  "sec": 5.6
+ },
+ {
+  "id": "open-amp@qnx-v2025.04.0",
+  "rank": [
+   "lib/proxy/rpmsg_retarget.c",
+   "lib/virtio/virtqueue.c",
+   "lib/remoteproc/remoteproc.c",
+   "lib/rpmsg/rpmsg_virtio.c",
+   "lib/virtio_mmio/virtio_mmio_drv.c",
+   "lib/proxy/CMakeLists.txt",
+   "lib/remoteproc/CMakeLists.txt",
+   "lib/virtio/CMakeLists.txt",
+   "lib/rpmsg/CMakeLists.txt",
+   "lib/include/openamp/virtio.h",
+   "lib/include/openamp/virtqueue.h",
+   "lib/include/openamp/remoteproc.h",
+   "lib/include/openamp/rpmsg.h",
+   "lib/include/openamp/rpmsg_virtio.h",
+   "cmake/options.cmake",
+   "cmake/depends.cmake",
+   "cmake/syscheck.cmake",
+   "cmake/platforms/cross_generic_gcc.cmake",
+   "cmake/platforms/cross_linux_gcc.cmake"
+  ],
+  "raw": "lib/proxy/rpmsg_retarget.c\nlib/virtio/virtqueue.c\nlib/remoteproc/remoteproc.c\nlib/rpmsg/rpmsg_virtio.c\nlib/virtio_mmio/virtio_mmio_drv.c\nlib/proxy/CMakeLists.txt\nlib/remoteproc/CMakeLists.txt\nlib/virtio/CMakeLists.txt\nlib/rpmsg/CMakeLists.txt\nlib/include/openamp/virtio.h\nlib/include/openamp/virtqueue.h\nlib/include/openamp/remoteproc.h\nlib/include/openamp/rpmsg.h\nlib/include/openamp/rpmsg_virtio.h\ncmake/options.cmake\ncmake/depends.cmake\ncmake/syscheck.cmake\ncmake/platforms/cross_generic_gcc.cmake\ncmake/platforms/cross_linux_gcc.cmake",
+  "sec": 30.7
+ },
+ {
+  "id": "opencv@qnx-4.12.0",
+  "rank": [
+   "modules/core/src/parallel.cpp",
+   "modules/core/src/system.cpp",
+   "modules/ts/src/ts_gtest.cpp",
+   "3rdparty/ittnotify/include/ittnotify.h",
+   "3rdparty/ittnotify/src/ittnotify/ittnotify_static.c",
+   "3rdparty/ittnotify/include/legacy/ittnotify.h",
+   "modules/core/include/opencv2/core/utils/plugin_loader.private.hpp",
+   "3rdparty/protobuf/src/google/protobuf/stubs/port.h",
+   "3rdparty/protobuf/src/google/protobuf/io/coded_stream.h",
+   "3rdparty/zlib-ng/zendian.h"
+  ],
+  "raw": "modules/core/src/parallel.cpp\nmodules/core/src/system.cpp\nmodules/ts/src/ts_gtest.cpp\n3rdparty/ittnotify/ittnotify_config.h\n3rdparty/ittnotify/include/ittnotify.h\n3rdparty/ittnotify/src/ittnotify/ittnotify_static.c\n3rdparty/ittnotify/include/legacy/ittnotify.h\nmodules/core/include/opencv2/core/utils/plugin_loader.private.hpp\n3rdparty/protobuf/src/google/protobuf/stubs/port.h\n3rdparty/protobuf/src/google/protobuf/io/coded_stream.h\n3rdparty/zlib-ng/zendian.h",
+  "sec": 28.6
+ },
+ {
+  "id": "openrc@qnx-0.63.1",
+  "rank": [
+   "src/start-stop-daemon/start-stop-daemon.c",
+   "src/supervise-daemon/supervise-daemon.c",
+   "src/librc/librc.c",
+   "src/openrc-init/openrc-init.c",
+   "src/openrc-run/openrc-run.c",
+   "src/librc/librc-daemon.c",
+   "src/librc/librc-misc.c",
+   "src/checkpath/checkpath.c",
+   "src/shared/misc.c",
+   "src/seedrng/seedrng.c",
+   "src/openrc/rc-logger.c",
+   "src/openrc/rc.c",
+   "src/fstabinfo/fstabinfo.c",
+   "src/shared/selinux.c"
+  ],
+  "raw": "src/start-stop-daemon/start-stop-daemon.c\nsrc/supervise-daemon/supervise-daemon.c\nsrc/librc/librc.c\nsrc/openrc-init/openrc-init.c\nsrc/openrc-run/openrc-run.c\nsrc/librc/librc-daemon.c\nsrc/librc/librc-misc.c\nsrc/checkpath/checkpath.c\nsrc/shared/misc.c\nsrc/seedrng/seedrng.c\nsrc/openrc/rc-logger.c\nsrc/openrc/rc.c\nsrc/fstabinfo/fstabinfo.c\nsrc/shared/selinux.c",
+  "sec": 24.5
+ },
+ {
+  "id": "perfetto@qnx-main",
+  "rank": [
+   "src/base/unix_socket.cc",
+   "src/base/utils.cc",
+   "src/base/subprocess_posix.cc",
+   "src/base/periodic_task.cc",
+   "src/base/event_fd.cc",
+   "src/profiling/memory/client.cc",
+   "src/base/watchdog_posix.cc",
+   "src/base/subprocess_unittest.cc",
+   "src/base/rt_mutex.cc"
+  ],
+  "raw": "src/base/unix_socket.cc\nsrc/base/utils.cc\nsrc/base/subprocess_posix.cc\nsrc/base/periodic_task.cc\nsrc/base/event_fd.cc\nsrc/profiling/memory/client.cc\nsrc/base/watchdog_posix.cc\nsrc/traced/service/tracing_service_impl.cc\nsrc/base/subprocess_unittest.cc\nsrc/base/rt_mutex.cc",
+  "sec": 21.2
+ },
+ {
+  "id": "piper1-gpl@qnx-v1.8.0",
+  "rank": [
+   "libpiper/src/main/main.cpp",
+   "libpiper/src/main/utils/main_utils.hpp",
+   "libpiper/src/main/utils/main_utils.cpp",
+   "libpiper/src/main/utils/process.cpp",
+   "libpiper/src/main/utils/wavfile.hpp",
+   "libpiper/src/main/utils/wav_headers.hpp",
+   "libpiper/src/main/utils/process.hpp",
+   "libpiper/src/main/utils/wavfile.cpp",
+   "libpiper/include/piper.h",
+   "libpiper/include/piper_impl.hpp",
+   "libpiper/include/chinese_phonemizer.h",
+   "libpiper/include/json.hpp",
+   "libpiper/include/uni_algo.h",
+   "libpiper/src/piper.cpp"
+  ],
+  "raw": "libpiper/src/main/main.cpp\nlibpiper/src/main/utils/main_utils.hpp\nlibpiper/src/main/utils/main_utils.cpp\nlibpiper/src/main/utils/process.cpp\nlibpiper/src/main/utils/wavfile.hpp\nlibpiper/src/main/utils/wav_headers.hpp\nlibpiper/src/main/utils/process.hpp\nlibpiper/src/main/utils/wavfile.cpp\nlibpiper/include/piper.h\nlibpiper/include/piper_impl.hpp\nlibpiper/include/chinese_phonemizer.h\nlibpiper/include/json.hpp\nlibpiper/include/uni_algo.h\nlibpiper/src/piper.cpp",
+  "sec": 24.7
+ },
+ {
+  "id": "pistache@qnx-v0.4.26",
+  "rank": [
+   "src/common/transport.cc",
+   "include/pistache/winornix.h",
+   "src/common/eventmeth.cc",
+   "include/pistache/eventmeth.h",
+   "src/common/os.cc",
+   "include/pistache/emosandlibevdefs.h",
+   "src/common/pist_syslog.cc",
+   "include/pistache/mailbox.h",
+   "src/client/client.cc",
+   "include/pistache/client.h"
+  ],
+  "raw": "src/common/transport.cc\ninclude/pistache/winornix.h\nsrc/common/eventmeth.cc\ninclude/pistache/eventmeth.h\nsrc/common/os.cc\ninclude/pistache/emosandlibevdefs.h\nsrc/common/pist_syslog.cc\ninclude/pistache/mailbox.h\nsrc/client/client.cc\ninclude/pistache/client.h",
+  "sec": 16.3
+ },
+ {
+  "id": "protobuf@qnx-main",
+  "rank": [
+   "src/google/protobuf/stubs/platform_macros.h",
+   "src/google/protobuf/io/zero_copy_stream_unittest.cc",
+   "src/google/protobuf/compiler/command_line_interface.cc",
+   "src/google/protobuf/stubs/port.h",
+   "src/google/protobuf/descriptor.h",
+   "src/google/protobuf/io/io_win32.h",
+   "src/google/protobuf/compiler/command_line_interface_unittest.cc",
+   "src/google/protobuf/descriptor.pb.h",
+   "src/google/protobuf/port_def.inc",
+   "src/google/protobuf/port_undef.inc",
+   "cmake/install.cmake",
+   "cmake/libprotobuf.cmake",
+   "cmake/libprotobuf-lite.cmake",
+   "upb/port/def.inc",
+   "src/google/protobuf/map.h",
+   "src/google/protobuf/compiler/importer.cc",
+   "src/google/protobuf/stubs/common.h",
+   "src/google/protobuf/message_unittest.inc",
+   "src/google/protobuf/compiler/command_line_interface_tester.h",
+   "src/google/protobuf/generated_message_tctable_decl.h",
+   "src/file_lists.cmake",
+   "upb/cmake/CMakeLists.txt",
+   "php/ext/google/protobuf/php-upb.h",
+   "ruby/ext/google/protobuf_c/ruby-upb.h",
+   "php/ext/google/protobuf/php-upb.c",
+   "ruby/ext/google/protobuf_c/ruby-upb.c"
+  ],
+  "raw": "src/google/protobuf/stubs/platform_macros.h\nsrc/google/protobuf/io/zero_copy_stream_unittest.cc\nsrc/google/protobuf/compiler/command_line_interface.cc\nsrc/google/protobuf/stubs/port.h\nsrc/google/protobuf/descriptor.h\nsrc/google/protobuf/io/io_win32.h\nsrc/google/protobuf/compiler/command_line_interface_unittest.cc\nsrc/google/protobuf/descriptor.pb.h\nsrc/google/protobuf/port_def.inc\nsrc/google/protobuf/port_undef.inc\ncmake/install.cmake\ncmake/libprotobuf.cmake\ncmake/libprotobuf-lite.cmake\nupb/port/def.inc\nsrc/google/protobuf/map.h\nsrc/google/protobuf/compiler/importer.cc\nsrc/google/protobuf/stubs/common.h\nsrc/google/protobuf/message_unittest.inc\nsrc/google/protobuf/compiler/command_line_interface_tester.h\nsrc/google/protobuf/generated_message_tctable_decl.h\nsrc/file_lists.cmake\nupb/cmake/CMakeLists.txt\nphp/ext/google/protobuf/php-upb.h\nruby/ext/google/protobuf_c/ruby-upb.h\nphp/ext/google/protobuf/php-upb.c\nruby/ext/google/protobuf_c/ruby-upb.c\nupb/generator/plugin.h",
+  "sec": 52.1
+ },
+ {
+  "id": "psutil@qnx-7.2.2",
+  "rank": [
+   "psutil/arch/posix/net.c",
+   "psutil/arch/bsd/proc.c",
+   "psutil/arch/posix/init.c",
+   "psutil/_psutil_bsd.c",
+   "psutil/arch/posix/proc.c",
+   "psutil/arch/posix/init.h",
+   "psutil/arch/freebsd/sys_socks.c",
+   "psutil/arch/aix/net_connections.c",
+   "psutil/arch/posix/pids.c",
+   "psutil/arch/linux/proc.c",
+   "psutil/arch/sunos/net.c",
+   "psutil/arch/osx/proc.c",
+   "psutil/arch/freebsd/proc_socks.c",
+   "psutil/arch/aix/ifaddrs.c",
+   "psutil/arch/osx/cpu.c",
+   "psutil/arch/windows/proc.c",
+   "psutil/arch/aix/net_kernel_structs.h",
+   "psutil/arch/bsd/disk.c",
+   "psutil/arch/sunos/environ.c",
+   "psutil/arch/all/str.c",
+   "psutil/arch/netbsd/socks.c"
+  ],
+  "raw": "psutil/arch/posix/net.c\npsutil/arch/bsd/proc.c\npsutil/arch/posix/init.c\npsutil/_psutil_bsd.c\npsutil/arch/posix/proc.c\npsutil/arch/posix/init.h\npsutil/arch/freebsd/sys_socks.c\npsutil/arch/aix/net_connections.c\npsutil/arch/posix/pids.c\npsutil/arch/linux/proc.c\npsutil/arch/sunos/net.c\npsutil/arch/osx/proc.c\npsutil/arch/freebsd/proc_socks.c\npsutil/arch/aix/ifaddrs.c\npsutil/arch/osx/cpu.c\npsutil/arch/windows/proc.c\npsutil/arch/aix/net_kernel_structs.h\npsutil/arch/bsd/disk.c\npsutil/arch/sunos/environ.c\npsutil/arch/all/str.c\npsutil/arch/netbsd/socks.c",
+  "sec": 41.0
+ },
+ {
+  "id": "qdirstat@john_qnx_support",
+  "rank": [
+   "src/MainWindow.cpp",
+   "src/Cleanup.cpp",
+   "src/SysUtil.cpp",
+   "src/DirReadJob.cpp",
+   "src/FileInfo.h"
+  ],
+  "raw": "src/MainWindow.cpp\nsrc/Cleanup.cpp\nsrc/SysUtil.cpp\nsrc/DirReadJob.cpp\nsrc/FileInfo.h",
+  "sec": 7.2
+ },
+ {
+  "id": "rapidjson@qnx-v1.1.0",
+  "rank": [
+   "CMakeLists.txt",
+   "include/rapidjson/document.h",
+   "include/rapidjson/msinttypes/stdint.h",
+   "include/rapidjson/reader.h",
+   "include/rapidjson/schema.h",
+   "include/rapidjson/writer.h",
+   "include/rapidjson/msinttypes/inttypes.h",
+   "include/rapidjson/pointer.h",
+   "include/rapidjson/internal/regex.h",
+   "include/rapidjson/encodings.h",
+   "include/rapidjson/stream.h",
+   "include/rapidjson/internal/stack.h",
+   "include/rapidjson/internal/strtod.h",
+   "include/rapidjson/stringbuffer.h",
+   "include/rapidjson/internal/dtoa.h",
+   "include/rapidjson/prettywriter.h",
+   "include/rapidjson/internal/itoa.h",
+   "include/rapidjson/internal/diyfp.h",
+   "include/rapidjson/istreamwrapper.h",
+   "include/rapidjson/ostreamwrapper.h",
+   "include/rapidjson/filewritestream.h",
+   "include/rapidjson/filereadstream.h"
+  ],
+  "raw": "CMakeLists.txt\ninclude/rapidjson/document.h\ninclude/rapidjson/msinttypes/stdint.h\ninclude/rapidjson/reader.h\ninclude/rapidjson/schema.h\ninclude/rapidjson/writer.h\ninclude/rapidjson/msinttypes/inttypes.h\ninclude/rapidjson/pointer.h\ninclude/rapidjson/internal/regex.h\ninclude/rapidjson/encodings.h\ninclude/rapidjson/stream.h\ninclude/rapidjson/internal/stack.h\ninclude/rapidjson/internal/strtod.h\ninclude/rapidjson/stringbuffer.h\ninclude/rapidjson/internal/dtoa.h\ninclude/rapidjson/prettywriter.h\ninclude/rapidjson/internal/itoa.h\ninclude/rapidjson/internal/diyfp.h\ninclude/rapidjson/istreamwrapper.h\ninclude/rapidjson/ostreamwrapper.h\ninclude/rapidjson/filewritestream.h\ninclude/rapidjson/filereadstream.h",
+  "sec": 33.4
+ },
+ {
+  "id": "re2@qnx_main",
+  "rank": [
+   "Makefile",
+   "CMakeLists.txt",
+   "re2/re2.h",
+   "python/_re2.cc",
+   "re2/regexp.h",
+   "re2/parse.cc",
+   "re2/dfa.cc",
+   "re2/re2.cc",
+   "re2/prog.h",
+   "re2/prog.cc",
+   "re2/sparse_array.h",
+   "re2/sparse_set.h",
+   "re2/regexp.cc",
+   "re2/nfa.cc",
+   "util/pcre.cc",
+   "re2/compile.cc",
+   "re2/onepass.cc",
+   "re2/unicode_groups.cc",
+   "re2/simplify.cc",
+   "re2/prefilter.cc",
+   "re2/walker-inl.h",
+   "re2/prefilter.h",
+   "re2/bitstate.cc",
+   "re2/prefilter_tree.cc",
+   "re2/prefilter_tree.h",
+   "re2/pod_array.h",
+   "re2/set.cc",
+   "re2/filtered_re2.h",
+   "re2/tostring.cc"
+  ],
+  "raw": "Makefile\nCMakeLists.txt\nre2/re2.h\npython/_re2.cc\nre2/regexp.h\nre2/parse.cc\nre2/dfa.cc\nre2/re2.cc\nre2/prog.h\nre2/prog.cc\nre2/sparse_array.h\nre2/sparse_set.h\nre2/regexp.cc\nre2/nfa.cc\nutil/pcre.cc\nre2/compile.cc\nre2/onepass.cc\nre2/unicode_groups.cc\nre2/simplify.cc\nre2/prefilter.cc\nre2/walker-inl.h\nre2/prefilter.h\nre2/bitstate.cc\nre2/prefilter_tree.cc\nre2/prefilter_tree.h\nre2/pod_array.h\nre2/set.cc\nre2/filtered_re2.h\nre2/tostring.cc",
+  "sec": 33.4
+ },
+ {
+  "id": "restbed@upstream_qnx",
+  "rank": [
+   "src/corvusoft/restbed/uri.cpp",
+   "src/corvusoft/restbed/detail/socket_impl.cpp",
+   "src/corvusoft/restbed/logger.hpp"
+  ],
+  "raw": "src/corvusoft/restbed/uri.cpp\nsrc/corvusoft/restbed/detail/socket_impl.cpp\nsrc/corvusoft/restbed/logger.hpp",
+  "sec": 9.1
+ },
+ {
+  "id": "rtl-sdr@qnx_2.0.2",
+  "rank": [
+   "src/rtl_tcp.c",
+   "src/librtlsdr.c",
+   "src/rtl_power.c",
+   "src/rtl_fm.c",
+   "src/rtl_adsb.c",
+   "src/rtl_sdr.c",
+   "src/rtl_eeprom.c",
+   "src/convenience/convenience.c",
+   "src/tuner_e4k.c",
+   "src/tuner_r82xx.c",
+   "src/getopt/getopt.c",
+   "src/tuner_fc0013.c",
+   "src/tuner_fc0012.c",
+   "src/tuner_fc2580.c"
+  ],
+  "raw": "src/rtl_tcp.c\nsrc/librtlsdr.c\nsrc/rtl_power.c\nsrc/rtl_fm.c\nsrc/rtl_adsb.c\nsrc/rtl_sdr.c\nsrc/rtl_eeprom.c\nsrc/convenience/convenience.c\nsrc/tuner_e4k.c\nsrc/tuner_r82xx.c\nsrc/getopt/getopt.c\nsrc/tuner_fc0013.c\nsrc/tuner_fc0012.c\nsrc/tuner_fc2580.c",
+  "sec": 20.9
+ },
+ {
+  "id": "ruy@qnx",
+  "rank": [
+   "ruy/pmu.cc",
+   "ruy/time.h",
+   "ruy/platform.h",
+   "ruy/kernel_x86.h",
+   "ruy/kernel_avx.cc",
+   "ruy/kernel_avx2_fma.cc",
+   "ruy/kernel_avx512.cc",
+   "ruy/pack_x86.h",
+   "ruy/pack_avx512.cc",
+   "ruy/kernel_arm64.cc"
+  ],
+  "raw": "ruy/pmu.cc\nruy/time.h\nruy/platform.h\nruy/kernel_x86.h\nruy/kernel_avx.cc\nruy/kernel_avx2_fma.cc\nruy/kernel_avx512.cc\nruy/pack_x86.h\nruy/pack_avx512.cc\nruy/kernel_arm64.cc",
+  "sec": 17.2
+ },
+ {
+  "id": "s2n-tls@qnx-v1.5.25",
+  "rank": [
+   "tls/s2n_ktls_io.c",
+   "crypto/s2n_ktls_crypto.h",
+   "tls/s2n_ktls_parameters.h"
+  ],
+  "raw": "tls/s2n_ktls_io.c\ncrypto/s2n_ktls_crypto.h\ntls/s2n_ktls_parameters.h",
+  "sec": 8.3
+ },
+ {
+  "id": "sdl2-compat@qnx-release-2.32.60",
+  "rank": [
+   "src/sdl2_compat.c",
+   "include/SDL2/SDL_platform.h",
+   "include/SDL2/SDL_endian.h",
+   "include/SDL2/SDL_syswm.h",
+   "include/SDL2/SDL_thread.h",
+   "include/SDL2/SDL_config.h.cmake",
+   "include/SDL2/SDL_stdinc.h",
+   "include/SDL2/SDL_opengl_glext.h",
+   "include/SDL2/SDL_egl.h",
+   "include/SDL2/SDL_opengles2_khrplatform.h",
+   "include/SDL2/SDL_opengles2_gl2ext.h",
+   "include/SDL2/SDL_cpuinfo.h",
+   "include/SDL2/SDL_system.h",
+   "include/SDL2/SDL_assert.h",
+   "include/SDL2/begin_code.h",
+   "src/dynapi/SDL_dynapi.c",
+   "src/sdl2_protos.h",
+   "cmake/sdlplatform.cmake",
+   "cmake/sdlcpu.cmake",
+   "cmake/sdlchecks.cmake",
+   "cmake/macros.cmake"
+  ],
+  "raw": "src/sdl2_compat.c\ninclude/SDL2/SDL_platform.h\ninclude/SDL2/SDL_endian.h\ninclude/SDL2/SDL_syswm.h\ninclude/SDL2/SDL_thread.h\ninclude/SDL2/SDL_config.h.cmake\ninclude/SDL2/SDL_stdinc.h\ninclude/SDL2/SDL_opengl_glext.h\ninclude/SDL2/SDL_egl.h\ninclude/SDL2/SDL_opengles2_khrplatform.h\ninclude/SDL2/SDL_opengles2_gl2ext.h\ninclude/SDL2/SDL_cpuinfo.h\ninclude/SDL2/SDL_system.h\ninclude/SDL2/SDL_assert.h\ninclude/SDL2/begin_code.h\nsrc/dynapi/SDL_dynapi.c\nsrc/sdl2_protos.h\ncmake/sdlplatform.cmake\ncmake/sdlcpu.cmake\ncmake/sdlchecks.cmake\ncmake/macros.cmake",
+  "sec": 35.5
+ },
+ {
+  "id": "sentencepiece@qnx-mediapipe-v0.10.26",
+  "rank": [],
+  "raw": "7\n16\n17",
+  "sec": 5.1
+ },
+ {
+  "id": "sleef@qnx_master",
+  "rank": [],
+  "raw": "## 2. CMakeLists.txt\n## 5. src/common/common.c\n## 6. src/libm-tester/tester.c\n## 8. src/quad-tester/qtester.c\n## 10. src/libm-tester/tester2dp.c\n## 12. src/libm-tester/tester2qp.c\n## 13. src/libm-tester/tester2simdsp.c\n## 14. src/libm-tester/tester2simddp.c\n## 21. src/libm-tester/tester2ld.c\n## 30. src/gencoef/dp.h",
+  "sec": 23.5
+ },
+ {
+  "id": "sscep@qnx-v0.10.0",
+  "rank": [
+   "src/sscep.h",
+   "src/net.c",
+   "src/fileutils.c",
+   "src/configuration.h",
+   "src/pkcs7.c",
+   "src/configuration.c",
+   "src/picohttpparser.c",
+   "src/picohttpparser.h",
+   "src/engines/sscep_capi.h",
+   "src/applink.c"
+  ],
+  "raw": "src/sscep.h\nsrc/net.c\nsrc/fileutils.c\nsrc/configuration.h\nsrc/pkcs7.c\nsrc/configuration.c\nsrc/picohttpparser.c\nsrc/picohttpparser.h\nsrc/engines/sscep_capi.h\nsrc/applink.c",
+  "sec": 11.3
+ },
+ {
+  "id": "stable-diffusion.cpp@qnx-8.0",
+  "rank": [
+   "src/util.cpp",
+   "thirdparty/httplib.h",
+   "thirdparty/miniz.h",
+   "thirdparty/zip.h",
+   "thirdparty/darts.h",
+   "include/stable-diffusion.h"
+  ],
+  "raw": "src/util.cpp\nthirdparty/httplib.h\nthirdparty/miniz.h\nthirdparty/zip.h\nthirdparty/darts.h\ninclude/stable-diffusion.h",
+  "sec": 9.1
+ },
+ {
+  "id": "strongswan@qnx-6.0.6",
+  "rank": [
+   "src/libcharon/plugins/kernel_netlink/kernel_netlink_net.c",
+   "src/libcharon/plugins/kernel_pfkey/kernel_pfkey_ipsec.c",
+   "src/libcharon/plugins/socket_default/socket_default_socket.c",
+   "src/libcharon/plugins/farp/farp_spoofer.c",
+   "src/libcharon/plugins/vici/vici_query.c",
+   "src/libcharon/plugins/kernel_netlink/kernel_netlink_shared.c",
+   "src/libcharon/network/pf_handler.c",
+   "src/libstrongswan/utils/utils.h",
+   "src/libstrongswan/utils/capabilities.c",
+   "src/libstrongswan/utils/chunk.c",
+   "src/libstrongswan/utils/leak_detective.c",
+   "src/libstrongswan/threading/thread.c",
+   "src/libstrongswan/Makefile.am",
+   "src/libcharon/Makefile.am",
+   "src/libipsec/ip_packet.c",
+   "src/libimcv/imc/imc_os_info.c",
+   "src/libcharon/plugins/dhcp/dhcp_socket.c",
+   "src/libcharon/plugins/forecast/forecast_forwarder.c",
+   "src/libcharon/plugins/kernel_pfroute/kernel_pfroute_net.c"
+  ],
+  "raw": "src/libcharon/plugins/kernel_netlink/kernel_netlink_net.c\nsrc/libcharon/plugins/kernel_pfkey/kernel_pfkey_ipsec.c\nsrc/libcharon/plugins/socket_default/socket_default_socket.c\nsrc/libcharon/plugins/farp/farp_spoofer.c\nsrc/libcharon/plugins/vici/vici_query.c\nsrc/libcharon/plugins/kernel_netlink/kernel_netlink_shared.c\nsrc/libcharon/network/pf_handler.c\nsrc/libstrongswan/utils/utils.h\nsrc/libstrongswan/utils/capabilities.c\nsrc/libstrongswan/utils/chunk.c\nsrc/libstrongswan/utils/leak_detective.c\nsrc/libstrongswan/threading/thread.c\nsrc/libstrongswan/Makefile.am\nsrc/libcharon/Makefile.am\nsrc/libipsec/ip_packet.c\nsrc/libimcv/imc/imc_os_info.c\nsrc/libcharon/plugins/dhcp/dhcp_socket.c\nsrc/libcharon/plugins/forecast/forecast_forwarder.c\nsrc/libcharon/plugins/kernel_pfroute/kernel_pfroute_net.c\nsrc/libcharon/plugins/imv_os/imv_os_agent.c\nsrc/libcharon/plugins/dhcp/dhcp_socket.c",
+  "sec": 52.5
+ },
+ {
+  "id": "sudo@qnx-v1.9.17p2",
+  "rank": [
+   "configure.ac",
+   "lib/eventlog/eventlog.c",
+   "logsrvd/logsrvd.c",
+   "src/exec_ptrace.h",
+   "src/ttyname.c",
+   "plugins/sudoers/starttime.c",
+   "plugins/sudoers/set_perms.c",
+   "src/exec_ptrace.c",
+   "plugins/sudoers/sudoreplay.c",
+   "plugins/sudoers/env.c",
+   "plugins/sudoers/visudo.c",
+   "logsrvd/sendlog.c",
+   "include/sudo_compat.h",
+   "src/sudo.c",
+   "lib/util/sha2.c",
+   "plugins/sudoers/toke.c",
+   "src/exec_nopty.c",
+   "plugins/sudoers/sudoers.c",
+   "lib/zlib/zutil.h",
+   "lib/util/getentropy.c",
+   "plugins/sudoers/testsudoers.c",
+   "src/exec_monitor.c",
+   "src/limits.c",
+   "plugins/sudoers/log_client.c",
+   "plugins/sudoers/gram.c",
+   "logsrvd/logsrvd_relay.c",
+   "plugins/sudoers/sudoers.h",
+   "logsrvd/logsrvd_local.c",
+   "lib/util/ttyname_dev.c",
+   "src/exec_pty.c"
+  ],
+  "raw": "configure.ac\nlib/eventlog/eventlog.c\nlogsrvd/logsrvd.c\nsrc/exec_ptrace.h\nsrc/ttyname.c\nplugins/sudoers/starttime.c\nplugins/sudoers/set_perms.c\nsrc/exec_ptrace.c\nplugins/sudoers/sudoreplay.c\nplugins/sudoers/env.c\nplugins/sudoers/visudo.c\nlogsrvd/sendlog.c\ninclude/sudo_compat.h\nsrc/sudo.c\nlib/util/sha2.c\nplugins/sudoers/toke.c\nsrc/exec_nopty.c\nplugins/sudoers/sudoers.c\nlib/zlib/zutil.h\nlib/util/getentropy.c\nplugins/sudoers/testsudoers.c\nsrc/exec_monitor.c\nsrc/limits.c\nplugins/sudoers/log_client.c\nplugins/sudoers/gram.c\nlogsrvd/logsrvd_relay.c\nplugins/sudoers/sudoers.h\nlogsrvd/logsrvd_local.c\nlib/util/ttyname_dev.c\nsrc/exec_pty.c",
+  "sec": 45.5
+ },
+ {
+  "id": "sysbench@qnx-1.0.20",
+  "rank": [
+   "third_party/luajit/luajit/src/lj_profile.c",
+   "third_party/luajit/luajit/src/lj_def.h",
+   "third_party/luajit/luajit/src/lj_ccallback.c",
+   "third_party/luajit/luajit/src/lj_mcode.c",
+   "third_party/luajit/luajit/src/lj_gdbjit.c",
+   "third_party/luajit/luajit/src/lib_package.c",
+   "third_party/luajit/luajit/src/lj_alloc.c",
+   "third_party/luajit/luajit/src/lj_prng.c",
+   "third_party/concurrency_kit/ck/regressions/common.h",
+   "third_party/concurrency_kit/ck/include/ck_stdint.h",
+   "third_party/concurrency_kit/ck/include/ck_limits.h",
+   "third_party/concurrency_kit/ck/regressions/ck_stack/validate/pop.c",
+   "third_party/concurrency_kit/ck/regressions/ck_stack/validate/pair.c",
+   "third_party/concurrency_kit/ck/regressions/ck_stack/validate/push.c",
+   "src/sysbench.c",
+   "src/sb_timer.h",
+   "src/sysbench.h",
+   "src/sb_util.h"
+  ],
+  "raw": "third_party/luajit/luajit/src/lj_profile.c\nthird_party/luajit/luajit/src/lj_def.h\nthird_party/luajit/luajit/src/lj_ccallback.c\nthird_party/luajit/luajit/src/lj_mcode.c\nthird_party/luajit/luajit/src/lj_gdbjit.c\nthird_party/luajit/luajit/src/lib_package.c\nthird_party/luajit/luajit/src/lj_alloc.c\nthird_party/luajit/luajit/src/lj_prng.c\nthird_party/concurrency_kit/ck/regressions/common.h\nthird_party/concurrency_kit/ck/include/ck_stdint.h\nthird_party/concurrency_kit/ck/include/ck_limits.h\nthird_party/concurrency_kit/ck/regressions/ck_stack/validate/pop.c\nthird_party/concurrency_kit/ck/regressions/ck_stack/validate/pair.c\nthird_party/concurrency_kit/ck/regressions/ck_stack/validate/push.c\nsrc/sysbench.c\nsrc/sb_timer.h\nsrc/sysbench.h\nsrc/sb_util.h",
+  "sec": 49.4
+ },
+ {
+  "id": "tinyxml2@qnx_10.0.0",
+  "rank": [
+   "tinyxml2.cpp",
+   "xmltest.cpp",
+   "tinyxml2.h",
+   "contrib/html5-printer.cpp"
+  ],
+  "raw": "tinyxml2.cpp\nxmltest.cpp\ntinyxml2.h\ncontrib/html5-printer.cpp",
+  "sec": 4.2
+ },
+ {
+  "id": "unbound@murthy-qnx-release-1.24.1",
+  "rank": [
+   "util/netevent.c",
+   "daemon/remote.c",
+   "util/storage/lookup3.c",
+   "util/ub_event.c",
+   "util/winsock_event.c",
+   "compat/getentropy_osx.c",
+   "compat/getentropy_linux.c",
+   "compat/getentropy_solaris.c"
+  ],
+  "raw": "util/netevent.c\ndaemon/remote.c\nutil/storage/lookup3.c\nutil/ub_event.c\nutil/winsock_event.c\ncompat/getentropy_osx.c\ncompat/getentropy_linux.c\ncompat/getentropy_solaris.c",
+  "sec": 13.9
+ },
+ {
+  "id": "vsomeip@qnx_3.5.5",
+  "rank": [
+   "CMakeLists.txt",
+   "implementation/runtime/src/application_impl.cpp",
+   "implementation/routing/src/routing_manager_client.cpp",
+   "implementation/routing/src/routing_manager_impl.cpp",
+   "implementation/endpoints/src/udp_server_endpoint_impl.cpp",
+   "implementation/routing/src/routing_manager_stub.cpp",
+   "implementation/configuration/src/configuration_impl.cpp",
+   "implementation/utility/src/utility.cpp",
+   "implementation/routing/include/routing_manager_impl.hpp",
+   "implementation/service_discovery/src/service_discovery_impl.cpp",
+   "implementation/routing/include/routing_manager_client.hpp",
+   "implementation/endpoints/src/netlink_connector.cpp",
+   "implementation/endpoints/include/netlink_connector.hpp",
+   "implementation/endpoints/src/local_tcp_server_endpoint_impl.cpp",
+   "implementation/endpoints/include/udp_server_endpoint_impl_receive_op.hpp",
+   "implementation/routing/include/routing_manager_stub.hpp",
+   "implementation/utility/include/utility.hpp",
+   "implementation/security/src/policy_manager_impl.cpp",
+   "implementation/plugin/src/plugin_manager_impl.cpp",
+   "implementation/routing/src/routing_manager_base.cpp",
+   "implementation/endpoints/include/local_uds_server_endpoint_impl.hpp",
+   "implementation/endpoints/src/udp_client_endpoint_impl.cpp",
+   "implementation/security/include/policy_manager_impl.hpp",
+   "implementation/endpoints/src/server_endpoint_impl.cpp",
+   "implementation/service_discovery/include/service_discovery_impl.hpp"
+  ],
+  "raw": "CMakeLists.txt\nimplementation/runtime/src/application_impl.cpp\nimplementation/routing/src/routing_manager_client.cpp\nimplementation/routing/src/routing_manager_impl.cpp\nimplementation/endpoints/src/udp_server_endpoint_impl.cpp\nimplementation/routing/src/routing_manager_stub.cpp\nimplementation/configuration/src/configuration_impl.cpp\nimplementation/utility/src/utility.cpp\nimplementation/routing/include/routing_manager_impl.hpp\nimplementation/service_discovery/src/service_discovery_impl.cpp\nimplementation/routing/include/routing_manager_client.hpp\nimplementation/endpoints/src/netlink_connector.cpp\nimplementation/endpoints/include/netlink_connector.hpp\nimplementation/endpoints/src/local_tcp_server_endpoint_impl.cpp\nimplementation/endpoints/include/udp_server_endpoint_impl_receive_op.hpp\nimplementation/routing/include/routing_manager_stub.hpp\nimplementation/utility/include/utility.hpp\nimplementation/security/src/policy_manager_impl.cpp\nimplementation/plugin/src/plugin_manager_impl.cpp\nimplementation/routing/src/routing_manager_base.cpp\nimplementation/endpoints/include/local_uds_server_endpoint_impl.hpp\nimplementation/endpoints/src/udp_client_endpoint_impl.cpp\nimplementation/security/include/policy_manager_impl.hpp\nimplementation/endpoints/src/server_endpoint_impl.cpp\nimplementation/service_discovery/include/service_discovery_impl.hpp\nimplementation",
+  "sec": 56.3
+ },
+ {
+  "id": "whisper.cpp@qnx-8.0",
+  "rank": [
+   "ggml/src/ggml-rpc/transport.cpp",
+   "ggml/src/ggml-sycl/dpct/helper.hpp",
+   "ggml/src/ggml-cpu/ggml-cpu.c",
+   "ggml/src/ggml-cpu/kleidiai/kleidiai.cpp",
+   "ggml/src/ggml-cpu/spacemit/ime.cpp",
+   "ggml/src/ggml-hexagon/htp/cmake-toolchain.cmake",
+   "ggml/src/ggml-hexagon/htp/matmul-ops.c",
+   "ggml/src/ggml-cpu/ggml-cpu.cpp",
+   "ggml/src/ggml-cpu/ggml-cpu-impl.h",
+   "ggml/src/ggml-quants.c",
+   "ggml/src/ggml-impl.h",
+   "ggml/src/ggml-sycl/ggml-sycl.cpp",
+   "ggml/src/ggml-rpc/CMakeLists.txt",
+   "ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+   "ggml/src/ggml-vulkan/ggml-vulkan.cpp",
+   "ggml/include/ggml.h",
+   "ggml/CMakeLists.txt",
+   "cmake/FindFFmpeg.cmake",
+   "ggml/src/CMakeLists.txt",
+   "ggml/src/ggml-backend-reg.cpp",
+   "ggml/src/ggml-cann/CMakeLists.txt",
+   "cmake/riscv64-spacemit-linux-gnu-gcc.cmake"
+  ],
+  "raw": "ggml/src/ggml-rpc/transport.cpp\nggml/src/ggml-sycl/dpct/helper.hpp\nggml/src/ggml-cpu/ggml-cpu.c\nggml/src/ggml-cpu/kleidiai/kleidiai.cpp\nggml/src/ggml-cpu/spacemit/ime.cpp\nggml/src/ggml-hexagon/htp/cmake-toolchain.cmake\nggml/src/ggml-hexagon/htp/matmul-ops.c\nggml/src/ggml-cpu/ggml-cpu.cpp\nggml/src/ggml-cpu/ggml-cpu-impl.h\nggml/src/ggml-quants.c\nggml/src/ggml-impl.h\nggml/src/ggml-sycl/ggml-sycl.cpp\nggml/src/ggml-rpc/CMakeLists.txt\nggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp\nggml/src/ggml-vulkan/ggml-vulkan.cpp\nggml/include/ggml.h\nggml/CMakeLists.txt\ncmake/FindFFmpeg.cmake\nggml/src/CMakeLists.txt\nggml/src/ggml-backend-reg.cpp\nggml/src/ggml-cann/CMakeLists.txt\ncmake/riscv64-spacemit-linux-gnu-gcc.cmake",
+  "sec": 54.1
+ },
+ {
+  "id": "xla@qnx-mediapipe",
+  "rank": [
+   "third_party/tsl/tsl/platform/default/port.cc",
+   "third_party/tsl/tsl/platform/env.cc",
+   "third_party/tsl/tsl/platform/default/env.cc",
+   "third_party/tsl/tsl/platform/errors.cc",
+   "third_party/tsl/tsl/platform/default/posix_file_system.cc",
+   "third_party/tsl/tsl/platform/cloud/gcs_dns_cache.cc",
+   "third_party/tsl/tsl/platform/path.cc",
+   "third_party/tsl/tsl/platform/cloud/gcs_file_system.cc",
+   "third_party/tsl/tsl/platform/mutex.h"
+  ],
+  "raw": "third_party/tsl/tsl/platform/default/port.cc\nthird_party/tsl/tsl/platform/env.cc\nthird_party/tsl/tsl/platform/default/env.cc\nthird_party/tsl/tsl/platform/errors.cc\nthird_party/tsl/tsl/platform/default/posix_file_system.cc\nthird_party/tsl/tsl/platform/cloud/gcs_dns_cache.cc\nthird_party/tsl/tsl/platform/path.cc\nthird_party/tsl/tsl/platform/cloud/gcs_file_system.cc\nthird_party/tsl/tsl/platform/mutex.h",
+  "sec": 28.4
+ },
+ {
+  "id": "xtl@qnx-0.7.7",
+  "rank": [
+   "include/xtl/xsystem.hpp",
+   "include/xtl/xplatform.hpp"
+  ],
+  "raw": "include/xtl/xsystem.hpp\ninclude/xtl/xplatform.hpp",
+  "sec": 5.5
+ },
+ {
+  "id": "zenoh-pico@qnx-1.5.0",
+  "rank": [
+   "src/system/unix/system.c",
+   "src/system/unix/network.c",
+   "src/system/unix/link/raweth.c"
+  ],
+  "raw": "src/system/unix/system.c\nsrc/system/unix/network.c\nsrc/system/unix/link/raweth.c",
+  "sec": 9.3
+ }
+]

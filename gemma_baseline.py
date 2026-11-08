@@ -32,11 +32,19 @@ def prompt(inst, mode):
     return text
 
 
-def parse(out, cands):
+def parse(out, cands, numbered=None):
+    """Paths from a model answer, in order. Leading list numbers ("1. path") are removed before the
+    path is taken. If `numbered` is given (the list shown to the model as "1. path", "2. path", ...),
+    a line that is only a number refers to that position."""
     cset, got = set(cands), []
     for line in out.split("\n"):
-        p = line.strip().strip("`*-• ").split(" ")[0]
-        p = re.sub(r"^\d+[.)]\s*", "", p)
+        s = line.strip().strip("`*-• #").strip()
+        if numbered and re.fullmatch(r"\d+[.)]?", s):
+            i = int(re.match(r"\d+", s).group()) - 1
+            p = numbered[i] if 0 <= i < len(numbered) else ""
+        else:
+            s = re.sub(r"^\d+[.)]\s+", "", s)
+            p = s.split(" ")[0].strip("`*")
         if p in cset and p not in got:
             got.append(p)
     return got
