@@ -1,0 +1,8 @@
+114 instances, 81506 files, 524 gold files
+logreg   all    R@1=0.195  R@5=0.464  R@10=0.591  R@20=0.719  R@30=0.775  vis@10=0.737  hid@10=0.194  hid@20=0.338  (n=114 instances x 3 seeds)
+logreg   unseen R@1=0.184  R@5=0.463  R@10=0.575  R@20=0.712  R@30=0.770  vis@10=0.718  hid@10=0.206  hid@20=0.339  (n=89 instances x 3 seeds)
+boosted  all    R@1=0.177  R@5=0.462  R@10=0.568  R@20=0.683  R@30=0.753  vis@10=0.713  hid@10=0.183  hid@20=0.262  (n=114 instances x 3 seeds)
+boosted  unseen R@1=0.176  R@5=0.453  R@10=0.566  R@20=0.675  R@30=0.745  vis@10=0.707  hid@10=0.186  hid@20=0.257  (n=89 instances x 3 seeds)
+logreg R@10 by seed: 0.584, 0.597, 0.591
+boosted R@10 by seed: 0.547, 0.601, 0.558
+logreg standardised coefficients: is_build +0.57, ppr_q +0.43, log_lines +0.39, ppr +0.34, depth -0.24, any_includes +0.24, is_header +0.22, os_tokens +0.20, log_n_files +0.19, nb_os_tokens -0.16, qnx_clash_names +0.16, qport +0.15, sys_includes +0.14, has_os +0.13, name_hint -0.10, degree +0.07, indegree +0.07, depth_pct +0.06, os_pct -0.06, peer_tokens +0.05, qport_blockers +0.04, top_build +0.03

@@ -4,3 +4,4 @@ data/raw/
 data/sources*.json
 data/eval_log_94.txt
 *.log
+data/features.jsonl
