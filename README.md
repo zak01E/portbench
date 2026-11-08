@@ -19,7 +19,7 @@ The main task is **file localization**: given the repository at `base_commit` an
 | `data/all_branches.json` | Every QNX branch, including older versions of the same project |
 | `data/eval_files.json` | Per-instance results of the baselines |
 | `data/eval_graph.json` | Per-instance results of the include-graph baselines |
-| `data/gemma_e2b_results.json` | Gemma 4 E2B answers, rankings and timings per instance |
+| `data/gemma_e2b_results.json`, `data/gemma_e4b_results.json` | Gemma 4 E2B / E4B answers, rankings and timings per instance |
 | `data/llm_inputs.json` | Candidate files and platform lines per instance, input of `gemma_baseline.py` |
 | `data/forks.json` | The `qnx-ports` forks with their upstream repositories |
 
@@ -40,7 +40,9 @@ Gold files that already mention a platform are easy (OS-mentions puts 73% in the
 instance). 57 of the 114 instances also need changes in files with no platform token, where OS-mentions does
 worse than random (R@10 0.071 against 0.135). Personalized PageRank over the `#include` graph, seeded with
 OS-mentions and qport scores, raises this to 0.173 (`python graph_eval.py`). Gemma 4 E2B (llama.cpp on a laptop CPU)
-reaches 0.238 on these files from the file paths alone, but only 0.434 on the easy ones (`gemma_analyze.py`). Details are in [PAPER.md](PAPER.md).
+reaches 0.238 on these files from the file paths alone, but ranking files by directory depth reaches 0.240
+(`order_baselines.py`), and Gemma 4 E4B (4-bit, Kaggle T4) does worse (0.140). Hidden fixes sit in shallow, central files.
+E4B notebook: https://www.kaggle.com/code/zakariako/portbench-gemma-4-e4b-localization-baseline Details are in [PAPER.md](PAPER.md).
 
 ## Rebuild from scratch
 You need the GitHub CLI (`gh`) and Python 3.10 or newer.

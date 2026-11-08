@@ -67,17 +67,81 @@ def make_generator():
     import torch
     from transformers import AutoProcessor, AutoModelForCausalLM
     proc = AutoProcessor.from_pretrained(MODEL)
-    model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16, device_map="auto")
+    # 4-bit NF4 weights (the CPU run of E2B used a 4-bit GGUF too): leaves room on two 16 GB T4s
+    # for the activations of the longest prompts
+    from transformers import BitsAndBytesConfig
+    q = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                           bnb_4bit_compute_dtype=torch.float16)
+    # memory-efficient attention for the text model only (eager attention builds an n x n matrix,
+    # 4.6 GB for a 12k-token prompt); the audio tower does not support sdpa
+    try:
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL, quantization_config=q, device_map="auto",
+            attn_implementation={"text_config": "sdpa", "vision_config": "eager", "audio_config": "eager"})
+    except Exception as e:  # noqa: BLE001
+        print("per-tower attention not accepted:", str(e)[:150], flush=True)
+        model = AutoModelForCausalLM.from_pretrained(MODEL, quantization_config=q, device_map="auto")
+        model.config.text_config._attn_implementation = "sdpa"
+    print("text attention:", model.config.text_config._attn_implementation, flush=True)
+    placed = set(getattr(model, "hf_device_map", {}).values())
+    print("device map:", sorted(map(str, placed)), flush=True)
+    assert not placed & {"cpu", "disk"}, "model does not fit on the GPUs"
 
     def gen_hf(text):
         # same settings as the llama.cpp run: greedy, thinking off, at most 350 new tokens
-        ids = proc.apply_chat_template([{"role": "user", "content": text}], add_generation_prompt=True,
+        msgs = [{"role": "user", "content": [{"type": "text", "text": text}]}]
+        ids = proc.apply_chat_template(msgs, add_generation_prompt=True, tokenize=True,
                                        return_tensors="pt", return_dict=True,
                                        enable_thinking=False).to(model.device)
+        # greedy decoding by hand: run the decoder without its head and apply lm_head to the last
+        # position only. The full model computes logits for every prompt token (vocabulary 262k),
+        # several GB on long prompts. Final logit soft-capping is monotonic, so argmax is unchanged.
+        eos = model.generation_config.eos_token_id
+        eos = set(eos if isinstance(eos, (list, tuple)) else [eos])
+        out_ids = []
         with torch.no_grad():
-            g = model.generate(**ids, max_new_tokens=350, do_sample=False)
-        return proc.decode(g[0][ids["input_ids"].shape[1]:], skip_special_tokens=True)
+            # chunked prefill: the attention of a 12k-token prompt in one pass needs a 4.6 GB matrix
+            n, out = ids["input_ids"].shape[1], None
+            for s0 in range(0, n, 2048):
+                e = min(n, s0 + 2048)
+                out = model.model(input_ids=ids["input_ids"][:, s0:e], attention_mask=ids["attention_mask"][:, :e],
+                                  past_key_values=out.past_key_values if out is not None else None, use_cache=True)
+            attn = ids["attention_mask"]
+            for _ in range(350):
+                h = out.last_hidden_state[:, -1:]
+                nxt = model.lm_head(h.to(model.lm_head.weight.device))[:, -1].argmax(-1, keepdim=True)
+                if nxt.item() in eos:
+                    break
+                out_ids.append(nxt.item())
+                attn = torch.cat([attn, attn.new_ones((1, 1))], dim=1)
+                out = model.model(input_ids=nxt.to(attn.device), attention_mask=attn,
+                                  past_key_values=out.past_key_values, use_cache=True)
+        del out
+        return proc.decode(out_ids, skip_special_tokens=True)
     return gen_hf
+
+
+def safe_generate(gen, text):
+    """A prompt that fails (for example CUDA out of memory on the longest inputs) counts as an empty answer."""
+    try:
+        return gen(text)
+    except Exception as e:  # noqa: BLE001
+        try:
+            import torch
+            torch.cuda.empty_cache()
+        except Exception:  # noqa: BLE001
+            pass
+        print("generation failed:", str(e)[:120], flush=True)
+        if not FAILED:
+            import traceback
+            print(traceback.format_exc()[-1500:], flush=True)
+        FAILED.append(str(e)[:120])
+        if len(FAILED) > 10:  # stop early instead of producing meaningless numbers
+            raise RuntimeError("more than 10 prompts failed") from e
+        return ""
+
+
+FAILED = []
 
 
 def main():
@@ -93,7 +157,7 @@ def main():
         row = {"id": inst["id"], "n_gold": len(inst["gold"])}
         for mode in ("tree", "rerank"):
             t0 = time.time()
-            out = generate(prompt(inst, mode))
+            out = safe_generate(generate, prompt(inst, mode))
             rank = parse(out, inst["candidates"])
             for k in (1, 5, 10, 20):
                 row[f"{mode}@{k}"] = len(set(rank[:k]) & set(inst["gold"])) / len(inst["gold"])
