@@ -1,0 +1,17 @@
+learned R@10 0.591 [0.522, 0.661]
+  vs os_mentions      0.548 [0.478, 0.621]  wins 29 losses 18 p=0.1439
+  vs qport+os         0.545 [0.469, 0.616]  wins 31 losses 15 p=0.0259
+  vs top_build+peers  0.570 [0.494, 0.642]  wins 17 losses 23 p=0.4296
+learned R@20 0.719 [0.653, 0.779]
+  vs os_mentions      0.660 [0.590, 0.732]  wins 29 losses 11 p=0.0064
+  vs qport+os         0.692 [0.625, 0.763]  wins 25 losses 8 p=0.0046
+  vs top_build+peers  0.676 [0.609, 0.744]  wins 28 losses 13 p=0.0275
+before June 2025: 67 instances, learned 0.600, OS-mentions 0.532, Gemma E2B paths 0.406 (R@10)
+after June 2025: 47 instances, learned 0.577, OS-mentions 0.571, Gemma E2B paths 0.385 (R@10)
+truncated diffs among evaluated instances: 15
+drop none     R@10=0.591  R@20=0.719  vis@10=0.737  hid@10=0.194  hid@20=0.338
+drop graph    R@10=0.589  R@20=0.717  vis@10=0.731  hid@10=0.186  hid@20=0.347
+drop tokens   R@10=0.563  R@20=0.713  vis@10=0.682  hid@10=0.226  hid@20=0.398
+drop qport    R@10=0.578  R@20=0.705  vis@10=0.726  hid@10=0.167  hid@20=0.298
+drop path     R@10=0.587  R@20=0.706  vis@10=0.754  hid@10=0.117  hid@20=0.239
+drop content  R@10=0.578  R@20=0.682  vis@10=0.732  hid@10=0.190  hid@20=0.269
