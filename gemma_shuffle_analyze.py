@@ -18,8 +18,8 @@ def rec(rank, gold, k):
 
 
 def mean(xs):
-    xs = [x for x in xs if x is not None]
-    return st.mean(xs) if xs else float("nan")
+    xs = [x for x in xs if x is not None and x == x]
+    return st.mean(xs) if xs else None
 
 
 def sign(pairs):
@@ -32,12 +32,15 @@ def sign(pairs):
 def main():
     res = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "data/gemma_e2b_shuffle.json"))
     inp = {x["id"]: x for x in json.load(open("data/llm_inputs.json"))}
+    tokens = {}
+    for g in json.load(open("data/gold_file_ranks.json")):  # same visible / hidden split as the paper
+        tokens.setdefault(g["id"], {})[g["file"]] = g["tokens"]
     rows = []
     for r in res:
         x = inp[r["id"]]
         gold = set(x["gold"])
-        vis = gold & set(x["snippets"])
-        hid = gold - vis
+        vis = {f for f, c in tokens[r["id"]].items() if c > 0}
+        hid = {f for f, c in tokens[r["id"]].items() if c == 0}
         row = {"id": r["id"], "n_shown": None}
         for name, seed in ORDERS.items():
             rank = r[f"{name}_rank"]
@@ -60,13 +63,16 @@ def main():
         for key, names in (("shuffled", ("shuffle0", "shuffle1")),):
             for m in [f"@{k}" for k in KS] + ["_vis@10", "_hid@10", "_hid@20"]:
                 row[f"{key}{m}"] = mean([row[f"{n}{m}"] for n in names])
+        row["truncated"] = len(x["candidates"]) > 400
         rows.append(row)
-    print(len(rows), "instances")
-    for name in list(ORDERS) + ["shuffled"]:
-        print(f"{name:9s} " + "  ".join(f"R@{k}={mean(r[f'{name}@{k}'] for r in rows):.3f}" for k in KS)
-              + f"  vis@10={mean(r[f'{name}_vis@10'] for r in rows):.3f}"
-              + f"  hid@10={mean(r[f'{name}_hid@10'] for r in rows):.3f}"
-              + f"  hid@20={mean(r[f'{name}_hid@20'] for r in rows):.3f}")
+    for label, sel in (("all", rows), ("at most 400 files", [r for r in rows if not r["truncated"]]),
+                       ("more than 400 files", [r for r in rows if r["truncated"]])):
+        print(len(sel), "instances:", label)
+        for name in list(ORDERS) + ["shuffled"]:
+            print(f"{name:9s} " + "  ".join(f"R@{k}={mean(r[f'{name}@{k}'] for r in sel):.3f}" for k in KS)
+                  + f"  vis@10={mean(r[f'{name}_vis@10'] for r in sel):.3f}"
+                  + f"  hid@10={mean(r[f'{name}_hid@10'] for r in sel):.3f}"
+                  + f"  hid@20={mean(r[f'{name}_hid@20'] for r in sel):.3f}")
     for name in ORDERS:
         print(f"{name:9s} picks per answer {mean(r[f'{name}_n'] for r in rows):.1f}, empty {sum(r[f'{name}_empty'] for r in rows)}, "
               f"mean position of picks {mean(r[f'{name}_pos'] for r in rows):.3f} (0 top, 1 bottom), "

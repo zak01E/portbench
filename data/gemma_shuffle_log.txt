@@ -1,0 +1,23 @@
+114 instances: all
+listing   R@1=0.153  R@5=0.313  R@10=0.366  R@20=0.407  vis@10=0.417  hid@10=0.161  hid@20=0.188
+shuffle0  R@1=0.082  R@5=0.160  R@10=0.226  R@20=0.278  vis@10=0.207  hid@10=0.173  hid@20=0.178
+shuffle1  R@1=0.084  R@5=0.177  R@10=0.241  R@20=0.300  vis@10=0.218  hid@10=0.174  hid@20=0.227
+shuffled  R@1=0.083  R@5=0.169  R@10=0.233  R@20=0.289  vis@10=0.213  hid@10=0.173  hid@20=0.202
+76 instances: at most 400 files
+listing   R@1=0.176  R@5=0.365  R@10=0.417  R@20=0.469  vis@10=0.464  hid@10=0.227  hid@20=0.260
+shuffle0  R@1=0.123  R@5=0.241  R@10=0.313  R@20=0.376  vis@10=0.288  hid@10=0.274  hid@20=0.282
+shuffle1  R@1=0.104  R@5=0.237  R@10=0.330  R@20=0.409  vis@10=0.302  hid@10=0.240  hid@20=0.324
+shuffled  R@1=0.114  R@5=0.239  R@10=0.321  R@20=0.392  vis@10=0.295  hid@10=0.257  hid@20=0.303
+38 instances: more than 400 files
+listing   R@1=0.107  R@5=0.210  R@10=0.264  R@20=0.285  vis@10=0.332  hid@10=0.048  hid@20=0.063
+shuffle0  R@1=0.000  R@5=0.000  R@10=0.053  R@20=0.081  vis@10=0.059  hid@10=0.000  hid@20=0.000
+shuffle1  R@1=0.044  R@5=0.056  R@10=0.062  R@20=0.084  vis@10=0.066  hid@10=0.060  hid@20=0.060
+shuffled  R@1=0.022  R@5=0.028  R@10=0.058  R@20=0.083  vis@10=0.062  hid@10=0.030  hid@20=0.030
+listing   picks per answer 26.3, empty 0, mean position of picks 0.318 (0 top, 1 bottom), picks in first 10% 0.384, answers in shown order 63/114, median sec 38
+shuffle0  picks per answer 24.0, empty 0, mean position of picks 0.410 (0 top, 1 bottom), picks in first 10% 0.254, answers in shown order 24/114, median sec 38
+shuffle1  picks per answer 23.7, empty 0, mean position of picks 0.386 (0 top, 1 bottom), picks in first 10% 0.305, answers in shown order 25/114, median sec 38
+listing vs shuffled @10     n=114 higher 48 lower 18 p=0.0003
+listing vs shuffled @20     n=114 higher 49 lower 22 p=0.0018
+listing vs shuffled _vis@10 n=96 higher 45 lower 14 p=0.0001
+listing vs shuffled _hid@10 n=57 higher 5 lower 12 p=0.1435
+listing vs shuffled _hid@20 n=57 higher 7 lower 10 p=0.6291
